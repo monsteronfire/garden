@@ -1,7 +1,8 @@
 +++
-title = 'Post 3'
+title = 'Note 3'
 date = 2023-03-15T11:00:00-07:00
 draft = false
+stage = 'seed'
 tags = ['red','green','blue']
 +++
 

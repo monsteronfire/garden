@@ -1,0 +1,28 @@
+{
+    "name": "Hugo Development Container",
+    "image": "golang:1.24.5",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "lts"
+        },
+        "ghcr.io/devcontainers/features/hugo:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "budparr.language-hugo-vscode",
+                "ms-vscode.vscode-json",
+                "redhat.vscode-yaml",
+                "davidanson.vscode-markdownlint"
+            ]
+        }
+    },
+    "forwardPorts": [
+        1313
+    ],
+    "postCreateCommand": "hugo version",
+    "remoteUser": "root"
+}
