@@ -2,3 +2,20 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = "starter"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  growth = "growth"
+  connects_to = "connects_to"
+  builds_on = "builds_on"
+  challenges = "challenges"
+  # Epistemic Status
+  certainty = "certainty"
+  evidence = "evidence"
+  # Maintenance Status
+  freshness = "freshness"
+  completeness = "completeness"
+  # Thematic Clustering
+  mindset = "mindset"
+  domain = "domain"

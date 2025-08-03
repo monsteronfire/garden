@@ -18,23 +18,6 @@ title = 'My New Hugo Site'
     pageRef = '/tags'
     weight = 30
 
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-  growth = "growth"
-  connects_to = "connects_to"
-  builds_on = "builds_on"
-  challenges = "challenges"
-  # Epistemic Status
-  certainty = "certainty"
-  evidence = "evidence"
-  # Maintenance Status
-  freshness = "freshness"
-  completeness = "completeness"
-  # Thematic Clustering
-  mindset = "mindset"
-  domain = "domain"
-
 [module]
   [module.hugoVersion]
     extended = false
