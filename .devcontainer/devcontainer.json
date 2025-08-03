@@ -16,7 +16,10 @@
                 "budparr.language-hugo-vscode",
                 "ms-vscode.vscode-json",
                 "redhat.vscode-yaml",
-                "davidanson.vscode-markdownlint"
+                "davidanson.vscode-markdownlint",
+                "esbenp.prettier-vscode",
+                "yzhang.markdown-all-in-one",
+                "eamodio.gitlens"
             ]
         }
     },
