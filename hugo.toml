@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = "starter"
 
+[frontmatter]
+  lastmod = ["date_tended", ":git", "date", ":default"]
+
 [taxonomies]
   tag = "tags"
   category = "categories"
