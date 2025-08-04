@@ -1,0 +1,192 @@
+.header-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: var(--space-xs);
+    padding-left: var(--space-xs);
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 768px) {
+        padding-right: var(--space-m);
+        padding-left: var(--space-m);
+    }
+}
+
+/* Mobile-first navigation styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    align-items: stretch;
+    padding: 0 1rem;
+}
+
+nav li {
+    position: relative;
+    width: 100%;
+}
+
+/* Mobile menu items */
+nav > ul > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a.active,
+nav > ul > li > a.ancestor {
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+/* Chevron indicator for items with submenus */
+nav li:has(ul) > a {
+    cursor: pointer;
+}
+
+nav li:has(ul) > a::after {
+    content: "▼";
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+    color: #6b7280;
+}
+
+nav li:has(ul).open > a::after {
+    transform: rotate(180deg);
+}
+
+/* Mobile dropdown menu */
+nav ul ul {
+    background-color: #f9fafb;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    display: none;
+    flex-direction: column;
+    padding: 0.5rem 0;
+}
+
+nav li.open > ul {
+    display: block;
+}
+
+/* Mobile dropdown menu items */
+nav ul ul li {
+    width: 100%;
+}
+
+nav ul ul a {
+    display: block;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    color: #374151;
+    transition: all 0.2s ease;
+    border-radius: 0;
+    margin: 0;
+}
+
+nav ul ul a:hover,
+nav ul ul a.active {
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+/* Active states */
+nav a.active {
+    background-color: #3b82f6;
+    color: white;
+}
+
+nav a.active:hover {
+    background-color: #2563eb;
+}
+
+nav ul ul a.active {
+    background-color: #3b82f6;
+    color: white;
+}
+
+nav ul ul a.active:hover {
+    background-color: #2563eb;
+}
+
+/* Desktop styles - min-width: 768px */
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav li {
+        width: auto;
+    }
+    
+    nav > ul > li > a {
+        justify-content: center;
+        width: auto;
+    }
+    
+    /* Desktop hover functionality */
+    nav li:has(ul) > a {
+        cursor: default;
+    }
+    
+    nav li:has(ul):hover > a::after {
+        transform: rotate(180deg);
+    }
+    
+    /* Desktop dropdown menu */
+    nav ul ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 200px;
+        background-color: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        border: 1px solid #e5e7eb;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+        z-index: 1000;
+        display: flex;
+        margin-top: 0;
+    }
+    
+    /* Show dropdown on hover for desktop */
+    nav li:hover > ul {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    
+    /* Reset mobile open state for desktop */
+    nav li.open > ul {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    
+    /* Desktop dropdown menu items */
+    nav ul ul a {
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        margin: 0 0.5rem;
+    }
+}
