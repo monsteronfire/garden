@@ -19,7 +19,8 @@
                 "davidanson.vscode-markdownlint",
                 "esbenp.prettier-vscode",
                 "yzhang.markdown-all-in-one",
-                "eamodio.gitlens"
+                "eamodio.gitlens",
+                "tamasfe.even-better-toml"
             ]
         }
     },
