@@ -1,7 +1,14 @@
 {{ define "main" }}
   {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
+
+  {{ partial "item-summary.html" (dict "postType" "note" "count" 3) }}
+
+  {{ partial "item-summary.html" (dict "postType" "essay" "count" 3) }}
+
+  {{ partial "item-summary.html" (dict "postType" "bookmark" "count" 3) }}
+
+  {{ partial "item-summary.html" (dict "postType" "portrait" "count" 3) }}
+
+  {{ partial "item-summary.html" (dict "postType" "project" "count" 3) }}
+
 {{ end }}
