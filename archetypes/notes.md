@@ -13,7 +13,7 @@ completeness = ["stub"]
 domain = [""]
 mindset = [""]
 tags = [""]
-relationships =
+[relationships]
   connects_to = []
   builds_on = []
   challenges = []
