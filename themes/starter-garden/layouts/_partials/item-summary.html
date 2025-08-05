@@ -1,0 +1,11 @@
+{{ $postType := .postType | default "note" }}
+{{ $count := .count | default 9 }}
+{{ $items := where site.RegularPages "Type" $postType}}
+
+{{/*  <pre>Debug: {{ debug.Dump $items }}</pre>  */}}
+
+{{ range first $count $items }}
+  <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+  {{ .Summary }}
+{{ end }}
+
