@@ -1,8 +1,8 @@
 +++
-title = "Portrait 1"
+title = "Project 1"
 type = "project"
 date = 2023-02-15T10:00:00-07:00
-draft = true
+draft = false
 description = ""
 link = ""
 +++
