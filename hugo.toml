@@ -1,7 +1,10 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Garden'
+title = 'Garden Little'
 theme = "starter-garden"
+
+[params]
+author = "Shaii Ong"
 
 [frontmatter]
 lastmod = ["date_tended", ":git", "date", ":default"]
