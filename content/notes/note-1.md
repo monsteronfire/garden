@@ -1,14 +1,23 @@
 +++
 title = 'Note 1'
-date = 2023-01-15T09:00:00-07:00
-draft = false
 type = "note"
-stage = 'seed'
-tags = ['red']
+date = "2025-08-06T11:01:45Z"
+date_planted = "2025-08-06T11:01:30Z"
+date_tended = "2025-08-06T11:01:30Z"
+draft = false
+# Epistemic status
+certainty = "speculative"
+vibes = "half-baked"
+evidence = "anecdotal"
+# Maintenance status
+growth_stage = "seed"
+# Thematic clustering
+topics = ["AI", "Development"]
+tags = ["skeptical", "philosophical", "engineering"]
 [relationships]
-  connects_to = []
-  builds_on = []
-  challenges = []
+  connects_to = ["note-5", "note-6"]
+  builds_on = ["note-9"]
+  challenges = ["note-10"]
 +++
 
 Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.

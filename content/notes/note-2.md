@@ -1,14 +1,23 @@
 +++
 title = 'Note 2'
-date = 2023-02-15T10:00:00-07:00
-draft = false
 type = "note"
-stage = 'seed'
-tags = ['red', 'green']
+date = "2025-08-06T11:01:45Z"
+date_planted = "2025-08-06T11:01:30Z"
+date_tended = "2025-08-06T11:01:30Z"
+draft = false
+# Epistemic status
+certainty = "low"
+vibes = "don't quote me"
+evidence = "anecdotal"
+# Maintenance status
+growth_stage = "sprout"
+# Thematic clustering
+topics = ["Culture & Community", "Engineering Management"]
+tags = ["rituals", "practical", "anecdotal"]
 [relationships]
-  connects_to = []
-  builds_on = []
-  challenges = []
+  connects_to = ["note-6", "note-7"]
+  builds_on = ["note-10"]
+  challenges = ["note-1"]
 +++
 
 Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.

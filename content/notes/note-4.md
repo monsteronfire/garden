@@ -1,14 +1,23 @@
 +++
 title = 'Note 4'
-date = 2023-02-15T10:00:00-07:00
-draft = false
 type = "note"
-stage = 'seed'
-tags = ['red', 'green']
+date = "2025-08-06T11:01:45Z"
+date_planted = "2025-08-06T11:01:30Z"
+date_tended = "2025-08-06T11:01:30Z"
+draft = false
+# Epistemic status
+certainty = "high"
+vibes = "dying on this hill (for now)"
+evidence = "empirical"
+# Maintenance status
+growth_stage = "seed"
+# Thematic clustering
+topics = ["Development", "Security"]
+tags = ["learning-in-progress", "supportive"]
 [relationships]
-  connects_to = []
-  builds_on = []
-  challenges = []
+  connects_to = ["note-3"]
+  builds_on = ["note-9"]
+  challenges = ["note-5"]
 +++
 
 Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.

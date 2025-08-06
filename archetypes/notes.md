@@ -15,9 +15,14 @@ growth_stage = "seed | sprout | bloom"
 topics = ["AI", "Culture & Community", "Development", "Engineering Management", "Security"]
 # Examples for tags
 # angle = ["skeptical", "optimistic", "contrarian", "supportive", "critical", "balanced", "provocative", "mainstream", "fringe", "devil's-advocate", "cheerleader", "neutral", "biased", "objective"]
+
 # approach = ["first-principles", "top-down", "bottom-up", "iterative", "experimental", "theoretical", "practical", "systematic", "intuitive", "analytical", "creative", "methodical", "ad-hoc", "structured", "exploratory"]
+
 # perspective = ["beginner-friendly", "expert-level", "historical", "futuristic", "cross-disciplinary", "domain-specific", "big-picture", "detailed", "personal", "academic", "industry", "outsider", "insider", "generalist", "specialist"]
+
 # lens = ["systems-thinking", "reductionist", "holistic", "economic", "technical", "social", "ethical", "psychological", "philosophical", "scientific", "artistic", "business", "engineering", "design", "user-focused", "data-driven", "story-driven", "metaphorical"]
+
+# other_examples = ["rituals", "processes", "documentation", "tribal-knowledge", "posterity", "learning-in-progress", "contradictory", "team-building", "tinkering", "humans", "ethics"]
 tags = [""]
 [relationships]
   connects_to = []
@@ -25,8 +30,4 @@ tags = [""]
   challenges = []
 +++
 
-## Summary
-
-## Key Points
-
-## Questions/Next Steps
+Velit id fugiat occaecat do tempor. Sit officia Lorem aliquip eu deserunt consectetur. Lorem ut cupidatat consectetur sit sint laborum. Esse cupidatat sit sint sunt tempor exercitation deserunt. Labore dolor duis laborum est do nisi ut veniam dolor et nostrud nostrud.
