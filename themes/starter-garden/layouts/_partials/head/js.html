@@ -1,3 +1,16 @@
+{{/*  Load local d3 file  */}}
+{{- $d3 := resources.Get "js/d3.v7.min.js" }}
+{{- if $d3 }}
+  {{- if hugo.IsDevelopment }}
+    <script src="{{ $d3.RelPermalink }}"></script>
+  {{- else }}
+    {{- with $d3 | minify | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+{{/*  Load main.js  */}}
 {{- with resources.Get "js/main.js" }}
   {{- $opts := dict
     "minify" (not hugo.IsDevelopment)

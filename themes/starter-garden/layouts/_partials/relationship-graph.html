@@ -1,0 +1,47 @@
+{{ $graphData := dict "nodes" (slice) "links" (slice) }}
+{{ $nodes := slice }}
+{{ $links := slice }}
+
+{{/* Collect all posts with relationships */}}
+{{ range .Site.RegularPages }}
+  {{ if .Params.relationships }}
+    {{ $node := dict 
+      "id" .File.BaseFileName
+      "title" .Title
+      "growth_stage" (index .Params.growth 0 | default "seed")
+      "type" (.Params.type | default "note")
+      "url" .RelPermalink
+    }}
+    {{ $nodes = $nodes | append $node }}
+    
+    {{/* Create links for each relationship type */}}
+    {{ range $relType, $targets := .Params.relationships }}
+      {{ range $targets }}
+        {{ $link := dict
+          "source" $.File.BaseFileName
+          "target" .
+          "type" $relType
+        }}
+        {{ $links = $links | append $link }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<div class="relationship-graph" data-nodes="{{ $nodes | jsonify }}" data-links="{{ $links | jsonify }}">
+  <svg id="garden-graph"></svg>
+  Relationship Garden Path Graph
+</div>
+
+<script>
+  // Get data attributes from DOM for D3 processing
+  const graphData = {
+    nodes: JSON.parse(document.querySelector('.relationship-graph').dataset.nodes),
+    links: JSON.parse(document.querySelector('.relationship-graph').dataset.links)
+  };
+  
+  console.log(graphData)
+
+  const container = d3.select(".graph-container");
+  console.log(container)
+</script>
