@@ -50,11 +50,11 @@
         .selectAll("circle")
         .data(graphData.nodes)
         .enter().append("circle")
-        .attr("class", d => `node node--${d.growth}`)
+        .attr("class", d => `node node--${d.growth_stage}`)
         .attr("r", d => d.type === "essay" ? 12 : 10)
         .on("mouseover", function(event, d) {
             tooltip.style("opacity", 1)
-                .html(`<strong>${d.title}</strong><br/>Growth: ${d.growth}<br/>Type: ${d.type}`)
+                .html(`<strong>${d.title}</strong><br/>Growth stage: ${d.growth_stage}<br/>Type: ${d.type}`)
                 .style("left", (event.pageX + 10) + "px")
                 .style("top", (event.pageY - 10) + "px")
         })

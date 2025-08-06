@@ -8,7 +8,7 @@
     {{ $node := dict 
       "id" .File.BaseFileName
       "title" .Title
-      "growth_stage" (index .Params.growth 0 | default "seed")
+      "growth_stage" (index .Params.growth_stage 0 | default "seed")
       "type" (.Params.type | default "note")
       "url" .RelPermalink
     }}
