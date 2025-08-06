@@ -15,7 +15,7 @@ growth_stage = "seed"
 topics = ["Development", "Security"]
 tags = ["learning-in-progress", "supportive"]
 [relationships]
-  connects_to = ["note-3"]
+  connects_to = ["note-2"]
   builds_on = ["note-9"]
   challenges = ["note-5"]
 +++

@@ -30,18 +30,18 @@
 
 <div class="relationship-graph" data-nodes="{{ $nodes | jsonify }}" data-links="{{ $links | jsonify }}">
   <svg id="garden-graph"></svg>
+  <div class="tooltip"></div>
   Relationship Garden Path Graph
 </div>
 
-<script>
-  // Get data attributes from DOM for D3 processing
-  const graphData = {
-    nodes: JSON.parse(document.querySelector('.relationship-graph').dataset.nodes),
-    links: JSON.parse(document.querySelector('.relationship-graph').dataset.links)
-  };
-  
-  console.log(graphData)
-
-  const container = d3.select(".graph-container");
-  console.log(container)
-</script>
+{{/* Load relationship-graph JavaScript file */}}
+{{- $graph := resources.Get "js/relationship-graph.js" }}
+{{- if $graph }}
+  {{- if hugo.IsDevelopment }}
+    <script src="{{ $graph.RelPermalink }}"></script>
+  {{- else }}
+    {{- with $graph | minify | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- end }}
+  {{- end }}
+{{- end }}
