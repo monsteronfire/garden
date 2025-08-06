@@ -7,4 +7,22 @@
 
   {{ .Content }}
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+  {{/*  <pre>{{ debug.Dump .Params }}</pre>  */}}
+
+  {{ if .Params.relationships }}
+  connected posts
+    <div class="connections">
+      {{ range $type, $posts := .Params.relationships }}
+        <h4>{{ humanize $type }}</h4>
+        <ul>
+          {{ range $posts }}
+            {{ with $.Site.GetPage (printf "/%s" .) }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      {{ end }}
+    </div>
+  {{ end }}
 {{ end }}

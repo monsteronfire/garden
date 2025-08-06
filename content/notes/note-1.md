@@ -5,6 +5,10 @@ draft = false
 type = "note"
 stage = 'seed'
 tags = ['red']
+[relationships]
+  connects_to = []
+  builds_on = []
+  challenges = []
 +++
 
 Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.
