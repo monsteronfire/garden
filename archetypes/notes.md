@@ -13,13 +13,12 @@ evidence = "empirical | theoretical | anecdotal"
 growth_stage = "seed | sprout | bloom"
 # Thematic clustering
 topics = ["AI", "Culture & Community", "Development", "Engineering Management", "Security"]
+# Examples for tags
+# angle = ["skeptical", "optimistic", "contrarian", "supportive", "critical", "balanced", "provocative", "mainstream", "fringe", "devil's-advocate", "cheerleader", "neutral", "biased", "objective"]
+# approach = ["first-principles", "top-down", "bottom-up", "iterative", "experimental", "theoretical", "practical", "systematic", "intuitive", "analytical", "creative", "methodical", "ad-hoc", "structured", "exploratory"]
+# perspective = ["beginner-friendly", "expert-level", "historical", "futuristic", "cross-disciplinary", "domain-specific", "big-picture", "detailed", "personal", "academic", "industry", "outsider", "insider", "generalist", "specialist"]
+# lens = ["systems-thinking", "reductionist", "holistic", "economic", "technical", "social", "ethical", "psychological", "philosophical", "scientific", "artistic", "business", "engineering", "design", "user-focused", "data-driven", "story-driven", "metaphorical"]
 tags = [""]
-# Mindset, angle and approach to topic
-angle = ["skeptical", "optimistic", "contrarian", "supportive", "critical", "balanced", "provocative", "mainstream", "fringe", "devil's-advocate", "cheerleader", "neutral", "biased", "objective"]
-approach = ["first-principles", "top-down", "bottom-up", "iterative", "experimental", "theoretical", "practical", "systematic", "intuitive", "analytical", "creative", "methodical", "ad-hoc", "structured", "exploratory"]
-perspective = ["beginner-friendly", "expert-level", "historical", "futuristic", "cross-disciplinary", "domain-specific", "big-picture", "detailed", "personal", "academic", "industry", "outsider", "insider", "generalist", "specialist"]
-lens = ["systems-thinking", "reductionist", "holistic", "economic", "technical", "social", "ethical", "psychological", "philosophical", "scientific", "artistic", "business", "engineering", "design", "user-focused", "data-driven", "story-driven", "metaphorical"]
-mindset = [""]
 [relationships]
   connects_to = []
   builds_on = []
