@@ -2,27 +2,27 @@
 {{ $nodes := slice }}
 {{ $links := slice }}
 
-{{/*  "type" (.Params.type | default "note")  */}}
-
 {{/* Collect all posts with relationships */}}
 {{ range .Site.RegularPages }}
   {{ if .Params.relationships }}
+
+    {{ $source_file := .File.BaseFileName }}
+
+    {{/* Create a node for each post */}}
     {{ $node := dict 
-      "id" .File.BaseFileName
+      "id" $source_file
       "title" .Title
       "url" .RelPermalink
       "growth" (.Params.growth_stage | default "seed")
-      
       "content_type" .Type
     }}
     {{ $nodes = $nodes | append $node }}
     
     {{/* Create links for each relationship type */}}
-
     {{ range $relType, $targets := .Params.relationships }}
       {{ range $targets }}
         {{ $link := dict
-          "source" $.File.BaseFileName
+          "source" $source_file
           "target" .
           "type" $relType
         }}

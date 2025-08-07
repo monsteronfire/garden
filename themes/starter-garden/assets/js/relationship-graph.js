@@ -3,7 +3,8 @@ const sampleData = {
     edges: JSON.parse(document.querySelector('.relationship-graph').dataset.links)
 }
 
-console.log("Nodes:", sampleData.nodes);
+console.log("nodes:", sampleData.nodes);
+console.log("edges:", sampleData.edges);
 
 //  const sampleData = {
 //     nodes: [
