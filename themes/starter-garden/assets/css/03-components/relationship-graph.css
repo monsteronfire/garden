@@ -1,52 +1,196 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0f0f23;
+    color: #cccccc;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #66c2a5;
+    margin-bottom: 30px;
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 150px;
+}
+
+.filter-group label {
+    font-weight: bold;
+    color: #66c2a5;
+    font-size: 0.9em;
+}
+
+select, button {
+    padding: 8px 12px;
+    border: 1px solid #444;
+    background: #1a1a2e;
+    color: #cccccc;
+    border-radius: 6px;
+    font-size: 0.9em;
+}
+
+button {
+    background: #66c2a5;
+    color: #0f0f23;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #52a085;
+    transform: translateY(-2px);
+}
+
 .relationship-graph {
+    position: relative;
     width: 100%;
-    height: 600px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #fafafa;
-}
-
-.node {
-    cursor: pointer;
-    stroke: #fff;
-    stroke-width: 2px;
-}
-
-.node--seed { fill: #28a745; }
-.node--tree { fill: #17a2b8; }
-.node--fruit { fill: #dc3545; }
-
-.link {
-    stroke-width: 2px;
-    marker-end: url(#arrowhead);
-}
-
-.link--builds_on { stroke: #28a745; }
-.link--connects_to { stroke: #17a2b8; }
-.link--challenges { stroke: #dc3545; }
-
-.node-label {
-    font: 12px sans-serif;
-    text-anchor: middle;
-    pointer-events: none;
-    fill: #333;
-}
-
-.legend {
-    font: 14px sans-serif;
-}
-
-.legend-item {
-    cursor: pointer;
+    height: 800px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background: radial-gradient(circle at center, #1a1a2e 0%, #0f0f23 100%);
+    overflow: hidden;
 }
 
 .tooltip {
     position: absolute;
-    padding: 8px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     color: white;
-    border-radius: 4px;
-    font: 12px sans-serif;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 12px;
     pointer-events: none;
-    opacity: 0;
+    border: 1px solid #66c2a5;
+    max-width: 250px;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
 }
+
+.tooltip h4 {
+    margin: 0 0 8px 0;
+    color: #66c2a5;
+    font-size: 14px;
+}
+
+.tooltip .meta {
+    opacity: 0.8;
+    font-size: 11px;
+    margin: 4px 0;
+}
+
+.legend {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    font-size: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.legend h4 {
+    margin: 0 0 10px 0;
+    color: #66c2a5;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    gap: 8px;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.legend-line {
+    width: 20px;
+    height: 2px;
+    margin: 0 5px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 120px;
+}
+
+.stat-card .number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #66c2a5;
+}
+
+.stat-card .label {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* Node and edge styles will be applied via D3 */
+.node {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.node:hover {
+    filter: brightness(1.3);
+}
+
+.link {
+    transition: all 0.3s ease;
+}
+
+.link.highlighted {
+    stroke-width: 3px !important;
+    opacity: 1 !important;
+}
+
+.node.highlighted {
+    stroke-width: 3px !important;
+    filter: brightness(1.5) drop-shadow(0 0 8px currentColor);
+}
+
+.node.dimmed {
+    opacity: 0.3;
+}
+
+.link.dimmed {
+    opacity: 0.1;
+}
+    

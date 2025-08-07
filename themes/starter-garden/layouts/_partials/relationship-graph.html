@@ -2,19 +2,23 @@
 {{ $nodes := slice }}
 {{ $links := slice }}
 
+{{/*  "type" (.Params.type | default "note")  */}}
+
 {{/* Collect all posts with relationships */}}
 {{ range .Site.RegularPages }}
   {{ if .Params.relationships }}
     {{ $node := dict 
       "id" .File.BaseFileName
       "title" .Title
-      "growth_stage" (index .Params.growth_stage 0 | default "seed")
-      "type" (.Params.type | default "note")
       "url" .RelPermalink
+      "growth" (.Params.growth_stage | default "seed")
+      
+      "content_type" .Type
     }}
     {{ $nodes = $nodes | append $node }}
     
     {{/* Create links for each relationship type */}}
+
     {{ range $relType, $targets := .Params.relationships }}
       {{ range $targets }}
         {{ $link := dict
@@ -28,20 +32,104 @@
   {{ end }}
 {{ end }}
 
-<div class="relationship-graph" data-nodes="{{ $nodes | jsonify }}" data-links="{{ $links | jsonify }}">
-  <svg id="garden-graph"></svg>
-  <div class="tooltip"></div>
-  Relationship Garden Path Graph
+
+<div class="container">
+  <h1>🌱 Digital Garden Connection Graph</h1>
+  
+  <div class="controls">
+      <div class="filter-group">
+          <label>Growth Stage</label>
+          <select id="growthFilter">
+              <option value="all">All Stages</option>
+              <option value="seed">🌱 Seed</option>
+              <option value="sprout">🌿 Sprout</option>
+              <option value="bloom">🌸 Bloom</option>
+          </select>
+      </div>
+      
+      <div class="filter-group">
+          <label>Content Type</label>
+          <select id="contentFilter">
+              <option value="all">All Types</option>
+              <option value="note">📝 Note</option>
+              <option value="link">🔗 Link</option>
+              <option value="essay">📄 Essay</option>
+              <option value="picture">🖼️ Picture</option>
+          </select>
+      </div>
+      
+      <div class="filter-group">
+          <label>Relationship</label>
+          <select id="relationshipFilter">
+              <option value="all">All Relationships</option>
+              <option value="builds_on">🟢 Builds On</option>
+              <option value="connects_to">🔵 Connects To</option>
+              <option value="challenges">🔴 Challenges</option>
+          </select>
+      </div>
+      
+      <div class="filter-group">
+          <label>Actions</label>
+          <button onclick="resetFilters()">Reset Filters</button>
+          <button onclick="centerGraph()">Center Graph</button>
+      </div>
+  </div>
+  
+  <div class="relationship-graph" data-nodes="{{ $nodes | jsonify }}" data-links="{{ $links | jsonify }}">
+      <svg id="graph"></svg>
+      <div class="legend">
+          <h4>Legend</h4>
+          <div>
+              <strong>Growth Stages:</strong>
+              <div class="legend-item">
+                  <div class="legend-color" style="background: #2ecc71"></div>
+                  <span>Seed</span>
+              </div>
+              <div class="legend-item">
+                  <div class="legend-color" style="background: #f1c40f"></div>
+                  <span>Sprout</span>
+              </div>
+              <div class="legend-item">
+                  <div class="legend-color" style="background: #e74c3c"></div>
+                  <span>Bloom</span>
+              </div>
+          </div>
+          <div style="margin-top: 15px;">
+              <strong>Relationships:</strong>
+              <div class="legend-item">
+                  <div class="legend-line" style="background: #2ecc71"></div>
+                  <span>Builds On</span>
+              </div>
+              <div class="legend-item">
+                  <div class="legend-line" style="background: #3498db"></div>
+                  <span>Connects To</span>
+              </div>
+              <div class="legend-item">
+                  <div class="legend-line" style="background: #e74c3c"></div>
+                  <span>Challenges</span>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="stats">
+      <div class="stat-card">
+          <div class="number" id="totalNodes">0</div>
+          <div class="label">Total Nodes</div>
+      </div>
+      <div class="stat-card">
+          <div class="number" id="totalEdges">0</div>
+          <div class="label">Connections</div>
+      </div>
+      <div class="stat-card">
+          <div class="number" id="visibleNodes">0</div>
+          <div class="label">Visible Nodes</div>
+      </div>
+      <div class="stat-card">
+          <div class="number" id="avgConnections">0</div>
+          <div class="label">Avg Connections</div>
+      </div>
+  </div>
 </div>
 
-{{/* Load relationship-graph JavaScript file */}}
-{{- $graph := resources.Get "js/relationship-graph.js" }}
-{{- if $graph }}
-  {{- if hugo.IsDevelopment }}
-    <script src="{{ $graph.RelPermalink }}"></script>
-  {{- else }}
-    {{- with $graph | minify | fingerprint }}
-      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
-    {{- end }}
-  {{- end }}
-{{- end }}
+<div class="tooltip" id="tooltip" style="display: none;"></div>

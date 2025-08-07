@@ -1,1 +1,13 @@
 <p>&copy; {{ now.Year }} {{ site.Params.Author }}</p>
+
+{{/* Load relationship-graph JavaScript file */}}
+{{- $graph := resources.Get "js/relationship-graph.js" }}
+{{- if $graph }}
+  {{- if hugo.IsDevelopment }}
+    <script src="{{ $graph.RelPermalink }}"></script>
+  {{- else }}
+    {{- with $graph | minify | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- end }}
+  {{- end }}
+{{- end }}
