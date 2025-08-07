@@ -1,0 +1,52 @@
+.relationship-graph {
+    width: 100%;
+    height: 600px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.node {
+    cursor: pointer;
+    stroke: #fff;
+    stroke-width: 2px;
+}
+
+.node--seed { fill: #28a745; }
+.node--tree { fill: #17a2b8; }
+.node--fruit { fill: #dc3545; }
+
+.link {
+    stroke-width: 2px;
+    marker-end: url(#arrowhead);
+}
+
+.link--builds_on { stroke: #28a745; }
+.link--connects_to { stroke: #17a2b8; }
+.link--challenges { stroke: #dc3545; }
+
+.node-label {
+    font: 12px sans-serif;
+    text-anchor: middle;
+    pointer-events: none;
+    fill: #333;
+}
+
+.legend {
+    font: 14px sans-serif;
+}
+
+.legend-item {
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+    font: 12px sans-serif;
+    pointer-events: none;
+    opacity: 0;
+}
