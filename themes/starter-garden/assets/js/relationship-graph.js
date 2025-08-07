@@ -3,107 +3,6 @@ const sampleData = {
     edges: JSON.parse(document.querySelector('.relationship-graph').dataset.links)
 }
 
-console.log("nodes:", sampleData.nodes);
-console.log("edges:", sampleData.edges);
-
-//  const sampleData = {
-//     nodes: [
-//         {
-//             id: "knowledge-graphs",
-//             title: "Knowledge Graphs in Digital Gardens",
-//             url: "/garden/knowledge-graphs/",
-//             content_type: "essay",
-//             growth: "bloom",
-//         },
-//         {
-//             id: "digital-gardens",
-//             title: "What are Digital Gardens?",
-//             url: "/garden/digital-gardens/",
-//             content_type: "note",
-//             growth: "sprout",
-//         },
-//         {
-//             id: "connected-thinking",
-//             title: "Connected Thinking",
-//             url: "/garden/connected-thinking/",
-//             content_type: "note",
-//             growth: "seed",
-//         },
-//         {
-//             id: "hugo-static-sites",
-//             title: "Hugo for Static Sites",
-//             url: "/garden/hugo-static-sites/",
-//             content_type: "link",
-//             growth: "sprout",
-//         },
-//         {
-//             id: "graph-visualization",
-//             title: "Graph Visualization with D3",
-//             url: "/garden/graph-visualization/",
-//             content_type: "essay",
-//             growth: "bloom",
-//         },
-//         {
-//             id: "zettelkasten-method",
-//             title: "The Zettelkasten Method",
-//             url: "/garden/zettelkasten-method/",
-//             content_type: "note",
-//             growth: "bloom",
-//         },
-//         {
-//             id: "network-effects",
-//             title: "Network Effects in Learning",
-//             url: "/garden/network-effects/",
-//             content_type: "picture",
-//             growth: "seed",
-//         }
-//     ],
-//     edges: [
-//         {
-//             source: "knowledge-graphs",
-//             target: "digital-gardens",
-//             type: "builds_on"
-//         },
-//         {
-//             source: "digital-gardens",
-//             target: "connected-thinking",
-//             type: "connects_to"
-//         },
-//         {
-//             source: "knowledge-graphs",
-//             target: "hugo-static-sites",
-//             type: "connects_to"
-//         },
-//         {
-//             source: "graph-visualization",
-//             target: "knowledge-graphs",
-//             type: "builds_on"
-//         },
-//         {
-//             source: "zettelkasten-method",
-//             target: "digital-gardens",
-//             type: "connects_to"
-//         },
-//         {
-//             source: "connected-thinking",
-//             target: "zettelkasten-method",
-//             type: "challenges"
-//         },
-//         {
-//             source: "network-effects",
-//             target: "connected-thinking",
-//             type: "builds_on"
-//         },
-//         {
-//             source: "graph-visualization",
-//             target: "network-effects",
-//             type: "connects_to"
-//         }
-//     ]
-// }
-
-  
-
 // Graph configuration
 const config = {
     width: 1200,
@@ -129,7 +28,7 @@ const config = {
 };
 
 // Initialize graph
-let svg, simulation, nodes, links, nodeElements, linkElements, tooltip;
+let svg, simulation, nodes, links, nodeElements, linkElements, tooltip, zoom;
 let currentData = JSON.parse(JSON.stringify(sampleData));
 let allData = JSON.parse(JSON.stringify(sampleData));
 
@@ -140,7 +39,7 @@ function initGraph() {
         .attr('height', config.height);
 
     // Add zoom behavior
-    const zoom = d3.zoom()
+    zoom = d3.zoom()
         .scaleExtent([0.1, 4])
         .on('zoom', (event) => {
             svg.select('g').attr('transform', event.transform);
@@ -178,10 +77,13 @@ function initGraph() {
 }
 
 function setupSimulation() {
+    const width = svg.node().getBoundingClientRect().width
+    const height = svg.node().getBoundingClientRect().height
+
     simulation = d3.forceSimulation()
         .force('link', d3.forceLink().id(d => d.id).distance(80))
         .force('charge', d3.forceManyBody().strength(-300))
-        .force('center', d3.forceCenter(config.width / 2, config.height / 2))
+        .force('center', d3.forceCenter(width / 2, height / 2))
         .force('collision', d3.forceCollide().radius(25));
 }
 
@@ -386,9 +288,9 @@ function resetFilters() {
 }
 
 function centerGraph() {
-    const transform = d3.zoomIdentity.translate(config.width / 2, config.height / 2).scale(1);
+    const transform = d3.zoomIdentity.translate(0, 0).scale(1);
     svg.transition().duration(750).call(
-        svg.__zoom.transform,
+        zoom.transform,
         transform
     );
 }
