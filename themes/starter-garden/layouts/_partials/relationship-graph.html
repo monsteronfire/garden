@@ -2,28 +2,76 @@
 {{ $nodes := slice }}
 {{ $links := slice }}
 
-{{/* Collect all posts with relationships */}}
+{{/* Collect all pages that have content (potential nodes) */}}
 {{ range .Site.RegularPages }}
-  {{ if .Params.relationships }}
+  {{ $node := dict 
+    "id" .File.BaseFileName
+    "title" .Title
+    "url" .RelPermalink
+    "growth" (.Params.growth_stage | default "seed")
+    "content_type" .Type
+  }}
+  {{ $nodes = $nodes | append $node }}
+{{ end }}
 
-    {{ $source_file := .File.BaseFileName }}
-
-    {{/* Create a node for each post */}}
-    {{ $node := dict 
-      "id" $source_file
-      "title" .Title
-      "url" .RelPermalink
-      "growth" (.Params.growth_stage | default "seed")
-      "content_type" .Type
-    }}
-    {{ $nodes = $nodes | append $node }}
+{{/* Scan all pages for wikilinks to create relationships */}}
+{{ range .Site.RegularPages }}
+  {{ $sourcePage := . }}
+  {{ $sourceSlug := $sourcePage.File.BaseFileName }}
+  {{ $sourceContent := $sourcePage.RawContent }}
+  
+  {{/* Find all wikilinks in this page's content */}}
+  {{ $wikilinks := findRE `\[\[([^\]]+)\]\]` $sourceContent }}
+  
+  {{ range $wikilinks }}
+    {{/* Extract slug from wikilink */}}
+    {{ $targetSlug := . | replaceRE `\[\[([^|\]]+).*\]\]` "$1" | urlize }}
     
-    {{/* Create links for each relationship type */}}
-    {{ range $relType, $targets := .Params.relationships }}
-      {{ range $targets }}
+    {{/* Skip self-references */}}
+    {{ if ne $sourceSlug $targetSlug }}
+      {{/* Extract context around the wikilink to infer relationship type */}}
+      {{ $context := "" }}
+      {{ $relType := "connects_to" }} {{/* default relationship type */}}
+      
+      {{/* Split content by the current wikilink to get context */}}
+      {{ $parts := split $sourceContent . }}
+      {{ if gt (len $parts) 1 }}
+        {{ $beforeContext := index $parts 0 }}
+        {{ $afterContext := index $parts 1 }}
+        
+        {{/* Get last 200 chars before and first 200 chars after for context */}}
+        {{ if gt (len $beforeContext) 200 }}
+          {{ $beforeContext = substr $beforeContext (sub (len $beforeContext) 200) 200 }}
+        {{ end }}
+        {{ if gt (len $afterContext) 200 }}
+          {{ $afterContext = substr $afterContext 0 200 }}
+        {{ end }}
+        
+        {{ $context = printf "%s %s %s" $beforeContext . $afterContext | lower }}
+        
+        {{/* Infer relationship type from context */}}
+        {{ if or (strings.Contains $context "builds on") (strings.Contains $context "based on") (strings.Contains $context "extends") (strings.Contains $context "follows from") }}
+          {{ $relType = "builds_on" }}
+        {{ else if or (strings.Contains $context "challenges") (strings.Contains $context "disagrees") (strings.Contains $context "contrary") (strings.Contains $context "refutes") }}
+          {{ $relType = "challenges" }}
+        {{ else }}
+          {{ $relType = "connects_to" }}
+        {{ end }}
+      {{ end }}
+      
+      {{/* Verify target page exists in our nodes */}}
+      {{ $targetExists := false }}
+      {{ range $nodes }}
+        {{ if eq .id $targetSlug }}
+          {{ $targetExists = true }}
+        {{ end }}
+      {{ end }}
+      
+      {{/* Only create link if target page exists */}}
+      {{ if $targetExists }}
         {{ $link := dict
-          "source" $source_file
-          "target" .
+          "source" $sourceSlug
+          "target" $targetSlug
           "type" $relType
         }}
         {{ $links = $links | append $link }}
@@ -31,7 +79,6 @@
     {{ end }}
   {{ end }}
 {{ end }}
-
 
 <div class="container">
   <h2>🌱 Digital Garden Connection Graph</h2>
@@ -133,3 +180,15 @@
 </div>
 
 <div class="tooltip" id="tooltip" style="display: none;"></div>
+
+{{/* Load the relationship graph JavaScript */}}
+{{- $customJS := resources.Get "js/relationship-graph.js" }}
+{{- if $customJS }}
+  {{- if hugo.IsDevelopment }}
+    <script src="{{ $customJS.RelPermalink }}"></script>
+  {{- else }}
+    {{- with $customJS | minify | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- end }}
+  {{- end }}
+{{- end }}
