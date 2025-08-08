@@ -14,9 +14,7 @@ const config = {
             bloom: '#e74c3c'
         },
         relationships: {
-            builds_on: '#2ecc71',
-            connects_to: '#3498db',
-            challenges: '#e74c3c'
+            mentions: '#3498db'  // Single relationship type
         },
         contentTypes: {
             note: { shape: 'circle', size: 8 },
@@ -53,19 +51,18 @@ function initGraph() {
     // Add arrow markers for directed edges
     const defs = svg.append('defs');
     
-    Object.entries(config.colors.relationships).forEach(([type, color]) => {
-        defs.append('marker')
-            .attr('id', `arrow-${type}`)
-            .attr('viewBox', '0 -5 10 10')
-            .attr('refX', 20)
-            .attr('refY', 0)
-            .attr('markerWidth', 6)
-            .attr('markerHeight', 6)
-            .attr('orient', 'auto')
-            .append('path')
-            .attr('d', 'M0,-5L10,0L0,5')
-            .attr('fill', color);
-    });
+    // Single arrow marker for mentions
+    defs.append('marker')
+        .attr('id', 'arrow-mentions')
+        .attr('viewBox', '0 -5 10 10')
+        .attr('refX', 20)
+        .attr('refY', 0)
+        .attr('markerWidth', 6)
+        .attr('markerHeight', 6)
+        .attr('orient', 'auto')
+        .append('path')
+        .attr('d', 'M0,-5L10,0L0,5')
+        .attr('fill', config.colors.relationships.mentions);
 
     // Setup tooltip
     tooltip = d3.select('#tooltip');
@@ -90,9 +87,9 @@ function setupSimulation() {
 function updateGraph() {
     const g = svg.select('g');
 
-    // Update links
+    // Update links - treat all links as mentions since we removed type field
     linkElements = g.selectAll('.link')
-        .data(currentData.edges, d => `${d.source.id || d.source}-${d.target.id || d.target}-${d.type}`);
+        .data(currentData.edges, d => `${d.source.id || d.source}-${d.target.id || d.target}`);
 
     linkElements.exit().remove();
 
@@ -103,8 +100,8 @@ function updateGraph() {
         .attr('opacity', 0.6);
 
     linkElements = linkEnter.merge(linkElements)
-        .attr('stroke', d => config.colors.relationships[d.type])
-        .attr('marker-end', d => `url(#arrow-${d.type})`);
+        .attr('stroke', config.colors.relationships.mentions)
+        .attr('marker-end', 'url(#arrow-mentions)');
 
     // Update nodes
     nodeElements = g.selectAll('.node')
@@ -224,11 +221,18 @@ function clearHighlight() {
 }
 
 function showTooltip(event, d) {
+    const connectedCount = currentData.edges.filter(edge => {
+        const sourceId = edge.source.id || edge.source;
+        const targetId = edge.target.id || edge.target;
+        return sourceId === d.id || targetId === d.id;
+    }).length;
+
     const content = `
         <h4>${d.title}</h4>
         <div class="meta"><strong>Type:</strong> ${d.content_type}</div>
         <div class="meta"><strong>Growth:</strong> ${d.growth}</div>
-        <div style="margin-top: 8px;">${d.description || ''}</div>
+        <div class="meta"><strong>Connections:</strong> ${connectedCount}</div>
+        <div style="margin-top: 8px; font-size: 12px; color: #666;">Click to open page</div>
     `;
     
     tooltip
@@ -242,11 +246,10 @@ function hideTooltip() {
     tooltip.style('display', 'none');
 }
 
-// Filter functions
+// Filter functions - simplified since we only have mentions now
 function applyFilters() {
     const growthFilter = document.getElementById('growthFilter').value;
     const contentFilter = document.getElementById('contentFilter').value;
-    const relationshipFilter = document.getElementById('relationshipFilter').value;
 
     // Filter nodes
     let filteredNodes = allData.nodes;
@@ -259,15 +262,11 @@ function applyFilters() {
 
     const filteredNodeIds = new Set(filteredNodes.map(n => n.id));
 
-    // Filter edges
+    // Filter edges based on filtered nodes
     let filteredEdges = allData.edges.filter(e => 
         filteredNodeIds.has(e.source.id || e.source) && 
         filteredNodeIds.has(e.target.id || e.target)
     );
-
-    if (relationshipFilter !== 'all') {
-        filteredEdges = filteredEdges.filter(e => e.type === relationshipFilter);
-    }
 
     currentData = {
         nodes: filteredNodes,
@@ -281,14 +280,19 @@ function applyFilters() {
 function resetFilters() {
     document.getElementById('growthFilter').value = 'all';
     document.getElementById('contentFilter').value = 'all';
-    document.getElementById('relationshipFilter').value = 'all';
     currentData = JSON.parse(JSON.stringify(allData));
     updateGraph();
     updateStats();
 }
 
 function centerGraph() {
-    const transform = d3.zoomIdentity.translate(0, 0).scale(1);
+    const currentWidth = parseInt(svg.attr('width'));
+    const currentHeight = parseInt(svg.attr('height'));
+    
+    const transform = d3.zoomIdentity
+        .translate(currentWidth / 2, currentHeight / 2)
+        .scale(1);
+    
     svg.transition().duration(750).call(
         zoom.transform,
         transform
@@ -323,10 +327,9 @@ function dragended(event, d) {
     d.fy = null;
 }
 
-// Event listeners
+// Event listeners - removed relationship filter
 document.getElementById('growthFilter').addEventListener('change', applyFilters);
 document.getElementById('contentFilter').addEventListener('change', applyFilters);
-document.getElementById('relationshipFilter').addEventListener('change', applyFilters);
 
 // Initialize everything
 initGraph();
