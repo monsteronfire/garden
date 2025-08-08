@@ -145,11 +145,14 @@ function updateGraph() {
                 node.append('polygon')
                     .attr('points', `0,-${contentConfig.size} ${contentConfig.size},${contentConfig.size} -${contentConfig.size},${contentConfig.size}`);
                 break;
-            case 'portrait':
-                node.append('polygon')
-                    .attr('points', `0,-${contentConfig.size} ${contentConfig.size * 0.866},${contentConfig.size * 0.5} -${contentConfig.size * 0.866},${contentConfig.size * 0.5}`);
-                break;
             case 'project':
+                // Cross shape using path
+                const crossSize = contentConfig.size;
+                const crossWidth = crossSize * 0.3;
+                node.append('path')
+                    .attr('d', `M-${crossWidth},-${crossSize} L${crossWidth},-${crossSize} L${crossWidth},-${crossWidth} L${crossSize},-${crossWidth} L${crossSize},${crossWidth} L${crossWidth},${crossWidth} L${crossWidth},${crossSize} L-${crossWidth},${crossSize} L-${crossWidth},${crossWidth} L-${crossSize},${crossWidth} L-${crossSize},-${crossWidth} L-${crossWidth},-${crossWidth} Z`);
+                break;
+            case 'portrait':
                 // Pentagon shape
                 const pentagonSize = contentConfig.size;
                 const pentagonPoints = [];
@@ -168,7 +171,7 @@ function updateGraph() {
     nodeElements = nodeEnter.merge(nodeElements);
 
     // Style nodes
-    nodeElements.selectAll('circle, rect, polygon')
+    nodeElements.selectAll('circle, rect, polygon, path')
         .attr('fill', d => config.colors.growth[d.growth])
         .attr('stroke', '#fff')
         .attr('stroke-width', 2);
