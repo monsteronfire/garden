@@ -4,13 +4,13 @@
   This partial finds all pages that link to the current page via wikilinks.
   Usage: {{ partial "backlinks.html" . }}
   
-  Returns a structure of pages that reference the current page.
+  Returns a structure of pages that mention the current page.
 */}}
 
 {{ $currentPage := . }}
 {{ $currentSlug := $currentPage.File.BaseFileName | urlize }}
 
-{{/* Store backlinks with relationship context */}}
+{{/* Store backlinks */}}
 {{ $backlinks := slice }}
 
 {{/* Scan all pages for wikilinks pointing to current page */}}
@@ -47,20 +47,10 @@
         {{ $afterContext = substr $afterContext 0 100 }}
         {{ end }}
         
-        {{ $context = printf "%s%s%s" $beforeContext . $afterContext | lower }}
+        {{ $context = printf "%s%s%s" $beforeContext . $afterContext }}
     {{ else }}
         {{/* Fallback to entire content if split fails */}}
-        {{ $context = $sourceContent | lower }}
-    {{ end }}
-    
-    {{/* Infer relationship type from context */}}
-    {{ $relType := "mentions" }}
-    {{ if or (strings.Contains $context "builds on") (strings.Contains $context "based on") (strings.Contains $context "extends") }}
-        {{ $relType = "builds_on" }}
-    {{ else if or (strings.Contains $context "challenges") (strings.Contains $context "disagrees") (strings.Contains $context "contrary") }}
-        {{ $relType = "challenges" }}
-    {{ else if or (strings.Contains $context "see also") (strings.Contains $context "related to") (strings.Contains $context "connects to") }}
-        {{ $relType = "connects_to" }}
+        {{ $context = $sourceContent }}
     {{ end }}
     
     {{/* Extract display text if custom text is used */}}
@@ -73,58 +63,34 @@
     {{/* Add to backlinks */}}
     {{ $backlink := dict 
         "page" $sourcePage 
-        "type" $relType 
         "context" $context
         "displayText" $displayText
     }}
     {{ $backlinks = $backlinks | append $backlink }}
     {{ end }}
-    
-  {{ end }}
-{{ end }}
 
-{{/* Group backlinks by relationship type */}}
-{{ $groupedBacklinks := dict }}
-{{ range $backlinks }}
-  {{ $relType := .type }}
-  {{ $existing := index $groupedBacklinks $relType | default slice }}
-  {{ $existing = $existing | append . }}
-  {{ $groupedBacklinks = merge $groupedBacklinks (dict $relType $existing) }}
+  {{ end }}
 {{ end }}
 
 {{/* Render backlinks if any exist */}}
 {{ if gt (len $backlinks) 0 }}
 <div class="backlinks">
-  <h3>Referenced by</h3>
+  <h3>💭 Mentioned in</h3>
   
-  {{ range $relType, $links := $groupedBacklinks }}
-    <div class="backlink-group" data-rel-type="{{ $relType }}">
-      {{ if eq $relType "builds_on" }}
-        <h4>🏗️ Built upon by</h4>
-      {{ else if eq $relType "challenges" }}
-        <h4>⚡ Challenged by</h4>
-      {{ else if eq $relType "connects_to" }}
-        <h4>🔗 Connected to</h4>
-      {{ else }}
-        <h4>💭 Mentioned in</h4>
-      {{ end }}
-      
-      <ul class="backlink-list">
-        {{ range $links }}
-          <li class="backlink-item">
-            <a href="{{ .page.RelPermalink }}" class="backlink-title">
-              {{ .page.Title }}
-            </a>
-            {{ if .page.Description }}
-              <span class="backlink-desc"> — {{ .page.Description }}</span>
-            {{ end }}
-            {{ with .page.Params.growth }}
-              <span class="growth-badge growth-{{ . }}">{{ . }}</span>
-            {{ end }}
-          </li>
+  <ul class="backlink-list">
+    {{ range $backlinks }}
+      <li class="backlink-item">
+        <a href="{{ .page.RelPermalink }}" class="backlink-title">
+          {{ .page.Title }}
+        </a>
+        {{ if .page.Description }}
+          <span class="backlink-desc"> — {{ .page.Description }}</span>
         {{ end }}
-      </ul>
-    </div>
-  {{ end }}
+        {{ with .page.Params.growth_stage }}
+          <span class="growth-badge growth-{{ . }}">{{ . }}</span>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
 </div>
 {{ end }}
