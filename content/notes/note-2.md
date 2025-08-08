@@ -14,10 +14,6 @@ growth_stage = "sprout"
 # Thematic clustering
 topics = ["Culture & Community", "Engineering Management"]
 tags = ["rituals", "practical", "anecdotal"]
-[relationships]
-  connects_to = ["note-6", "note-7"]
-  builds_on = ["note-10"]
-  challenges = ["note-1"]
 +++
 
 Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod [[note-7]] ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.

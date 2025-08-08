@@ -14,10 +14,6 @@ growth_stage = "sprout"
 # Thematic clustering
 topics = ["Engineering Management"]
 tags = ["posterity", "humans"]
-[relationships]
-  connects_to = ["note-7"]
-  builds_on = ["note-10"]
-  challenges = ["note-1"]
 +++
 
 Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia. Velit id fugiat occaecat do tempor. [[note-1]] Sit officia Lorem aliquip eu deserunt consectetur. Aute proident deserunt in nulla aliquip dolore ipsum [[note-10]] Lorem ut cupidatat consectetur sit sint laborum. Esse cupidatat sit sint sunt tempor exercitation deserunt. Labore dolor duis laborum est do nisi ut veniam dolor et nostrud nostrud.

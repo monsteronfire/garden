@@ -14,10 +14,6 @@ growth_stage = "seed"
 # Thematic clustering
 topics = ["Development", "Engineering Management"]
 tags = ["data-driven", "gut-feeling", "contradictory"]
-[relationships]
-  connects_to = ["note-9"]
-  builds_on = ["note-2"]
-  challenges = ["note-7", "note-6"]
 +++
 
 Exercitation occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea. Anim ut duis sunt nisi. Culpa cillum sit Just [[note-9]] Link voluptate voluptate eiusmod dolor. Enim nisi Lorem ipsum irure est excepteur voluptate eu in enim nisi. Nostrud ipsum Lorem anim sint labore consequat do.

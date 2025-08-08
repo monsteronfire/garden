@@ -14,10 +14,6 @@ growth_stage = "seed"
 # Thematic clustering
 topics = ["AI", "Development"]
 tags = ["skeptical", "philosophical", "engineering"]
-[relationships]
-  connects_to = ["note-5", "note-6"]
-  builds_on = ["note-9"]
-  challenges = ["note-10"]
 +++
 
 Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.

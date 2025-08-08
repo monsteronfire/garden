@@ -14,10 +14,6 @@ growth_stage = "bloom"
 # Thematic clustering
 topics = ["AI", "Culture & Community"]
 tags = ["tribal-knowledge", "rituals", "team-building"]
-[relationships]
-  connects_to = ["note-9"]
-  builds_on = ["note-2"]
-  challenges = ["note-7"]
 +++
 
 Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia. Velit id fugiat occaecat do tempor. [[note-2]] Sit officia Lorem aliquip eu deserunt consectetur. Aute proident deserunt in nulla aliquip dolore ipsum Lorem ut cupidatat consectetur sit sint laborum. [[note-9]] Esse cupidatat sit sint sunt tempor exercitation deserunt. Labore dolor duis [[note-1]] laborum est do nisi ut veniam dolor et nostrud nostrud.
