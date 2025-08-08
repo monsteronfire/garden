@@ -20,4 +20,14 @@ tags = ["data-driven", "gut-feeling", "contradictory"]
   challenges = ["note-7", "note-6"]
 +++
 
-Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia. Velit id fugiat occaecat do tempor. Sit officia Lorem aliquip eu deserunt consectetur. Aute proident deserunt in nulla aliquip dolore ipsum Lorem ut cupidatat consectetur sit sint laborum. Esse cupidatat sit sint sunt tempor exercitation deserunt. Labore dolor duis laborum est do nisi ut veniam dolor et nostrud nostrud.
+Exercitation
+
+d
+
+Link [[note-1|Note-1]] With Custom Text
+
+Just [[note-1]] Link
+
+d
+
+Aute proident

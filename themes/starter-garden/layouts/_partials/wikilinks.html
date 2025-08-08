@@ -1,0 +1,50 @@
+{{/*
+  layouts/partials/wikilinks.html
+  
+  This partial processes wikilinks in content and converts them to Hugo links.
+  Usage: {{ partial "wikilinks.html" .Content }}
+  
+  Supports:
+  - [[page-slug]] -> link to page with slug "page-slug" 
+  - [[page-slug|Custom Text]] -> link with custom display text
+  - Automatic page lookup using Hugo's .GetPage function
+*/}}
+
+{{ $content := . }}
+
+{{/* First pass: Replace wikilinks with custom text [[slug|text]] */}}
+{{ $content = $content | replaceRE `\[\[([^|\]]+)\|([^\]]+)\]\]` `<wikilink data-slug="$1" data-text="$2"></wikilink>` }}
+
+{{/* Second pass: Replace simple wikilinks [[slug]] */}}
+{{ $content = $content | replaceRE `\[\[([^\]]+)\]\]` `<wikilink data-slug="$1" data-text="$1"></wikilink>` }}
+
+{{/* Third pass: Convert wikilink tags to actual Hugo links */}}
+{{ range $match := findRE `<wikilink[^>]*>` $content }}
+  {{ $slug := $match | replaceRE `.*data-slug="([^"]*)".*` "$1" }}
+  {{ $text := $match | replaceRE `.*data-text="([^"]*)".*` "$1" }}
+  
+  {{/* Clean up the slug for page lookup */}}
+  {{ $cleanSlug := $slug | urlize }}
+
+  {{/* Try to find the target page */}}
+  {{ $targetPage := site.GetPage $cleanSlug }}
+  
+  {{/* Generate the replacement link */}}
+  {{ $replacement := "" }}
+  {{ if $targetPage }}
+    {{/* Page exists - create proper link */}}
+    {{ $replacement = printf `<a href="%s" class="wikilink exists" title="%s">%s</a>` $targetPage.RelPermalink $targetPage.Title $text }}
+  {{ else }}
+    {{/* Page doesn't exist - create placeholder link */}}
+    {{ $replacement = printf `<span class="wikilink missing" data-slug="%s" title="Page '%s' doesn't exist yet">%s</span>` $cleanSlug $slug $text }}
+  {{ end }}
+  
+  {{/* Replace in content */}}
+  {{ $content = replaceRE $match $replacement $content}}
+
+  <pre>Clean content: {{ debug.Dump $content }}</pre>
+
+{{ end }}
+
+{{ $escapedContent := $content | safeHTML }}
+{{ return $escapedContent }}
