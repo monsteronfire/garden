@@ -8,6 +8,7 @@
   {{/*  {{ .Content }}  */}}
   
   {{ partial "wikilinks.html" .Content }}
+  {{ partial "backlinks.html" . }}
 
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 
