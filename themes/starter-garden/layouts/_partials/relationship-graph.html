@@ -106,16 +106,6 @@
       </div>
       
       <div class="filter-group">
-          <label>Relationship</label>
-          <select id="relationshipFilter">
-              <option value="all">All Relationships</option>
-              <option value="builds_on">🟢 Builds On</option>
-              <option value="connects_to">🔵 Connects To</option>
-              <option value="challenges">🔴 Challenges</option>
-          </select>
-      </div>
-      
-      <div class="filter-group">
           <label>Actions</label>
           <button onclick="resetFilters()">Reset Filters</button>
           <button onclick="centerGraph()">Center Graph</button>
@@ -142,18 +132,26 @@
               </div>
           </div>
           <div style="margin-top: 15px;">
-              <strong>Relationships:</strong>
+              <strong>Content types:</strong>
               <div class="legend-item">
                   <div class="legend-line" style="background: #2ecc71"></div>
-                  <span>Builds On</span>
+                  <span>Note</span>
               </div>
               <div class="legend-item">
                   <div class="legend-line" style="background: #3498db"></div>
-                  <span>Connects To</span>
+                  <span>Essay</span>
               </div>
               <div class="legend-item">
                   <div class="legend-line" style="background: #e74c3c"></div>
-                  <span>Challenges</span>
+                  <span>Bookmark</span>
+              </div>
+              <div class="legend-item">
+                  <div class="legend-line" style="background: #e74c3c"></div>
+                  <span>Portrait</span>
+              </div>
+              <div class="legend-item">
+                  <div class="legend-line" style="background: #e74c3c"></div>
+                  <span>Project</span>
               </div>
           </div>
       </div>

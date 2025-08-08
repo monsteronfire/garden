@@ -18,9 +18,10 @@ const config = {
         },
         contentTypes: {
             note: { shape: 'circle', size: 8 },
-            link: { shape: 'rect', size: 10 },
+            bookmark: { shape: 'star', size: 15 },
             essay: { shape: 'diamond', size: 12 },
-            picture: { shape: 'triangle', size: 10 }
+            portrait: { shape: 'triangle', size: 10 },
+            project: { shape: 'pentagon', size: 12 }
         }
     }
 };
@@ -126,20 +127,40 @@ function updateGraph() {
                 node.append('circle')
                     .attr('r', contentConfig.size);
                 break;
-            case 'link':
-                node.append('rect')
-                    .attr('width', contentConfig.size * 2)
-                    .attr('height', contentConfig.size * 2)
-                    .attr('x', -contentConfig.size)
-                    .attr('y', -contentConfig.size);
+            case 'bookmark':
+                // Star shape
+                const starSize = contentConfig.size;
+                const starPoints = [];
+                for (let i = 0; i < 10; i++) {
+                    const angle = (i * Math.PI / 5) - (Math.PI / 2);
+                    const radius = i % 2 === 0 ? starSize : starSize * 0.4;
+                    const x = radius * Math.cos(angle);
+                    const y = radius * Math.sin(angle);
+                    starPoints.push(`${x},${y}`);
+                }
+                node.append('polygon')
+                    .attr('points', starPoints.join(' '));
                 break;
             case 'essay':
                 node.append('polygon')
                     .attr('points', `0,-${contentConfig.size} ${contentConfig.size},${contentConfig.size} -${contentConfig.size},${contentConfig.size}`);
                 break;
-            case 'picture':
+            case 'portrait':
                 node.append('polygon')
                     .attr('points', `0,-${contentConfig.size} ${contentConfig.size * 0.866},${contentConfig.size * 0.5} -${contentConfig.size * 0.866},${contentConfig.size * 0.5}`);
+                break;
+            case 'project':
+                // Pentagon shape
+                const pentagonSize = contentConfig.size;
+                const pentagonPoints = [];
+                for (let i = 0; i < 5; i++) {
+                    const angle = (i * 2 * Math.PI / 5) - (Math.PI / 2); // Start from top
+                    const x = pentagonSize * Math.cos(angle);
+                    const y = pentagonSize * Math.sin(angle);
+                    pentagonPoints.push(`${x},${y}`);
+                }
+                node.append('polygon')
+                    .attr('points', pentagonPoints.join(' '));
                 break;
         }
     });
