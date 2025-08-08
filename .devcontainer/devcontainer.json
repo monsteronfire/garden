@@ -21,12 +21,25 @@
                 "yzhang.markdown-all-in-one",
                 "eamodio.gitlens",
                 "tamasfe.even-better-toml"
-            ]
+            ],
+            "settings": {
+                "hugo.server.renderToDisk": true,
+                "files.associations": {}
+            }
         }
     },
     "forwardPorts": [
         1313
     ],
-    "postCreateCommand": "hugo version",
+    "portsAttributes": {
+        "1313": {
+        "label": "Hugo Dev Server",
+        "onAutoForward": "notify"
+        }
+    },
+    "postCreateCommand": "hugo mod tidy && hugo version",
+    "mounts": [
+        "source=devcontainer-hugo-cache,target=/tmp/hugo_cache,type=volume"
+    ],
     "remoteUser": "root"
 }
