@@ -24,10 +24,6 @@ topics = ["AI", "Culture & Community", "Development", "Engineering Management", 
 
 # other_examples = ["rituals", "processes", "documentation", "tribal-knowledge", "posterity", "learning-in-progress", "contradictory", "team-building", "tinkering", "humans", "ethics"]
 tags = [""]
-[relationships]
-  connects_to = []
-  builds_on = []
-  challenges = []
 +++
 
 Velit id fugiat occaecat do tempor. Sit officia Lorem aliquip eu deserunt consectetur. Lorem ut cupidatat consectetur sit sint laborum. Esse cupidatat sit sint sunt tempor exercitation deserunt. Labore dolor duis laborum est do nisi ut veniam dolor et nostrud nostrud.
