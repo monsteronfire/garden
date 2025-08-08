@@ -70,7 +70,6 @@ function initGraph() {
     // Initialize simulation
     setupSimulation();
     updateGraph();
-    updateStats();
 }
 
 function setupSimulation() {
@@ -274,7 +273,6 @@ function applyFilters() {
     };
 
     updateGraph();
-    updateStats();
 }
 
 function resetFilters() {
@@ -282,31 +280,15 @@ function resetFilters() {
     document.getElementById('contentFilter').value = 'all';
     currentData = JSON.parse(JSON.stringify(allData));
     updateGraph();
-    updateStats();
 }
 
 function centerGraph() {
-    const currentWidth = parseInt(svg.attr('width'));
-    const currentHeight = parseInt(svg.attr('height'));
-    
-    const transform = d3.zoomIdentity
-        .translate(currentWidth / 2, currentHeight / 2)
-        .scale(1);
+    const transform = d3.zoomIdentity.translate(0, 0).scale(1);
     
     svg.transition().duration(750).call(
         zoom.transform,
         transform
     );
-}
-
-function updateStats() {
-    document.getElementById('totalNodes').textContent = allData.nodes.length;
-    document.getElementById('totalEdges').textContent = allData.edges.length;
-    document.getElementById('visibleNodes').textContent = currentData.nodes.length;
-    
-    const avgConnections = currentData.nodes.length > 0 ? 
-        (currentData.edges.length * 2 / currentData.nodes.length).toFixed(1) : 0;
-    document.getElementById('avgConnections').textContent = avgConnections;
 }
 
 // Drag functions
