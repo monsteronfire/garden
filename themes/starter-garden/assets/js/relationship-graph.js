@@ -1,4 +1,4 @@
-const sampleData = {
+const relationshipData = {
     nodes: JSON.parse(document.querySelector('.relationship-graph').dataset.nodes),
     edges: JSON.parse(document.querySelector('.relationship-graph').dataset.links)
 }
@@ -27,8 +27,8 @@ const config = {
 
 // Initialize graph
 let svg, simulation, nodes, links, nodeElements, linkElements, tooltip, zoom;
-let currentData = JSON.parse(JSON.stringify(sampleData));
-let allData = JSON.parse(JSON.stringify(sampleData));
+let currentData = JSON.parse(JSON.stringify(relationshipData));
+let allData = JSON.parse(JSON.stringify(relationshipData));
 
 function initGraph() {
     // Setup SVG
