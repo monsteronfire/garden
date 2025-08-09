@@ -97,18 +97,48 @@ button:hover {
     align-items: center;
     margin: 5px 0;
     gap: 8px;
+
+    &.content {
+        height: 20px;
+    }
 }
 
 .legend-color {
     width: 12px;
     height: 12px;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
-.legend-line {
+/* Content Type Shapes
+    - note: circle
+    - bookmark: star
+    - essay: triangle
+    - project: cross/plus
+    - portrait: pentagon
+*/
+
+.legend-type-icon {
     width: 20px;
-    height: 2px;
-    margin: 0 5px;
+
+    &.circle {
+        font-size: 30px;
+    }
+
+    &.star {
+        font-size: 20px;
+    }
+
+    &.triangle {
+        font-size: 20px;
+    }
+
+    &.plus {
+        font-size: 20px;
+    }
+
+    &.pentagon {
+        font-size: 18px;
+    }
 }
 
 .stats {
