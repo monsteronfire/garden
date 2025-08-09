@@ -160,3 +160,15 @@
 </div>
 
 <div class="tooltip" id="tooltip" style="display: none;"></div>
+
+{{/* Load relationship-graph JavaScript file */}}
+{{- $graph := resources.Get "js/relationship-graph.js" }}
+{{- if $graph }}
+  {{- if hugo.IsDevelopment }}
+    <script src="{{ $graph.RelPermalink }}"></script>
+  {{- else }}
+    {{- with $graph | minify | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- end }}
+  {{- end }}
+{{- end }}
