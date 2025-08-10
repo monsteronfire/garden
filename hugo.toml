@@ -31,7 +31,7 @@ domain = "domain"
 [[menus.main]]
 name = 'Garden'
 identifier = 'garden'
-pageRef = '/'
+pageRef = '/garden'
 weight = 10
 
 [[menus.main]]
