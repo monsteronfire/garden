@@ -29,11 +29,6 @@ domain = "domain"
 
 [menus]
 [[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
-
-[[menus.main]]
 name = 'Garden'
 identifier = 'garden'
 pageRef = '/garden'
