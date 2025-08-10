@@ -13,7 +13,7 @@ lastmod = ["date_tended", ":git", "date", ":default"]
 [taxonomies]
 tag = "tags"
 category = "categories"
-growth = "growth"
+growth_stage = "growth_stage"
 connects_to = "connects_to"
 builds_on = "builds_on"
 challenges = "challenges"
