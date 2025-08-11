@@ -2,5 +2,9 @@
     <h1>
         <a href="/">{{ site.Title }}</a>
     </h1>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-toggle-icon light-icon">☀️</span>
+        <span class="theme-toggle-icon dark-icon">🌙</span>
+    </button>
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
 </div>

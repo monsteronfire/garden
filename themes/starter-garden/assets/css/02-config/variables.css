@@ -66,3 +66,7 @@
   /* Media Query - Screen Sizes */
   --tabletandup: 50rem;
 }
+
+[data-theme="dark"] {
+    --colour-bg: black; 
+}

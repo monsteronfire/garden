@@ -10,6 +10,18 @@
   {{- end }}
 {{- end }}
 
+{{/*  Load theme switcher file  */}}
+{{- $themeswitch := resources.Get "js/theme.js" }}
+{{- if $themeswitch }}
+  {{- if hugo.IsDevelopment }}
+    <script src="{{ $themeswitch.RelPermalink }}"></script>
+  {{- else }}
+    {{- with $themeswitch | minify | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- end }}
+  {{- end }}
+{{- end }}
+
 {{/*  Load main.js  */}}
 {{- with resources.Get "js/main.js" }}
   {{- $opts := dict
