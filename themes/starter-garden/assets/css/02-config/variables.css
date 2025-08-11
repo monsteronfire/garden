@@ -4,6 +4,7 @@
   /* Simple fonts */
   --font-family-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-family-display: "Berkshire Swash", serif;
 
   /* Classical line heights */
   --line-height-headers: 1.1;

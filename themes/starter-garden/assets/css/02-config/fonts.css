@@ -1,0 +1,8 @@
+/* Berkshire Swash - Regular */
+@font-face {
+  font-family: "Berkshire Swash";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/berkshire-swash/berkshire-swash-regular.ttf') format('truetype');
+}
