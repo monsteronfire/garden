@@ -1,6 +1,6 @@
 +++
 title = "{{ .Name | title }}"
-type = "bookmark"
+type = "pin"
 date = '{{ .Date }}'
 date_planted = '{{ .Date }}'
 date_tended = '{{ .Date }}'

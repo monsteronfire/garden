@@ -1,6 +1,6 @@
 +++
-title = "Bookmark 1"
-type = "bookmark"
+title = "Pin 1"
+type = "pin"
 date = 2023-02-15T10:00:00-07:00
 date_planted = 2023-02-15T10:00:00-07:00
 date_tended = 2023-02-15T10:00:00-07:00

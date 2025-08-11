@@ -18,7 +18,7 @@ const config = {
         },
         contentTypes: {
             note: { shape: 'circle', size: 8 },
-            bookmark: { shape: 'star', size: 15 },
+            pin: { shape: 'star', size: 15 },
             essay: { shape: 'diamond', size: 12 },
             portrait: { shape: 'triangle', size: 10 },
             project: { shape: 'pentagon', size: 12 }
@@ -127,7 +127,7 @@ function updateGraph() {
                 node.append('circle')
                     .attr('r', contentConfig.size);
                 break;
-            case 'bookmark':
+            case 'pin':
                 // Star shape
                 const starSize = contentConfig.size;
                 const starPoints = [];

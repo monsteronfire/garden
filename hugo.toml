@@ -18,12 +18,12 @@ image = "content-type-essays.png"
 title = "Essays"
 subtitle = "A spell for"
 description = "Essays Description"
-[[params.garden.content_types.bookmarks]]
-icon = "Bookmarks Icon"
-image = "content-type-bookmarks.png"
-title = "Bookmarks"
+[[params.garden.content_types.pins]]
+icon = "Pins Icon"
+image = "content-type-pins.png"
+title = "Pins"
 subtitle = "A spell for"
-description = "Bookmarks Description"
+description = "Pins Description"
 [[params.garden.content_types.portraits]]
 icon = "Portraits Icon"
 image = "content-type-portraits.png"
@@ -77,9 +77,9 @@ pageRef = '/essays'
 weight = 22
 
 [[menus.main]]
-name = 'Bookmarks'
+name = 'Pins'
 parent = 'garden'
-pageRef = '/bookmarks'
+pageRef = '/pins'
 weight = 23
 
 [[menus.main]]
