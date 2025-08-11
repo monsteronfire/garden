@@ -5,19 +5,21 @@
 </pre>  */}}
 
 <div class="contenttype">
-  {{ range $key, $arr := $content_types }}
-    {{ $ct := index $arr 0 }}
-      <div class="contenttype__card">
-        <div class="contenttype__content">
-          <div class="contenttype__header">
-            <p class="contenttype__subtitle">{{ $ct.subtitle }}</p>
-            <p class="contenttype__description">{{ $ct.description }}</p>
+  <div class="deck">
+    {{ range $key, $arr := $content_types }}
+      {{ $ct := index $arr 0 }}
+        <div class="deck__card" style="--i: {{ $key }}">
+          <div class="deck__content">
+            <div class="deck__header">
+              <p class="deck__subtitle">{{ $ct.subtitle }}</p>
+              <p class="deck__description">{{ $ct.description }}</p>
+            </div>
+            <div class="deck__image">
+              <img src="images/{{ $ct.image }}" alt="{{ $ct.icon }}">
+            </div>
+            <h3 class="deck__title">{{ $ct.title }}</h3>
           </div>
-          <div class="contentype__image">
-            <img src="images/{{ $ct.image }}" alt="{{ $ct.icon }}">
-          </div>
-          <h3 class="contenttype__title">{{ $ct.title }}</h3>
         </div>
-      </div>
-  {{ end }}
+    {{ end }}
+  </div>
 </div>
