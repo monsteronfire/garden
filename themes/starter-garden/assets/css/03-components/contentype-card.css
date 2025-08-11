@@ -9,6 +9,10 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 2vmin;
 
+    a {
+        text-decoration: none;;
+    }
+
     [class*='__card'] {
         border: 1px solid var(--colour-card-secondary);
         border-radius: var(--space-m);
@@ -50,9 +54,12 @@
 
     [class*='__title'] {
         margin-top: var(--space-xxs);
-        color: var(--colour-card-secondary);
         font-family: var(--font-family-display);
         text-transform: uppercase;
+    }
+
+    [class*='__title'] a {
+       color: var(--colour-card-secondary); 
     }
 }
 

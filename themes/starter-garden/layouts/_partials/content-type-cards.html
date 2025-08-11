@@ -15,9 +15,13 @@
               <p class="deck__description">{{ $ct.description }}</p>
             </div>
             <div class="deck__image">
-              <img src="images/{{ $ct.image }}" alt="{{ $ct.icon }}">
+              <a href="">
+                <img src="images/{{ $ct.image }}" alt="{{ $ct.icon }}">
+              </a>
             </div>
-            <h3 class="deck__title">{{ $ct.title }}</h3>
+            <h3 class="deck__title">
+              <a href="{{ $ct.link }}">{{ $ct.title }}</a>
+            </h3>
           </div>
         </div>
     {{ end }}

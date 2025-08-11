@@ -12,30 +12,35 @@ image = "content-type-notes.png"
 title = "Notes"
 subtitle = "A spell for"
 description = "Notes Description"
+link = "/garden/notes"
 [[params.garden.content_types.essays]]
 icon = "Essays Icon"
 image = "content-type-essays.png"
 title = "Essays"
 subtitle = "A spell for"
 description = "Essays Description"
+link = "/garden/essays"
 [[params.garden.content_types.pins]]
 icon = "Pins Icon"
 image = "content-type-pins.png"
 title = "Pins"
 subtitle = "A spell for"
 description = "Pins Description"
+link = "/garden/pins"
 [[params.garden.content_types.portraits]]
 icon = "Portraits Icon"
 image = "content-type-portraits.png"
 title = "Portraits"
 subtitle = "A spell for"
 description = "Portraits Description"
+link = "/garden/portraits"
 [[params.garden.content_types.projects]]
 icon = "Projects Icon"
 image = "content-type-projects.png"
 title = "Projects"
 subtitle = "A spell for"
 description = "Projects -  Description"
+link = "/garden/projects"
 
 [frontmatter]
 lastmod = ["date_tended", ":git", "date", ":default"]
