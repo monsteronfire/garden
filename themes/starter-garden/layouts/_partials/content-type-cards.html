@@ -1,0 +1,23 @@
+{{- $content_types := site.Params.garden.content_types }}
+
+{{/*  <pre>
+    Content Types: {{ debug.Dump $content_types }}
+</pre>  */}}
+
+<div class="contenttype">
+  {{ range $key, $arr := $content_types }}
+    {{ $ct := index $arr 0 }}
+      <div class="contenttype__card">
+        <div class="contenttype__content">
+          <div class="contenttype__header">
+            <p class="contenttype__subtitle">{{ $ct.subtitle }}</p>
+            <p class="contenttype__description">{{ $ct.description }}</p>
+          </div>
+          <div class="contentype__image">
+            <img src="images/{{ $ct.image }}" alt="{{ $ct.icon }}">
+          </div>
+          <h3 class="contenttype__title">{{ $ct.title }}</h3>
+        </div>
+      </div>
+  {{ end }}
+</div>

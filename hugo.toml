@@ -8,24 +8,34 @@ author = "Shaii Ong"
 dateFormat = "02 Jan, 2006"
 [[params.garden.content_types.notes]]
 icon = "Notes Icon"
-image = "Notes Image"
+image = "content-type-notes.png"
+title = "Notes"
+subtitle = "A spell for"
 description = "Notes Description"
 [[params.garden.content_types.essays]]
 icon = "Essays Icon"
-image = "Essays Image"
+image = "content-type-essays.png"
+title = "Essays"
+subtitle = "A spell for"
 description = "Essays Description"
 [[params.garden.content_types.bookmarks]]
 icon = "Bookmarks Icon"
-image = "Bookmarks Image"
+image = "content-type-bookmarks.png"
+title = "Bookmarks"
+subtitle = "A spell for"
 description = "Bookmarks Description"
 [[params.garden.content_types.portraits]]
 icon = "Portraits Icon"
-image = "Portraits Image"
+image = "content-type-portraits.png"
+title = "Portraits"
+subtitle = "A spell for"
 description = "Portraits Description"
 [[params.garden.content_types.projects]]
 icon = "Projects Icon"
-image = "Projects Image"
-description = "Projects Description"
+image = "content-type-projects.png"
+title = "Projects"
+subtitle = "A spell for"
+description = "Projects -  Description"
 
 [frontmatter]
 lastmod = ["date_tended", ":git", "date", ":default"]
