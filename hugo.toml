@@ -6,6 +6,26 @@ theme = "starter-garden"
 [params]
 author = "Shaii Ong"
 dateFormat = "02 Jan, 2006"
+[[params.garden.content_types.notes]]
+icon = "Notes Icon"
+image = "Notes Image"
+description = "Notes Description"
+[[params.garden.content_types.essays]]
+icon = "Essays Icon"
+image = "Essays Image"
+description = "Essays Description"
+[[params.garden.content_types.bookmarks]]
+icon = "Bookmarks Icon"
+image = "Bookmarks Image"
+description = "Bookmarks Description"
+[[params.garden.content_types.portraits]]
+icon = "Portraits Icon"
+image = "Portraits Image"
+description = "Portraits Description"
+[[params.garden.content_types.projects]]
+icon = "Projects Icon"
+image = "Projects Image"
+description = "Projects Description"
 
 [frontmatter]
 lastmod = ["date_tended", ":git", "date", ":default"]
