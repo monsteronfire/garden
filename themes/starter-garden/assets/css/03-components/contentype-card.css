@@ -52,6 +52,15 @@
         border-bottom-left-radius: var(--space-s);
     }
 
+    [class*='__image']:hover {
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        mask: linear-gradient(-60deg, #ffffff 30%, rgba(235, 235, 235, 0.333), #ffffff 70%) right/350% 100%;
+        animation: shimmer 2.5s infinite;
+        font-size: 50px;
+        max-width: 200px;
+    }
+
     [class*='__title'] {
         margin-top: var(--space-xxs);
         font-family: var(--font-family-display);
@@ -63,3 +72,8 @@
     }
 }
 
+@keyframes shimmer {
+  100% {
+    mask-position: left
+  }
+}
