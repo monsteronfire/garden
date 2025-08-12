@@ -6,3 +6,12 @@
   font-display: swap;
   src: url('/fonts/berkshire-swash/berkshire-swash-regular.ttf') format('truetype');
 }
+
+/* Macondo Swash Caps - Regular */
+@font-face {
+  font-family: "Macondo Swash Caps";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/macondo-swash-caps/macondo-swash-caps-regular.ttf') format('truetype');
+}
