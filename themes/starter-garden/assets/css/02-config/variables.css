@@ -44,6 +44,7 @@
   --colour-secondary-rotate: rgb(92, 193, 92);
   --colour-tertiary: rgb(253, 231, 231);
   --colour-glint: rgb(163, 209, 255);
+  --colour-accent: #0E740C;
 
   /* Neutral colours */
   --colour-white: hsl(0, 0%, 100%);
@@ -71,7 +72,9 @@
     --colour-background: var(--colour-dark);
 
     /* Content Type Card colours */
-    --colour-primary: var(--colour-medium);
+    --colour-primary: #EDD5C9;
     --colour-secondary: var(--colour-dark);
-    --colour-text-body: var(--colour-medium);
+    --colour-tertiary: var();
+    --colour-accent: #FE8336;
+    --colour-text-body: var(--colour-primary);
 }

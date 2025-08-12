@@ -1,7 +1,7 @@
 .footer {
     background-color: var(--colour-secondary);
     border-top: 1px solid var(--colour-tertiary);
-    border-bottom: var(--space-xs) solid var(--colour-primary);
+    border-bottom: var(--space-xs) solid var(--colour-accent);
 
     [class*='_contents'] {
         display: flex;
