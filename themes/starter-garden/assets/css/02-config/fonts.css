@@ -15,3 +15,20 @@
   font-display: swap;
   src: url('/fonts/macondo-swash-caps/macondo-swash-caps-regular.ttf') format('truetype');
 }
+
+/* Inter - Variable */
+@font-face {
+  font-family: "Inter Italic";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/inter/inter-italic-variable-font_opsz-wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/inter/inter-variable-font_opsz-wght.ttf') format('truetype');
+}
