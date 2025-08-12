@@ -1,6 +1,6 @@
 {{ define "main" }}
-  {{ .Content }}
-
+  {{ partial "components/hero.html" . }}
+  
   {{ partial "content-type-cards.html" . }}
 
   {{ partial "item-summary.html" (dict "postType" "note" "count" 3) }}

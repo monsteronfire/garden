@@ -1,0 +1,4 @@
+.hero {
+    display: flex;
+    margin-bottom: var(--space-xxxxl);
+}
