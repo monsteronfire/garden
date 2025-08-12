@@ -1,36 +1,23 @@
-<div class="container footer">
+<div class="container footer_contents">
     <div>
         <p>&copy; {{ now.Year }} {{ site.Params.Author }}</p>
     </div>
-    <div>
-        <ul>
-            <li>
-                <a href="/garden">Garden</a>
-            </li>
-            <li>
-                <a href="/about">About</a>
-            </li>
-            <li>
-                <a href="/relationship-graph">Relationship Graph</a>
-            </li>
-            <li>
-                 <a href="/tags">Tags</a>
-            </li>
-            <li>
-                <a href="/garden/notes">Notes</a>
-            </li>
-            <li>
-                <a href="/garden/essays">Essays</a>
-            </li>
-            <li>
-                <a href="/garden/pins">Pins</a>
-            </li>
-            <li>
-                <a href="/garden/portraits">Portraits</a>
-            </li>
-            <li>
-                <a href="/garden/projects">Projects</a>
-            </li>
-        </ul>
+    <div class="footer__socials">
+        <a
+            href="{{ .Site.Data.links.socialmedia.github }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mr-8"
+            aria-label="Github account link">
+                {{ partial "components/icon.html" "youtube" }}
+        </a>
+        <a
+            href="{{ .Site.Data.links.socialmedia.youtube }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class=""
+            aria-label="Youtube channel link">
+                {{ partial "components/icon.html" "twitter" }}
+        </a>
     </div>
 </div>

@@ -21,7 +21,7 @@
 
   /* Three different text colours */
   --colour-text-header: #26162C;
-  --colour-text-body: rgb(67, 61, 61);
+  --colour-text-body: var(--colour-dark);
   --colour-text-muted: rgb(113, 111, 111);
 
   /* Classical and robust spacing system */
@@ -37,26 +37,22 @@
   --space-xxxxl: 4rem;
 
   /* Application colours */
-  --colour-primary: rgb(147, 83, 85);
+  --colour-primary: var(--colour-dark);
   --colour-primary-rotate: rgb(239, 190, 190);
   --colour-primary-bg: rgb(253, 236, 236);
-  --colour-secondary: rgb(218, 248, 196);
+  --colour-secondary: var(--colour-medium);
   --colour-secondary-rotate: rgb(92, 193, 92);
   --colour-tertiary: rgb(253, 231, 231);
   --colour-glint: rgb(163, 209, 255);
 
   /* Neutral colours */
   --colour-white: hsl(0, 0%, 100%);
-  --colour-background: #fcf6f4;
-  --colour-light: hsl(0, 6%, 93%);
+  --colour-background: var(--colour-medium);
+  --colour-light: #fcf6f4;
   --colour-medium: #EDD5C9;
   --colour-dark: var(--colour-text-header);
   --colour-dark-rgb: 82, 72, 61;
-
-  /* Content Type Card colours */
-  --colour-card-primary: var(--colour-dark);
-  --colour-card-secondary: var(--colour-medium);
-
+  
   /* Border radius */
   --border-radius: 0.375rem;
 
@@ -72,9 +68,10 @@
 }
 
 [data-theme="dark"] {
-    --colour-background: var(--colour-dark); 
+    --colour-background: var(--colour-dark);
 
     /* Content Type Card colours */
-    --colour-card-primary: var(--colour-medium);
-    --colour-card-secondary: var(--colour-dark);
+    --colour-primary: var(--colour-medium);
+    --colour-secondary: var(--colour-dark);
+    --colour-text-body: var(--colour-medium);
 }
