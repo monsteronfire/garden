@@ -9,6 +9,7 @@
   --line-height-body: 1.5;
 
   /* Classical and robust font sizes system */
+  --font-size-xxs: 0.625rem;
   --font-size-xs: 0.75rem;
   --font-size-s: 0.875rem;
   --font-size-m: 1rem;

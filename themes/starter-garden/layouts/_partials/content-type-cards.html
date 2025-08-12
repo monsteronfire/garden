@@ -8,10 +8,10 @@
   <div class="deck">
     {{ range $key, $arr := $content_types }}
       {{ $ct := index $arr 0 }}
-        <div class="deck__card" style="--i: {{ $key }}">
+        <div class="deck__card {{$key}}" style="--i: {{ $key }}">
           <div class="deck__content">
             <div class="deck__header">
-              <p class="deck__subtitle">{{ $ct.subtitle }}</p>
+              <p class="deck__icon">{{ $ct.icon }} {{ $ct.icon }} {{ $ct.icon }}</p>
               <p class="deck__description">{{ $ct.description }}</p>
             </div>
             <div class="deck__image shimmer">

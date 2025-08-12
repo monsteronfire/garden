@@ -34,11 +34,19 @@
         border-top-left-radius: var(--space-s);
     }
 
-    [class*='__subtitle'] {
-        font-size: var(--font-size-xs);
-        font-weight: 800;
-        text-transform: uppercase;
+    [class*='__icon'] {
+        height: var(--space-l);
+        overflow: hidden;
+        font-size: var(--font-size-xs)
     }
+
+    .projects [class*='__icon'] {
+        font-size: var(--font-size-xxs)
+    }
+
+    .notes [class*='__icon'] {
+        font-size: var(--font-size-m)
+    } 
 
     [class*='__description'] {
         font-family: var(--font-family-display);
@@ -54,11 +62,8 @@
 
     [class*='__image']:hover {
         color: rgb(255, 255, 255);
-        display: inline-block;
         mask: linear-gradient(-60deg, #ffffff 30%, rgba(235, 235, 235, 0.333), #ffffff 70%) right/350% 100%;
         animation: shimmer 2.5s infinite;
-        font-size: 50px;
-        max-width: 200px;
     }
 
     [class*='__title'] {
