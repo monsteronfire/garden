@@ -9,13 +9,8 @@
     flex-wrap: wrap;
     gap: var(--space-xs);
     justify-content: center;
-
-    @media (max-width: 600px) {
-        .deck {
-            flex-direction: column;
-            align-items: center;
-        }
-    }
+    flex-direction: column;
+    align-items: center;
 
     a {
         text-decoration: none;
@@ -31,14 +26,6 @@
         background-color: var(--colour-card-primary);
         padding: var(--space-m);
         text-align: center;
-    }
-
-    @media (max-width: 600px) {
-        [class*='__card'] {
-            width: 90vw;
-            max-width: 400px;
-            min-width: 0;
-        }
     }
 
     [class*='__content'] {
@@ -94,6 +81,12 @@
 
     [class*='__title'] a {
        color: var(--colour-card-secondary); 
+    }
+}
+
+@media (min-width: 768px) {
+    .deck {
+        flex-direction: row;
     }
 }
 
