@@ -56,7 +56,8 @@
     } 
 
     [class*='__description'] {
-        font-family: var(--font-family-display);
+        font-family: var(--font-family);
+        font-size: var(--font-size-s);
     }
 
     [class*='__image'] {
