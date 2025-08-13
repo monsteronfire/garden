@@ -25,9 +25,8 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-    border-radius: 8px;
     align-items: stretch;
-    padding: 0 1rem;
+    padding: 0 var(--space-m);
 }
 
 .menu li {
@@ -40,20 +39,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1.5rem;
+    padding: var(--space-m) var(--space-l);
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
-    border-radius: 6px;
     width: 100%;
-    box-sizing: border-box;
 }
 
 .menu > ul > li > a:hover,
 .menu > ul > li > a.active,
 .menu > ul > li > a.ancestor {
-    background-color: #f3f4f6;
-    color: #1f2937;
+    color: var(--colour-text-body);
 }
 
 /* Chevron indicator for items with submenus */
@@ -77,7 +73,7 @@
 .menu ul ul {
     background-color: #f9fafb;
     margin-top: 0.5rem;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     display: none;
     flex-direction: column;
     padding: 0.5rem 0;
@@ -96,7 +92,7 @@
     display: block;
     padding: 0.75rem 2rem;
     text-decoration: none;
-    color: #374151;
+    color: var(--colour-text-body);
     transition: all 0.2s ease;
     border-radius: 0;
     margin: 0;
@@ -105,26 +101,20 @@
 .menu ul ul a:hover,
 .menu ul ul a.active {
     background-color: #f3f4f6;
-    color: #1f2937;
+    color: var(--colour-text-body);
 }
 
 /* Active states */
 .menu a.active {
-    background-color: #3b82f6;
     color: white;
 }
 
 .menu a.active:hover {
-    background-color: #2563eb;
+    text-decoration: underline;
 }
 
 .menu ul ul a.active {
-    background-color: #3b82f6;
     color: white;
-}
-
-.menu ul ul a.active:hover {
-    background-color: #2563eb;
 }
 
 /* Desktop styles - min-width: 768px */
@@ -161,7 +151,7 @@
         min-width: 200px;
         background-color: #fff;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        border-radius: 8px;
+        border-radius: var(--border-radius);
         border: 1px solid #e5e7eb;
         opacity: 0;
         visibility: hidden;
@@ -188,8 +178,8 @@
     
     /* Desktop dropdown menu items */
     .menu ul ul a {
-        padding: 0.75rem 1.5rem;
-        border-radius: 4px;
-        margin: 0 0.5rem;
+        padding: var(--space-s) var(--space-l);
+        border-radius: var(--border-radius);
+        margin: 0 var(--space-xs);
     }
 }

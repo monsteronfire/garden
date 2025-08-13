@@ -2,15 +2,24 @@
   border-radius: var(--border-radius-full);
   padding: var(--space-xs) var(--space-s);
   background-color: rgba(255, 255, 255, 0.4);
+  display: inline;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.4); 
 }
 
 [data-theme="dark"] .themetoggle {
   background-color: rgba(39, 39, 42, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1); 
 }
 
 .icon--lightmode {
   display: inline-block;
+
+  .material-icons {
+    color: var(--colour-dark);
+  }
 }
+
 .icon--darkmode {
   display: none;
 }
@@ -20,4 +29,7 @@
 }
 [data-theme="dark"] .icon--darkmode {
   display: inline-block;
+  .material-icons {
+    color: var(--colour-accent);
+  }
 }

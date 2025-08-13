@@ -54,6 +54,7 @@
   --colour-medium: #EDD5C9;
   --colour-dark: var(--colour-text-header);
   --colour-dark-rgb: 82, 72, 61;
+  --colour-grey: #e5e7eb;
   
   /* Border radius */
   --border-radius: 0.375rem;
