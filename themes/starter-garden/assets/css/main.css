@@ -2,6 +2,13 @@ body {
     background-color: var(--colour-background);
     font-family: var(--font-family-body);
     color: var(--colour-text-body);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
 }
 
 h1 {
