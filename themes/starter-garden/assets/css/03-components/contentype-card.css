@@ -26,6 +26,11 @@
         background-color: var(--colour-primary);
         padding: var(--space-m);
         text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    [class*='__card']:hover {
+        transform: translateY(calc(-1 * var(--space-m)));
     }
 
     [class*='__content'] {
