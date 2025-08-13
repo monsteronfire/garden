@@ -1,7 +1,7 @@
 :root {
-  --font-family: 'Inter', sans-serif;
-  /* Simple fonts */
-  --font-family-sans: "Inter";
+  /* Fonts */
+  --font-family-body: Georgia;
+  --font-family-heading: "Inter";
   --font-family-display: "Macondo Swash Caps", serif;
 
   /* Classical line heights */
@@ -15,9 +15,10 @@
   --font-size-m: 1rem;
   --font-size-l: 1.125rem;
   --font-size-xl: 1.25rem;
-  --font-size-xxl: 1.5rem;
-  --font-size-xxxl: 2rem;
-  --font-size-xxxxl: 2.5rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-7xl: 4.5rem;
 
   /* Three different text colours */
   --colour-text-header: #26162C;
@@ -56,6 +57,7 @@
   
   /* Border radius */
   --border-radius: 0.375rem;
+  --border-radius-full: 9999px;
 
   /* Border */
   --border: solid 2px var(--colour-light);
