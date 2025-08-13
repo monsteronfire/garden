@@ -1,14 +1,15 @@
 <div class="header-nav">
     <div>
-        <a href="/">{{ site.Title }}</a>
+        <a href="/">{{ site.Params.Logo }}</a>
     </div>
-    ICONS
-    {{ partial "components/icon.html" "sun" }}
-    {{ partial "components/icon.html" "moon" }}
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-        <span class="theme-toggle-icon light-icon">☀️</span>
-        <span class="theme-toggle-icon dark-icon">🌙</span>
-        <i class="material-icons">face</i>
-    </button>
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+
+    <button id="themetoggle" class="themetoggle" aria-label="Toggle dark mode">
+        <div class="icon--lightmode">
+            {{ partial "components/icon.html" "sun" }}
+        </div>
+        <div class="icon--darkmode">
+            {{ partial "components/icon.html" "moon" }}
+        </div>
+    </button>
 </div>

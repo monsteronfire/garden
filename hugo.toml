@@ -6,6 +6,7 @@ theme = "starter-garden"
 [params]
 author = "Shaii Ong"
 dateFormat = "02 Jan, 2006"
+logo = "🌸"
 [[params.garden.content_types.notes]]
 icon = "●"
 image = "content-type-notes.png"

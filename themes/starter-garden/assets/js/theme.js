@@ -49,7 +49,7 @@ class ThemeManager {
   }
 
   setupToggle() {
-    const toggle = document.getElementById('theme-toggle');
+    const toggle = document.getElementById('themetoggle');
     if (toggle) {
       toggle.addEventListener('click', () => this.toggleTheme());
       

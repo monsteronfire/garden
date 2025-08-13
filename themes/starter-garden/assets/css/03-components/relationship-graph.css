@@ -30,15 +30,8 @@ select, button {
 }
 
 button {
-    background: #42a988;
-    color: #0f0f23;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-button:hover {
-    background: #52a085;
-    transform: translateY(-2px);
 }
 
 .relationship-graph {
