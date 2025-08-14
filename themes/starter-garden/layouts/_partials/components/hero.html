@@ -1,6 +1,8 @@
 <div class="hero">
-    <div>{{ .Content }}</div>
-    <div>
-      <img src="/images/hero.png" alt="">
-    </div>
+  <div>{{ .Content }}</div>
+  <video id="hero-video" class="hero-video" autoplay muted loop playsinline>
+    <source src="videos/hero.webm" type="video/webm">
+  </video>
+
+  <img id="hero-fallback" class="hero-fallback" src="images/hero.png" alt="Hero animation" style="display: none;">
 </div>

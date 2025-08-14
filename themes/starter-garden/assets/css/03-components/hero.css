@@ -1,4 +1,19 @@
 .hero {
     display: flex;
+    position: relative;
     margin-bottom: var(--space-xxxxl);
+
+    h2 {
+        font-size: var(--font-size-2xl);
+        font-weight: 400;
+    }
+
+    .hero-video, .hero-fallback {
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
