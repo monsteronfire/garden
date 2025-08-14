@@ -1,7 +1,7 @@
 .hero {
     display: flex;
     position: relative;
-    margin-bottom: var(--space-xxxxl);
+    margin-bottom: var(--space-4xl);
 
     h2 {
         font-size: var(--font-size-2xl);

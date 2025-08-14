@@ -26,16 +26,16 @@
   --colour-text-muted: rgb(113, 111, 111);
 
   /* Classical and robust spacing system */
-  --space-xxxs: 0.25rem;
-  --space-xxs: 0.375rem;
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.375rem;
   --space-xs: 0.5rem;
   --space-s: 0.75rem;
   --space-m: 1rem;
   --space-l: 1.5rem;
   --space-xl: 2rem;
-  --space-xxl: 2.5rem;
-  --space-xxxl: 3rem;
-  --space-xxxxl: 4rem;
+  --space-2xl: 2.5rem;
+  --space-3xl: 3rem;
+  --space-4xl: 4rem;
 
   /* Application colours */
   --colour-primary: var(--colour-dark);

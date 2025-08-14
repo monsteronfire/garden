@@ -66,7 +66,7 @@
     }
 
     [class*='__image'] {
-        margin-top: var(--space-xxs);
+        margin-top: var(--space-2xs);
         padding: var(--space-s);
         background-color: var(--colour-secondary);
         border-bottom-right-radius: var(--space-s);
@@ -80,7 +80,7 @@
     }
 
     [class*='__title'] {
-        margin-top: var(--space-xxs);
+        margin-top: var(--space-2xs);
         font-family: var(--font-family-display);
         text-transform: uppercase;
     }

@@ -7,8 +7,8 @@
         display: flex;
         align-content: center;
         justify-content: space-between;
-        padding-top: var(--space-xxxl);
-        padding-bottom: var(--space-xxxl);
+        padding-top: var(--space-3xl);
+        padding-bottom: var(--space-3xl);
     }
 
     [class*='_socials'] {
