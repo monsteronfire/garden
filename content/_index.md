@@ -6,4 +6,4 @@ draft = false
 
 # I'm {{< sparkle "Shaii" >}}. You've stumbled upon my little garden on the World Wide Web.
 
-## I write about programming, community maintenance, and engineering management. Take a stroll and stay as long as you like.
+## I write about programming, community maintenance, and engineering management. Take a stroll around and stay as long as you like.

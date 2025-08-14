@@ -13,16 +13,4 @@
 
   {{ partial "item-summary.html" (dict "postType" "project" "count" 3) }}
 
-  {{/*  Hero Video file  */}}
-  {{- $hero := resources.Get "js/hero.js" }}
-  {{- if $hero }}
-    {{- if hugo.IsDevelopment }}
-      <script src="{{ $hero.RelPermalink }}"></script>
-    {{- else }}
-      {{- with $hero | minify | fingerprint }}
-        <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
-      {{- end }}
-    {{- end }}
-  {{- end }}
-
 {{ end }}

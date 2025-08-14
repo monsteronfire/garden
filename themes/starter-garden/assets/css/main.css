@@ -1,9 +1,9 @@
 body {
     background-color: var(--colour-background);
-       background-image: var(--background-texture-light); 
-    /* background-blend-mode: multiply; */
+    background-image: var(--background-texture-light); 
     font-family: var(--font-family-body);
     color: var(--colour-text-body);
+    /* This keeps the footer at the bottom */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -20,4 +20,5 @@ main {
 h1 {
     font-family: var(--font-family-heading);
     font-size: var(--font-size-7xl);
+    line-height: var(--line-height-headers);
 }

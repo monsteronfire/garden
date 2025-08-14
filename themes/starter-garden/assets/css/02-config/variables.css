@@ -37,6 +37,9 @@
   --space-3xl: 3rem;
   --space-4xl: 4rem;
 
+  /* Specific spacers */
+  --space-10xl: 10rem;
+
   /* Application colours */
   --colour-primary: var(--colour-dark);
   --colour-primary-rotate: rgb(239, 190, 190);

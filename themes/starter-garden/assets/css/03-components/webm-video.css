@@ -1,0 +1,15 @@
+.sitevideo {
+    display: flex;
+    position: relative;
+    margin-bottom: var(--space-4xl);
+    overflow-x: hidden;
+
+    [class*='__video'], [class*='__fallback'] {
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        /* position: absolute;
+        bottom: 0;
+        right: 0; */
+    }
+}
