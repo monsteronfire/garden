@@ -1,10 +1,16 @@
 body {
     background-color: var(--colour-background);
+       background-image: var(--background-texture-light); 
+    /* background-blend-mode: multiply; */
     font-family: var(--font-family-body);
     color: var(--colour-text-body);
     height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+[data-theme="dark"] body {
+       background-image: var(--background-texture-dark); 
 }
 
 main {
