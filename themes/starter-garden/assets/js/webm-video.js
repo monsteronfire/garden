@@ -12,6 +12,6 @@ function isSafari() {
 }
 
 if (isSafari()) {
-    document.querySelector('.sitevideo-fallback').style.display = 'block';
-    document.querySelector('.sitevideo-video').style.display = 'none';
+    document.querySelector('#sitevideo-fallback').style.display = 'block';
+    document.querySelector('#sitevideo-video').style.display = 'none';
 }

@@ -10,16 +10,4 @@
   {{partial "components/webm-video.html" . }}
   
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-
-    {{/*  Webm Video file  */}}
-  {{- $webm := resources.Get "js/webm-video.js" }}
-  {{- if $webm }}
-    {{- if hugo.IsDevelopment }}
-      <script src="{{ $webm.RelPermalink }}"></script>
-    {{- else }}
-      {{- with $webm | minify | fingerprint }}
-        <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
-      {{- end }}
-    {{- end }}
-  {{- end }}
 {{ end }}
