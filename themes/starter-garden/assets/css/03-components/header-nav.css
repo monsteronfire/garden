@@ -12,6 +12,12 @@
         width: var(--space-3xl);
         height: var(--space-3xl);
         filter: var(--filter-shadow-small);
+        transition: transform 0.35s cubic-bezier(.4,2,.3,1), filter 0.35s;
+    }
+
+    [class*='__logo']:hover svg {
+        transform: scale(1.12) rotate(-8deg);
+        filter: var(--filter-shadow-medium);
     }
 
     .menu ul {
