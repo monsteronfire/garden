@@ -3,7 +3,7 @@
     display: flex;
     position: absolute;
     bottom: 0;
-    right: -80px;
+    right: 0px;
 
     [class*='__video'], [class*='__fallback'] {
         width: 100%;
