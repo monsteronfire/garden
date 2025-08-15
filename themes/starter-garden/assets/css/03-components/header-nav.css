@@ -13,6 +13,8 @@
     }
 
     .site__logo svg {
+        width: var(--space-3xl);
+        height: var(--space-3xl);
         filter: var(--filter-shadow-small);
     }
 
