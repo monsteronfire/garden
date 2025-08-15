@@ -1,3 +1,10 @@
+{{/*  
+  Item summary partial
+  Displays a summary of items of a specific type
+  
+  Usage: 
+  {{ partial "item-summary.html" (dict "postType" "note" "count" 3) }}
+*/}}
 {{ $postType := .postType | default "note" }}
 {{ $count := .count | default 5 }}
 {{ $items := where site.RegularPages "Type" $postType}}

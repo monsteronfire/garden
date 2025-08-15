@@ -1,5 +1,5 @@
 <span class="sparkle">
-    {{ $svg := resources.Get "images/stars.svg" }}
+    {{ $svg := resources.Get "/images/stars.svg" }}
     {{ if $svg }}
         <span class="stars">{{- $svg.Content | safeHTML -}}</span>
     {{ end }}
