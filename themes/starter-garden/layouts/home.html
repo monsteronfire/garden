@@ -1,16 +1,3 @@
 {{ define "main" }}
   {{ partial "components/hero.html" . }}
-  
-  {{ partial "content-type-cards.html" . }}
-
-  {{ partial "item-summary.html" (dict "postType" "note" "count" 3) }}
-
-  {{ partial "item-summary.html" (dict "postType" "essay" "count" 3) }}
-
-  {{ partial "item-summary.html" (dict "postType" "pin" "count" 3) }}
-
-  {{ partial "item-summary.html" (dict "postType" "portrait" "count" 3) }}
-
-  {{ partial "item-summary.html" (dict "postType" "project" "count" 3) }}
-
 {{ end }}
