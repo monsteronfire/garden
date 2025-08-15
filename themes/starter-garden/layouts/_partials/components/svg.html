@@ -4,9 +4,12 @@
 */}}
 
 {{- $path := printf "/images/svg/%s.svg" .svgName }}
+{{ $classes := .customClass }}
 
 {{- with resources.Get $path }}
-  {{ .Content | safeHTML }}
+  <span class="{{$classes}}">
+    {{ .Content | safeHTML }}
+  </span>
 {{- else }}
   {{- errorf "The 'svg' partial was unable to find %s" $path }}
 {{- end }}

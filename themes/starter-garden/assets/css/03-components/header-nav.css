@@ -12,6 +12,10 @@
         text-decoration: none;;
     }
 
+    .site__logo svg {
+        filter: var(--filter-shadow-small);
+    }
+
     @media (min-width: 768px) {
         padding-right: var(--space-m);
         padding-left: var(--space-m);
