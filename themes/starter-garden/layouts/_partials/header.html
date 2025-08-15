@@ -1,6 +1,8 @@
 <div class="header-nav">
     <div>
-        <a href="/">{{ site.Params.Logo }}</a>
+        <a href="/">
+            {{ partialCached "components/svg.html" (dict "svgName" "flower" "customClass" "site__logo") }}
+        </a>
     </div>
 
     {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
