@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <div>
+    <h1>{{ .Title }} custom</h1>
+    {{ .Content }}
+
+    <div>
+        {{ partial "content-type-cards.html" . }}
+    </div>
+  </div>
+
+{{ end }}
