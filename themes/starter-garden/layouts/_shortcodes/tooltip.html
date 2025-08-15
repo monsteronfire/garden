@@ -1,0 +1,4 @@
+{{ partial "components/tooltip.html" (dict 
+  "label" (.Get "label")
+  "content" (.Inner | default (.Get "content"))
+) }}
