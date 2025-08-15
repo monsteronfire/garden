@@ -1,4 +1,10 @@
+{{/*  
+    Usage:
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+*/}}
+
 {{- $path := printf "/images/svg/%s.svg" .svgName }}
+
 {{- with resources.Get $path }}
   {{ .Content | safeHTML }}
 {{- else }}
