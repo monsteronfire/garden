@@ -1,1 +1,20 @@
-Where the callout code goes
+{{/*  
+  Callout Partial
+
+  Usage:
+  {{ partial "callout.html" (dict 
+    "type" "error"
+    "title" "System Notice"
+    "content" "Maintenance scheduled for tonight."
+  ) }}
+
+*/}}
+
+<div class="callout callout--{{ .type | default "info" }}">
+  {{ if .title }}
+    <h4 class="callout__title">{{ .title }}</h4>
+  {{ end }}
+  <div class="callout__content">
+    {{ .content | markdownify }}
+  </div>
+</div>
