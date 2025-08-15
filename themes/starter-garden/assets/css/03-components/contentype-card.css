@@ -75,7 +75,7 @@
 
     [class*='__image']:hover {
         color: rgb(255, 255, 255);
-        mask: linear-gradient(-60deg, #ffffff 30%, rgba(235, 235, 235, 0.333), #ffffff 70%) right/350% 100%;
+        mask: linear-gradient(-60deg, #ffffff 30%, rgba(255, 255, 255, 0.8), #ffffff 70%) right/350% 100%;
         animation: shimmer 2.5s infinite;
     }
 
@@ -87,6 +87,12 @@
 
     [class*='__title'] a {
        color: var(--colour-secondary); 
+    }
+}
+
+[data-theme="dark"] {
+    .deck__image:hover {
+        mask: linear-gradient(-60deg, #000000 30%, rgba(0, 0, 0, 0.8), #000000 70%) right/350% 100%;
     }
 }
 
