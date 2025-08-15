@@ -1,9 +1,8 @@
 .hero {
     display: flex;
     position: relative;
-    margin-bottom: var(--space-4xl);
     overflow-x: hidden;
-    height: 90vh;
+    /* height: 70vh; */
 
     h2 {
         font-size: var(--font-size-2xl);
@@ -11,7 +10,10 @@
     }
 
     [class*='__content'] {
-        margin: auto;
+        z-index: var(--zindex-2);
+        width: 60%;
+        /* margin-top: var(--space-xl); */
+        margin: auto 0;
     }
 
     [class*='__content'] h1 {

@@ -4,6 +4,6 @@ date = 2025-08-03T08:30:00-07:00
 draft = false
 +++
 
-# I'm {{< sparkle "Shaii" >}}. You've stumbled upon my little garden on the World Wide Web.
+# Hello, I'm {{< sparkle "Shaii" >}}. 
 
-## I write about programming, community maintenance, and engineering management. Take a stroll around and stay as long as you like.
+## You've stumbled upon my little garden on the World Wide Web. I write about topics including programming, community maintenance, and engineering management. Take a stroll around and stay as long as you like.

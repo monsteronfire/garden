@@ -1,15 +1,13 @@
 .sitevideo {
+    z-index: var(--zindex-1);
     display: flex;
-    position: relative;
-    margin-bottom: var(--space-4xl);
-    overflow-x: hidden;
+    position: absolute;
+    bottom: 0;
+    right: -80px;
 
     [class*='__video'], [class*='__fallback'] {
         width: 100%;
-        max-width: 1200px;
+        max-width: 800px;
         height: auto;
-        /* position: absolute;
-        bottom: 0;
-        right: 0; */
     }
 }

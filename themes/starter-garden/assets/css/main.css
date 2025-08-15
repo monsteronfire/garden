@@ -19,6 +19,10 @@ main {
 
 h1 {
     font-family: var(--font-family-heading);
-    font-size: var(--font-size-7xl);
+    font-size: var(--font-size-6xl);
     line-height: var(--line-height-headers);
+}
+
+.main-content {
+    display: flex;
 }
