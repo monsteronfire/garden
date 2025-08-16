@@ -23,6 +23,6 @@ h1 {
     line-height: var(--line-height-headers);
 }
 
-.main-content {
+.maincontent {
     display: flex;
 }
