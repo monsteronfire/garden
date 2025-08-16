@@ -11,7 +11,7 @@
 
     [class*='__content'] {
         z-index: var(--zindex-2);
-        width: 60%;
+        width: 50%;
         margin-top: var(--space-xl);
     }
 
