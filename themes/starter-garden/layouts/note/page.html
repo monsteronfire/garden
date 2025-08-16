@@ -1,16 +1,18 @@
 {{ define "main" }}
-  <h1>{{ .Title }} Custom Template</h1>
+  <div class="note">
+    <h1>{{ .Title }} Custom Template</h1>
 
-  {{ partial "details.html" . }}
-  {{ partial "epistemic.html" . }}
+    {{ partial "details.html" . }}
+    {{ partial "epistemic.html" . }}
 
-  {{/*  {{ .Content }}  */}}
-  
-  {{ partial "wikilinks.html" .Content }}
-  {{ partial "backlinks.html" . }}
+    {{/*  {{ .Content }}  */}}
+    
+    {{ partial "wikilinks.html" .Content }}
+    {{ partial "backlinks.html" . }}
 
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 
-  {{ partial "relationship-graph.html" . }}
+    {{ partial "relationship-graph.html" . }}
+  </div>
 
 {{ end }}

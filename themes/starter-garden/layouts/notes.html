@@ -1,8 +1,10 @@
 {{ define "main" }}
-  <h1>{{ .Title }} notes custom</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ partial "wikilinks.html" .Summary }}
-  {{ end }}
+  <div class="noteshome">
+    <h1>{{ .Title }} notes custom</h1>
+    {{ .Content }}
+    {{ range .Pages }}
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      {{ partial "wikilinks.html" .Summary }}
+    {{ end }}
+  </div>
 {{ end }}

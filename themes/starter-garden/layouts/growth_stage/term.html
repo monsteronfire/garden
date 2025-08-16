@@ -1,8 +1,10 @@
 {{ define "main" }}
-growth stage terms layout
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-  {{ end }}
+  <div class="growthstagehome">
+    <h1>{{ .Title }}</h1>
+    growth stage terms layout
+    {{ .Content }}
+    {{ range .Pages }}
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ end }}
+  </div>
 {{ end }}
