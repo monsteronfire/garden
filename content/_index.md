@@ -6,4 +6,4 @@ draft = false
 
 # Hello, I'm {{< sparkle "Shaii" >}}. 
 
-## You've stumbled upon my little {{< tooltip label="garden" >}}This is a warning callout with **markdown** support.{{< /tooltip >}} on the World Wide Web. I write about topics including programming, community maintenance, and engineering management. Take a stroll around and stay as long as you like.
+## You've stumbled upon my little {{< tooltip label="garden" >}}This is a warning callout with **markdown** support.{{< /tooltip >}} on the World Wide Web. I write about topics including programming, community maintenance, and people-first engineering management. Take a stroll around and stay as long as you like.
