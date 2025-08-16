@@ -15,7 +15,4 @@
         margin-top: var(--space-xl);
     }
 
-    [class*='__content'] h1 {
-        margin-bottom: var(--space-3xl);
-    }
 }

@@ -1,7 +1,9 @@
 {{ define "main" }}
-  <div>
+  <div class="gardenhome">
     <h1>{{ .Title }}</h1>
-    {{ .Content }}
+    <div class="gardenhome__content">
+      {{ .Content }}
+    </div>
 
     <div>
         {{ partial "content-type-cards.html" . }}

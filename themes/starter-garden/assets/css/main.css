@@ -21,6 +21,7 @@ h1 {
     font-family: var(--font-family-heading);
     font-size: var(--font-size-6xl);
     line-height: var(--line-height-headers);
+    margin-bottom: var(--space-3xl);
 }
 
 .maincontent {
