@@ -79,15 +79,15 @@
   
   <ul class="backlink-list">
     {{ range $backlinks }}
-      <li class="backlink-item">
-        <a href="{{ .page.RelPermalink }}" class="backlink-title">
+      <li class="backlink">
+        <a href="{{ .page.RelPermalink }}" class="backlink__title internallink">
           {{ .page.Title }}
         </a>
         {{ if .page.Description }}
-          <span class="backlink-desc"> — {{ .page.Description }}</span>
+          <span class="backlink__desc"> — {{ .page.Description }}</span>
         {{ end }}
         {{ with .page.Params.growth_stage }}
-          <span class="growth-badge growth-{{ . }}">{{ . }}</span>
+          <span class="growthbadge growth__{{ . }}">{{ . }}</span>
         {{ end }}
       </li>
     {{ end }}
