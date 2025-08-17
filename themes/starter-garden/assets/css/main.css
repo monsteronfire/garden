@@ -27,12 +27,11 @@ h1 {
 .maincontent {
     display: flex;
 
-    a,
-    a.internallink {
+    a {
         color: var(--colour-accent);
     }
 
-    a:not(.internallink):after {
+    a.external:after {
         content: " ↗";
         color: var(--colour-accent);
         font-size: var(--font-size-xs);

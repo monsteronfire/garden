@@ -33,7 +33,7 @@
   {{ $replacement := "" }}
   {{ if $targetPage }}
     {{/* Page exists - create proper link */}}
-    {{ $replacement = printf `<a href="%s" class="wikilink exists internallink" title="%s">%s</a>` $targetPage.RelPermalink $targetPage.Title $text }}
+    {{ $replacement = printf `<a href="%s" class="wikilink exists" title="%s">%s</a>` $targetPage.RelPermalink $targetPage.Title $text }}
   {{ else }}
     {{/* Page doesn't exist - create placeholder link */}}
     {{ $replacement = printf `<span class="wikilink missing" data-slug="%s" title="Page '%s' doesn't exist yet">%s</span>` $cleanSlug $slug $text }}
