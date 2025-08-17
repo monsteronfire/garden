@@ -76,6 +76,9 @@
   --shadow-small: 1px 3px 6px hsl(0 0% 0% / 0.1);
   --filter-shadow-small: drop-shadow(1px 1px 2px hsl(0 0% 0% / 0.2));
 
+  /* Opacity */
+  --opacity-70: 0.7;
+
   /* Z-index */
   --zindex-1: 10;
   --zindex-2: 20;

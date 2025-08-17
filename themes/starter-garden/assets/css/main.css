@@ -27,15 +27,18 @@ h1 {
 .maincontent {
     display: flex;
 
+    a,
     a.internallink {
         color: var(--colour-accent);
     }
 
     a:not(.internallink):after {
         content: " ↗";
-        font-size: 0.8em;
-        opacity: 0.7;
-        margin-left: 0.2em;
+        color: var(--colour-accent);
+        font-size: var(--font-size-xs);
+        font-weight: bold;
+        opacity: var(--opacity-70);
+        margin-left: var(--space-3xs);
     }
 }
 
