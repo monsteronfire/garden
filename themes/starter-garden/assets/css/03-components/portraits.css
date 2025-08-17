@@ -21,6 +21,7 @@
     [class*='__item'] {
         padding: 20px;
         width: 100%;
+        max-width: 400px;
         aspect-ratio: 1/1;
         background-color: white;
         border-style: solid;
