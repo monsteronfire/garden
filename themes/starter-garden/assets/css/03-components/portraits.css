@@ -1,0 +1,42 @@
+.portraits {
+    
+}
+
+.portraits__content {
+    margin-bottom: var(--space-4xl);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2xl);
+    margin-bottom: var(--space-4xl);
+
+    @media (min-width: 768px) {
+        /* flex-direction: row; */
+
+    }
+
+    [class*='__item'] {
+        padding: 20px;
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-color: white;
+        border-style: solid;
+        border-width: 10px;
+        border-top-color: #725534;
+        border-right-color: #4a3722;
+        border-bottom-color:  #725534;
+        border-left-color: #4a3722;
+        box-shadow: 2px 2px 4px rgba(0,0,0,.6);
+
+        img {
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            width: 30%;
+        }
+    }
+}

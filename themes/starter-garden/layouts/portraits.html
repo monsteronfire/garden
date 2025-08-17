@@ -1,10 +1,18 @@
 {{ define "main" }}
-  <div class="portraitshome">
-    <h1>{{ .Title }} portraits custom</h1>
-    {{ .Content }}
-    {{ range .Pages }}
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ partial "wikilinks.html" .Summary }}
-    {{ end }}
+  <div class="portraits">
+    <h1>{{ .Title }}</h1>
+    <div class="portraits__content">
+      {{ .Content }}
+    </div>
+
+    <div class="gallery">
+      {{ range (.Resources.ByType "image") }}
+        {{ $thumb := .Resize "250x250" }}
+        {{ $full := .Resize "800x800" }}
+        <div class="gallery__item">
+          <img src="{{ $thumb.RelPermalink }}" alt="{{ .Name }}" loading="lazy">
+        </div>
+      {{ end }}
+    </div>
   </div>
 {{ end }}
