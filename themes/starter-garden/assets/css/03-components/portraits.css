@@ -24,15 +24,19 @@
         aspect-ratio: 1/1;
         background-color: white;
         border-style: solid;
-        border-width: 10px;
+        border-width: var(--space-m);
         border-top-color: #725534;
         border-right-color: #4a3722;
         border-bottom-color:  #725534;
         border-left-color: #4a3722;
-        box-shadow: 2px 2px 4px rgba(0,0,0,.6);
-
+        box-shadow: var(--shadow-medium);
+        border-radius: var(--border-radius);
+        
         img {
             width: 100%;
+            display: block;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-inset); 
         }
 
         @media (min-width: 768px) {

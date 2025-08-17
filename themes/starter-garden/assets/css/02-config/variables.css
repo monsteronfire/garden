@@ -73,8 +73,10 @@
 
   /* Shadows */
   --shadow-large: 2px 4px 10px hsl(0 0% 0% / 0.1);
+  --shadow-medium: 2px 2px 4px rgba(0,0,0,.6);
   --shadow-small: 1px 3px 6px hsl(0 0% 0% / 0.1);
   --filter-shadow-small: drop-shadow(1px 1px 2px hsl(0 0% 0% / 0.2));
+  --shadow-inset: -1px -1px 1px rgba(0,0,0,.5);
 
   /* Opacity */
   --opacity-70: 0.7;
