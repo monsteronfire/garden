@@ -1,4 +1,6 @@
 .gardenhome {
+    margin-top: var(--space-4xl);
+
     > [class*='__content'] {
         margin-bottom: var(--space-4xl);
     }
