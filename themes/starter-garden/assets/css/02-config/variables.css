@@ -1,3 +1,80 @@
+/* @link https://utopia.fyi/type/calculator?c=360,18,1.2,1200,22,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --fluid-min-width: 360;
+  --fluid-max-width: 1200;
+
+  --fluid-screen: 100vw;
+  --fluid-bp: calc(
+    (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+      (var(--fluid-max-width) - var(--fluid-min-width))
+  );
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --fluid-screen: calc(var(--fluid-max-width) * 1px);
+  }
+}
+
+:root {
+  --f--2-min: 12.50;
+  --f--2-max: 14.08;
+  --font-size-xs: calc(
+    ((var(--f--2-min) / 16) * 1rem) + (var(--f--2-max) - var(--f--2-min)) *
+      var(--fluid-bp)
+  );
+
+  --f--1-min: 15.00;
+  --f--1-max: 17.60;
+  --font-size-s: calc(
+    ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-0-min: 18.00;
+  --f-0-max: 22.00;
+  --font-size-base: calc(
+    ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-1-min: 21.60;
+  --f-1-max: 27.50;
+  --font-size-m: calc(
+    ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-2-min: 25.92;
+  --f-2-max: 34.38;
+  --font-size-l: calc(
+    ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-3-min: 31.10;
+  --f-3-max: 42.97;
+  --font-size-xl: calc(
+    ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-4-min: 37.32;
+  --f-4-max: 53.71;
+  --font-size-2xl: calc(
+    ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
+      var(--fluid-bp)
+  );
+
+  --f-5-min: 44.79;
+  --f-5-max: 67.14;
+  --font-size-3xl: calc(
+    ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
+      var(--fluid-bp)
+  );
+}
+
 :root {
   /* Fonts */
   --font-family-body: Georgia;
@@ -8,8 +85,8 @@
   --line-height-headers: 1.1;
   --line-height-body: 1.5;
 
-  /* Classical and robust font sizes system */
-  --font-size-xxs: 0.625rem;
+  /* REFERENCE: Classical and robust font sizes system */
+  /* --font-size-xxs: 0.625rem;
   --font-size-xs: 0.75rem;
   --font-size-s: 0.875rem;
   --font-size-m: 1rem;
@@ -19,7 +96,7 @@
   --font-size-3xl: 2rem;
   --font-size-4xl: 2.5rem;
   --font-size-6xl: 3.5rem;
-  --font-size-7xl: 4.5rem;
+  --font-size-7xl: 4.5rem; */
 
   /* Three different text colours */
   --colour-text-header: #26162C;

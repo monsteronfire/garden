@@ -20,7 +20,7 @@
     padding: 10px 20px;
     background: var(--colour-card-primary, #fff);
     color: var(--colour-text-body, #222);
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-s);
     border-radius: 30px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.12);
     

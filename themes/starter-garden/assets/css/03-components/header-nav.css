@@ -30,7 +30,7 @@
         padding: var(--space-xs) var(--space-s);
         color: var(--colour-dark);
         font-family: var(--font-family-heading);
-        font-size: var(--font-size-l);
+        font-size: var(--font-size-s);
         font-weight: 500;
         text-decoration: none;
         text-transform: uppercase;

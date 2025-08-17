@@ -5,7 +5,7 @@
     /* height: 70vh; */
 
     h2 {
-        font-size: var(--font-size-2xl);
+        font-size: var(--font-size-base);
         font-weight: 400;
     }
 

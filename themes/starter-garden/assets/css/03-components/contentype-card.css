@@ -54,16 +54,16 @@
     }
 
     .projects [class*='__icon'] {
-        font-size: var(--font-size-xxs)
+        font-size: var(--font-size-xs)
     }
 
     .notes [class*='__icon'] {
-        font-size: var(--font-size-m)
+        font-size: var(--font-size-xs)
     } 
 
     [class*='__description'] {
         font-family: var(--font-family);
-        font-size: var(--font-size-s);
+        font-size: var(--font-size-xs);
     }
 
     [class*='__image'] {
