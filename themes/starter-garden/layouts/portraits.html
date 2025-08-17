@@ -6,7 +6,8 @@
     </div>
 
     <div class="gallery">
-      {{ range (.Resources.ByType "image") }}
+      {{ $images := sort (.Resources.ByType "image") "Name" "desc" }}
+      {{ range ($images) }}
         {{ $thumb := .Resize "250x250" }}
         {{ $full := .Resize "800x800" }}
         <div class="gallery__item">
