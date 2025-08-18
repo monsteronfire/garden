@@ -9,14 +9,22 @@
             rel="noopener noreferrer"
             class="mr-8"
             aria-label="Github account link">
-                {{ partial "components/icon.html" "youtube" }}
+                {{ partial "components/icon.html" "github" }}
         </a>
         <a
             href="{{ .Site.Data.links.socialmedia.youtube }}"
             target="_blank"
             rel="noopener noreferrer"
+            class="mr-8"
+            aria-label="YouTube account link">
+                {{ partial "components/icon.html" "youtube" }}
+        </a>
+        <a
+            href="{{ .Site.Data.links.socialmedia.twitter }}"
+            target="_blank"
+            rel="noopener noreferrer"
             class=""
-            aria-label="Youtube channel link">
+            aria-label="Twitter channel link">
                 {{ partial "components/icon.html" "twitter" }}
         </a>
     </div>
