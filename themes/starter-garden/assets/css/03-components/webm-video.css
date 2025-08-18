@@ -1,13 +1,16 @@
 .sitevideo {
     z-index: var(--zindex-1);
     display: flex;
-    position: absolute;
-    bottom: 0;
-    right: 0px;
 
     [class*='__video'], [class*='__fallback'] {
         width: 100%;
         max-width: 800px;
         height: auto;
+    }
+
+    @media (min-width: 768px) {
+        position: absolute;
+        bottom: 0;
+        right: 0px;
     }
 }
