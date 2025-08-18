@@ -43,5 +43,13 @@ h1 {
         opacity: var(--opacity-70);
         margin-left: var(--space-3xs);
     }
+
+    .wrapper {
+        margin-top: var(--space-xl);
+
+        @media (min-width: 768px) {
+            margin-top: var(--space-4xl);
+        }
+    }
 }
 

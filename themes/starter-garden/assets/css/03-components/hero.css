@@ -4,7 +4,6 @@
     justify-content: space-between;
     position: relative;
     overflow-x: hidden;
-    margin-top: var(--space-xl);
 
     h2 {
         font-size: var(--font-size-base);
@@ -18,10 +17,6 @@
         @media (min-width: 768px) {
             width: 50%;
         }
-    }
-
-    @media (min-width: 768px) {
-        margin-top: var(--space-4xl);
     }
 
 }
