@@ -28,7 +28,7 @@
     .menu a {
         border-radius: var(--border-radius);
         padding: var(--space-xs) var(--space-s);
-        color: var(--colour-dark);
+        color: var(--colour-primary);
         font-family: var(--font-family-heading);
         font-size: var(--font-size-s);
         font-weight: 500;
@@ -43,13 +43,6 @@
 
     }
 }
-
-[data-theme="dark"] {
-    .menu a {
-        color: var(--colour-white)
-    }
-}
-
 
 /* Desktop styles - min-width: 768px */
 @media (min-width: 768px) {

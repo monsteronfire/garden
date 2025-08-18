@@ -63,12 +63,12 @@ completeness = "completeness"
 mindset = "mindset"
 domain = "domain"
 
-# [menus]
-# [[menus.main]]
-# name = 'Garden'
-# identifier = 'garden'
-# pageRef = '/garden'
-# weight = 20
+[menus]
+[[menus.main]]
+name = 'Garden'
+identifier = 'garden'
+pageRef = '/garden'
+weight = 20
 
 # Temporarily disable menu until I figure it out properly
 # [[menus.main]]
