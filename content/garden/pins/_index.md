@@ -5,4 +5,4 @@ draft = false
 layout = "pins"
 +++
 
-Interesting resources, references, and curiosities picked up from my travels through the internet. Put here for safekeeping and sharing.
+## Interesting resources, references, and curiosities picked up from my travels through the internet. Put here for safekeeping and sharing.

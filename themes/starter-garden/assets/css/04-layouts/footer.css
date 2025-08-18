@@ -20,4 +20,8 @@
         fill: var(--colour-primary);
         transition: fill 0.2s;
     }
+
+    .copyright {
+        font-size: var(--font-size-s);
+    }
 }

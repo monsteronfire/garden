@@ -5,11 +5,6 @@
     position: relative;
     overflow-x: hidden;
 
-    h2 {
-        font-size: var(--font-size-base);
-        font-weight: 400;
-    }
-
     [class*='__content'] {
         z-index: var(--zindex-2);
         width: 100%;

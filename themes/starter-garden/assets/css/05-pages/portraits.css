@@ -1,17 +1,9 @@
 .portraitshome {
-   margin-top: var(--space-xl); 
-
-    @media (min-width: 768px) {
-        margin-top: var(--space-4xl);
-    }
+   
 }
 
 .portraits__content {
     margin-bottom: var(--space-4xl);
-
-    h2 {
-        font-weight: 400;
-    }
 }
 
 .gallery {
