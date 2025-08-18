@@ -1,12 +1,17 @@
 .gardenhome {
-    margin-top: var(--space-4xl);
+    margin-top: var(--space-xl);
 
     > [class*='__content'] {
         margin-bottom: var(--space-4xl);
+        
     }
 
     > [class*='__content'] > p {
         margin-bottom: var(--space-l);
         font-size: var(--font-size-base);
+    }
+
+    @media (min-width: 768px) {
+        margin-top: var(--space-4xl);
     }
 }
