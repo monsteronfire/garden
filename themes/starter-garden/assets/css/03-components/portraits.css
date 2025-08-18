@@ -4,6 +4,10 @@
 
 .portraits__content {
     margin-bottom: var(--space-4xl);
+
+    h2 {
+        font-weight: 400;
+    }
 }
 
 .gallery {
