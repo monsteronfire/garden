@@ -15,4 +15,9 @@
         display: flex;
         gap: var(--space-m);
     }
+
+    [class*='_socials'] svg path {
+        fill: var(--colour-primary);
+        transition: fill 0.2s;
+    }
 }
