@@ -1,8 +1,8 @@
 {{ define "main" }}
-  <div class="essayshome">
-    <h1>{{ .Title }} Essays custom Essays</h1>
+  <div class="essayshome wrapper">
+    <h1>{{ .Title }}</h1>
     {{ .Content }}
-    sfsds
+
     {{ range .Pages }}
       <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
       {{ partial "wikilinks.html" .Summary }}

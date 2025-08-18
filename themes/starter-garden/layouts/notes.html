@@ -1,6 +1,6 @@
 {{ define "main" }}
-  <div class="noteshome">
-    <h1>{{ .Title }} notes custom</h1>
+  <div class="noteshome wrapper">
+    <h1>{{ .Title }}</h1>
     {{ .Content }}
     {{ range .Pages }}
       <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>

@@ -5,4 +5,4 @@ draft = false
 layout = "notes"
 +++
 
-Tempor est exercitation ad qui pariatur quis adipisicing aliquip nisi ea consequat ipsum occaecat. Nostrud consequat ullamco laboris fugiat esse esse adipisicing velit laborum ipsum incididunt ut enim. Dolor pariatur nulla quis fugiat dolore excepteur. Aliquip ad quis aliqua enim do consequat.
+## Rough notes about ideas I'm exploring and topics I'd like to learn more about. These notes are constantly changing. They may grow into fully-realised essays or they may not.
