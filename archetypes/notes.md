@@ -1,5 +1,6 @@
 +++
 title = "{{ .Name | title }}"
+description = "Write about 180 characters"
 type = "note"
 date = "{{ .Date }}"
 date_planted = "{{ .Date }}"

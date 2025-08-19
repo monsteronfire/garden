@@ -43,6 +43,11 @@ subtitle = "A spell for"
 description = "Portfolio of work"
 link = "/garden/projects"
 
+[params.garden.growth_stage]
+seed = "🍋"
+sprout = "🌱"
+bloom = "🌸"
+
 [frontmatter]
 lastmod = ["date_tended", ":git", "date", ":default"]
 

@@ -1,0 +1,4 @@
+{{ $growth_icons := site.Params.garden.growth_stage }}
+{{ $icon := index $growth_icons .Params.growth_stage }}
+
+<span class="growth-icon">{{ $icon }}</span>
