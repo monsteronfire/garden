@@ -1,7 +1,10 @@
 {{ define "main" }}
   <div class="noteshome wrapper">
-    <h1>{{ .Title }}</h1>
-    <div class="notes__content">
+    <div class="notes__header sectionheader">
+      <img src="/images/content-type-notes.png" alt=""> 
+    </div>
+    <div class="notes__content sectioncontent">
+      <h1>{{ .Title }}</h1>
       {{ .Content }}
     </div>
     {{ range .Pages }}

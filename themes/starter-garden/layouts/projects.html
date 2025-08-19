@@ -1,7 +1,10 @@
 {{ define "main" }}
-  <div class="projectshome">
-    <h1>{{ .Title }}</h1>
-    <div class="projects__content">
+  <div class="projectshome wrapper">
+    <div class="projects__header sectionheader">
+      <img src="/images/content-type-projects.png" alt=""> 
+    </div>
+    <div class="projects__content sectioncontent">
+      <h1>{{ .Title }}</h1>
       {{ .Content }}
     </div>
     {{ range .Pages }}

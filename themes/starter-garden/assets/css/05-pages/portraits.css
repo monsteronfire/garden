@@ -2,9 +2,7 @@
    
 }
 
-.portraits__content {
-    margin-bottom: var(--space-4xl);
-}
+.portraits__header {}
 
 .gallery {
     display: flex;

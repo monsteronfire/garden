@@ -1,7 +1,10 @@
 {{ define "main" }}
   <div class="portraitshome wrapper">
-    <h1>{{ .Title }}</h1>
-    <div class="portraits__content">
+    <div class="portraits__header sectionheader">
+      <img src="/images/content-type-portraits.png" alt=""> 
+    </div>
+    <div class="portraits__content sectioncontent">
+      <h1>{{ .Title }}</h1>
       {{ .Content }}
     </div>
 

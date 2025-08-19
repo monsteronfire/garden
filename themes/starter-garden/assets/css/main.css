@@ -24,7 +24,7 @@ h1 {
     margin-bottom: var(--space-l);
 
     @media (min-width: 768px) {
-        margin-bottom: var(--space-3xl);
+        margin-bottom: var(--space-2xl);
     }
 }
 
@@ -50,14 +50,6 @@ p {
         font-weight: bold;
         opacity: var(--opacity-70);
         margin-left: var(--space-3xs);
-    }
-
-    .wrapper {
-        margin-top: var(--space-xl);
-
-        @media (min-width: 768px) {
-            margin-top: var(--space-4xl);
-        }
     }
 }
 

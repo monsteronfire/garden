@@ -1,0 +1,23 @@
+.wrapper {
+    margin-top: var(--space-xl);
+
+    @media (min-width: 768px) {
+        margin-top: var(--space-4xl);
+    }
+}
+
+.sectionheader {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    img {
+        width: 200px;
+        height: auto;
+    }
+}
+
+.sectioncontent {
+    margin-bottom: var(--space-4xl);
+    text-align: center;
+}

@@ -1,7 +1,10 @@
 {{ define "main" }}
   <div class="pinshome wrapper">
-    <h1>{{ .Title }}</h1>
-    <div class="pins__content">
+    <div class="pins__header sectionheader">
+      <img src="/images/content-type-pins.png" alt=""> 
+    </div>
+    <div class="pins__content sectioncontent">
+      <h1>{{ .Title }}</h1>
       {{ .Content }}
     </div>
     {{ range .Pages }}
