@@ -140,7 +140,7 @@
   --colour-dark-muted: rgba(38, 22, 44, 0.2);
   --colour-grey: #e5e7eb;
 
-  --colour-overlay: rgba(255, 255, 255, 0.3);
+  --colour-overlay: rgba(255, 255, 255, var(--opacity-30));
 
   /* Background images */
   --background-texture-dark: url("/images/bg-tile-asfalt-dark.png");
@@ -161,6 +161,8 @@
   --shadow-inset: -1px -1px 1px rgba(0,0,0,.5);
 
   /* Opacity */
+  --opacity-10: 0.1;
+  --opacity-30: 0.3;
   --opacity-70: 0.7;
 
   /* Z-index */
@@ -179,7 +181,7 @@
     --colour-primary-muted: var(--colour-medium-muted);
     --colour-secondary: var(--colour-dark);
 
-    --colour-overlay: rgba(255, 255, 255, 0.1);
+    --colour-overlay: rgba(255, 255, 255, var(--opacity-10));
     --colour-accent: var(--colour-orange);
     --colour-text-body: var(--colour-primary);
 }
