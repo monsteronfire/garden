@@ -8,9 +8,14 @@
       {{ .Content }}
     </div>
 
-    {{ range .Pages }}
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ partial "wikilinks.html" .Summary }}
-    {{ end }}
+    <div class="essays__list sectionlist">
+      {{ range .Pages }}
+        <div class="essays__item">
+          <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+          {{ partial "wikilinks.html" .Summary }}
+        </div>
+      {{ end }}
+    </div>
+
   </div>
 {{ end }}
