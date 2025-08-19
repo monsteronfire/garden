@@ -7,12 +7,17 @@
 
 .notes__item {
     display: flex;
+    gap: var(--space-xs);
     width: 100%;
-    padding: var(--space-s) var(--space-l);
-    border: 1px solid #eee;
+    padding: var(--space-s) var(--space-m);
+    border: 1px solid var(--colour-primary-muted);
     border-radius: var(--border-radius);
 
     @media (min-width: 768px) {
-        width: 45%;
+        width: 32%;
     }
+}
+
+.notes__icon {
+
 }
