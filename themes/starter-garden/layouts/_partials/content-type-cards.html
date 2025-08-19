@@ -16,18 +16,17 @@
     {{ range $key, $arr := $content_types }}
       {{ $ct := index $arr 0 }}
         <div class="deck__card {{$key}}" style="--i: {{ $key }}">
+          <a href="{{ $ct.link }}" class="boxlink"></a>
           <div class="deck__content">
             <div class="deck__header">
               <p class="deck__icon">{{ $ct.icon }} {{ $ct.icon }} {{ $ct.icon }}</p>
               <p class="deck__description">{{ $ct.description }}</p>
             </div>
             <div class="deck__image shimmer">
-              <a href="{{ $ct.link }}">
-                <img src="/images/{{ $ct.image }}" alt="{{ $ct.icon }}">
-              </a>
+              <img src="/images/{{ $ct.image }}" alt="{{ $ct.icon }}">
             </div>
             <h3 class="deck__title">
-              <a href="{{ $ct.link }}">{{ $ct.title }}</a>
+              {{ $ct.title }}
             </h3>
           </div>
         </div>

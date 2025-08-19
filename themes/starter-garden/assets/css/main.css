@@ -51,5 +51,13 @@ p {
         opacity: var(--opacity-70);
         margin-left: var(--space-3xs);
     }
+
+    a.boxlink {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
 }
 
