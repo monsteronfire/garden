@@ -140,6 +140,8 @@
   --colour-dark-muted: rgba(38, 22, 44, 0.2);
   --colour-grey: #e5e7eb;
 
+  --colour-overlay: rgba(255, 255, 255, 0.3);
+
   /* Background images */
   --background-texture-dark: url("/images/bg-tile-asfalt-dark.png");
   --background-texture-light: url("/images/bg-tile-asfalt-light.png");
@@ -176,7 +178,8 @@
     --colour-primary: var(--colour-medium);
     --colour-primary-muted: var(--colour-medium-muted);
     --colour-secondary: var(--colour-dark);
-    --colour-tertiary: var();
+
+    --colour-overlay: rgba(255, 255, 255, 0.1);
     --colour-accent: var(--colour-orange);
     --colour-text-body: var(--colour-primary);
 }

@@ -13,6 +13,11 @@
     padding: var(--space-s) var(--space-m);
     border: 1px solid var(--colour-primary-muted);
     border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: var(--colour-overlay);
+    }
 
     @media (min-width: 768px) {
         width: 32%;
