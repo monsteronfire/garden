@@ -1,7 +1,9 @@
 {{ define "main" }}
   <div class="pinshome wrapper">
     <h1>{{ .Title }}</h1>
-    {{ .Content }}
+    <div class="pins__content">
+      {{ .Content }}
+    </div>
     {{ range .Pages }}
       <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
       {{ partial "wikilinks.html" .Summary }}

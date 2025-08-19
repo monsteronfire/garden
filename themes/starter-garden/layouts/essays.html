@@ -1,7 +1,9 @@
 {{ define "main" }}
   <div class="essayshome wrapper">
     <h1>{{ .Title }}</h1>
-    {{ .Content }}
+    <div class="essays__content">
+      {{ .Content }}
+    </div>
 
     {{ range .Pages }}
       <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
