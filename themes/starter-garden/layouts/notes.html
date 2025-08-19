@@ -11,13 +11,14 @@
     <div class="notes__list sectionlist">
       {{ range .Pages }}
         <div class="notes__item">
-          <div class="notes__icon">
-            {{ partial "growth-icon.html" . }}
-          </div>
-          <div>
-            <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
-            {{ partial "wikilinks.html" .Params.description }}
-          </div>
+          <a href="{{ .RelPermalink }}" class="boxlink"></a>
+            <div class="notes__icon">
+              {{ partial "growth-icon.html" . }}
+            </div>
+            <div>
+              <h3>{{ .LinkTitle }}</h3>
+              {{ partial "wikilinks.html" .Params.description }}
+            </div>
         </div>
       {{ end }}
     </div>

@@ -6,6 +6,7 @@
 }
 
 .notes__item {
+    position: relative;
     display: flex;
     gap: var(--space-xs);
     width: 100%;
@@ -15,6 +16,14 @@
 
     @media (min-width: 768px) {
         width: 32%;
+    }
+
+    a.boxlink {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 }
 
