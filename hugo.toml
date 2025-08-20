@@ -48,6 +48,10 @@ seed = "🌱"
 sprout = "🌿"
 bloom = "🌸"
 
+[params.pins.status]
+using = "Have tried and can recommend"
+exploring = "Looks cool, haven't tried"
+
 [frontmatter]
 lastmod = ["date_tended", ":git", "date", ":default"]
 
