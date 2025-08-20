@@ -8,9 +8,8 @@
 }
 
 .projects__cover {
-    height: 220px;
     margin-bottom: var(--space-m);
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
-    background-color: pink;
+    overflow: hidden;
 }

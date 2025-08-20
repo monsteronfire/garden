@@ -9,7 +9,7 @@ draft = false
 description = "The business website for a veterinary clinic in Auckland, New Zealand."
 link = ""
 tags = []
-cover = ""
+cover = "project-cover-lynfield-vets.jpg"
 +++
 
 ## About
