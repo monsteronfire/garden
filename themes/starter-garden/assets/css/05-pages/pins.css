@@ -1,2 +1,24 @@
 .pinshome {
 }
+
+.pins__list {
+}
+
+.pins__item {
+    width: 100%;
+
+
+    @media (min-width: 768px) {
+        width: 45%;
+    }
+}
+
+.pins__icon {
+    .material-icons {
+        color: var(--colour-primary-muted);
+    }
+
+    svg path {
+        stroke: var(--colour-primary);
+    }
+}

@@ -1,24 +1,8 @@
-.notes__list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: var(--space-m);
-}
+.notes__list {}
 
 .notes__item {
-    position: relative;
-    display: flex;
-    gap: var(--space-xs);
     width: 100%;
-    padding: var(--space-s) var(--space-m);
-    border: 1px solid var(--colour-primary-muted);
-    border-radius: var(--border-radius);
-    transition: all 0.3s ease;
-
-    &:hover {
-        background: var(--colour-overlay);
-    }
-
+    
     @media (min-width: 768px) {
         width: 32%;
     }

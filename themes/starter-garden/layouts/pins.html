@@ -10,8 +10,16 @@
     
     <div class="pins__list sectionlist">
       {{ range .Pages }}
-        <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
-        {{ partial "wikilinks.html" .Summary }}
+        <div class="pins__item">
+          <div class="pins__icon">
+            <i class="material-icons">bookmark_border</i>
+          </div>
+          <div>
+            <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+            <p>{{ partial "wikilinks.html" .Params.description }}</p>
+            <a href="{{ .Params.external_url }}" target="_blank" class="external original">See original</a>
+          </div>
+        </div>
       {{ end }}
     </div>
     

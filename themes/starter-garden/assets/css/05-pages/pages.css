@@ -30,4 +30,30 @@
 
 .sectionlist {
     margin-bottom: var(--space-4xl);
+
+    [class*='__item'] {
+        position: relative;
+    }
+}
+
+.notes__list,
+.pins__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-m);
+}
+
+.notes__item,
+.pins__item {
+    display: flex;
+    gap: var(--space-xs);
+    padding: var(--space-s) var(--space-m);
+    border: 1px solid var(--colour-primary-muted);
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: var(--colour-overlay);
+    }
 }
