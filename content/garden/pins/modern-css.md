@@ -1,14 +1,15 @@
 +++
 title = "Modern CSS"
-description = ""
+description = "A great reference for learning modern CSS by Stephanie Eckles"
 type = "pin"
 date = 2025-08-19T10:00:00-07:00
 date_planted = 2025-08-19T10:00:00-07:00
 date_tended = 2025-08-19T10:00:00-07:00
 draft = false
 external_url = "https://moderncss.dev"
-tags = [""]
-domain = ["Reference"]
+status = "using"
+tags = ["CSS"]
+domain = ["reference"]
 +++
 
 ## Worth saving
