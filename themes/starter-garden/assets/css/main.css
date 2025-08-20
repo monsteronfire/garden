@@ -32,6 +32,10 @@ h2 {
     font-weight: 400;
 }
 
+h3 {
+    
+}
+
 p {
     font-size: var(--font-size-base);
 }

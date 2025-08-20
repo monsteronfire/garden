@@ -5,4 +5,4 @@ draft = false
 layout = "projects"
 +++
 
-## A portfolio of personal work
+## A portfolio of personal and client work.

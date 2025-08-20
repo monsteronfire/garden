@@ -37,7 +37,8 @@
 }
 
 .notes__list,
-.pins__list {
+.pins__list,
+.projects__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -45,7 +46,8 @@
 }
 
 .notes__item,
-.pins__item {
+.pins__item,
+.projects__item {
     display: flex;
     gap: var(--space-xs);
     padding: var(--space-s) var(--space-m);
