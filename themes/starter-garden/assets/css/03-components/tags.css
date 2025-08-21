@@ -1,0 +1,13 @@
+.tags {
+    display: flex;
+    gap: var(--space-xs);
+    margin-top: var(--space-l);
+
+    [class*='__link'] {
+        padding: var(--space-xs) var(--space-s);
+        color: var(--colour-secondary);
+        text-transform: capitalize;
+        background-color: var(--colour-grey);
+        border-radius: var(--border-radius);
+    }
+}

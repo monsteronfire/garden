@@ -38,21 +38,23 @@
 
 .notes__list,
 .pins__list,
-.projects__list {
+.projects__list,
+.essays__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: var(--space-m);
+    gap: var(--space-2xl) var(--space-m);
 }
 
 .notes__item,
 .pins__item,
-.projects__item {
+.projects__item,
+.essays__item {
     box-sizing: border-box;
     display: flex;
     gap: var(--space-xs);
     padding: var(--space-s) var(--space-m);
-    border-width: 1px;
+    border-width: 1.5px;
     border-style: solid;
     border-color: var(--colour-primary-muted);
     border-radius: var(--border-radius);

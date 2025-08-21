@@ -1,3 +1,9 @@
+/* .essays__list {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-l)
+} */
+
 .essays__item {
     a {
         text-decoration: none;

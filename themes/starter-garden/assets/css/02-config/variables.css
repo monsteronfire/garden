@@ -138,8 +138,9 @@
   --colour-dark: #26162c;
   --colour-dark-rgb: 38, 22, 44;
   --colour-dark-muted: rgba(38, 22, 44, 0.2);
+
   --colour-grey-medium: #715979;
-  --colour-grey-light: #caa6d5;
+  --colour-grey-light: #ba9ec2;
   --colour-grey: var(--colour-grey-medium);
 
   --colour-overlay: rgba(255, 255, 255, var(--opacity-30));

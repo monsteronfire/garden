@@ -11,9 +11,13 @@
     <div class="essays__list sectionlist">
       {{ range .Pages }}
         <div class="essays__item">
-          <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
-          {{ partial "details.html" . }}
-          {{ partial "wikilinks.html" .Summary }}
+          <div>
+            <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+            {{ partial "details.html" . }}
+            {{ partial "wikilinks.html" .Summary }}
+
+            {{ partial "tags.html" . }}
+          </div>
         </div>
       {{ end }}
     </div>

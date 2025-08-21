@@ -1,5 +1,5 @@
 +++
-title = "Sinatra-inspired Frameworks"
+title = "Sinatra-inspired frameworks"
 type = "essay"
 date = 2025-06-20T10:00:00-07:00
 date_planted = 2025-06-20T10:00:00-07:00
@@ -9,7 +9,7 @@ growth = ["sprout"]
 word_count = 0
 certainty = ["medium"]
 completeness = ["developing"]
-tags = [""]
+tags = ["ruby", "frameworks"]
 domain = [""]
 +++
 

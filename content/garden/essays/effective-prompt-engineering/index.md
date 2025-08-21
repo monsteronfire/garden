@@ -1,5 +1,5 @@
 +++
-title = "Prompt Engineering is Effective Communication"
+title = "Prompt engineering is just effective communication"
 type = "essay"
 date = 2025-08-20T20:50:00-07:00
 date_planted = 2025-08-20T20:50:00-07:00
@@ -9,7 +9,7 @@ growth = ["sprout"]
 word_count = 0
 certainty = ["medium"]
 completeness = ["developing"]
-tags = [""]
+tags = ["LLM", "ai", "prompt", "communication"]
 domain = [""]
 +++
 
