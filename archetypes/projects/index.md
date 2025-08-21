@@ -9,6 +9,7 @@ draft = true
 description = ""
 link = ""
 tags = []
+domain = ["personal", "client", "experiment"]
 cover = ""
 +++
 
