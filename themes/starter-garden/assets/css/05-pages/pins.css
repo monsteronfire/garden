@@ -7,6 +7,9 @@
 .pins__item {
     width: 100%;
 
+    h3 a {
+        text-decoration: none;
+    }
 
     @media (min-width: 768px) {
         width: 45%;

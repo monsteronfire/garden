@@ -12,4 +12,4 @@ tags = [""]
 domain = [""]
 +++
 
-## Worth saving
+## Reason to bookmark

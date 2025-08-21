@@ -12,4 +12,10 @@ tags = ["linux"]
 domain = ["tools"]
 +++
 
-## Worth saving
+## Reason to bookmark
+
+I think I'd like to get a Framework laptop as my next machine. The modular approach really appeals to me.
+
+Plus, I hate planned obsolescence. Most of us aren't flush with cash to be able to get a new computer every few years, so I think it's ethical to have the right to repair.
+
+Also, the colours are very nice.

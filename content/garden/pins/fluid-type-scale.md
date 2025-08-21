@@ -8,8 +8,12 @@ date_tended = '2025-08-20T07:06:02Z'
 draft = false
 external_url = "https://utopia.fyi/type/calculator/"
 status = "using"
-tags = [""]
-domain = [""]
+tags = ["css"]
+domain = ["tool"]
 +++
 
-## Worth saving
+## Reason to bookmark
+
+I first saw this fluid type scale mentioned on Maggie Appleton's garden. This calculator helps you generate a scale using your own specifications.
+
+It's very cool and saved me the trouble of having to figure out font-sizes for different breakpoints.

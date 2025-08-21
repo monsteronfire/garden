@@ -34,7 +34,7 @@ h2 {
 
 h3 {
     font-family: var(--font-family-heading);
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-base);
 }
 
 p {

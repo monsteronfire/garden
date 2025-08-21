@@ -1,6 +1,6 @@
 +++
-title = "Modern CSS"
-description = "A great reference for learning modern CSS by Stephanie Eckles"
+title = "Modern CSS Solutions"
+description = "A great reference for learning how to solve old problems with modern CSS"
 type = "pin"
 date = 2025-08-19T10:00:00-07:00
 date_planted = 2025-08-19T10:00:00-07:00
@@ -12,6 +12,8 @@ tags = ["CSS"]
 domain = ["reference"]
 +++
 
-## Worth saving
+## Reason to bookmark
 
-Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.
+It has been a long time since I've written vanilla CSS, and I feel a little out-of-the-loop sometimes. This site has great in-depth articles that include code snippets.
+
+There's also a companion site for smol snippets: [smolcss.dev](https://smolcss.dev)

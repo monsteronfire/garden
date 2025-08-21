@@ -12,4 +12,10 @@ tags = ["webm", "video", "audio"]
 domain = ["tool"]
 +++
 
-## Worth saving
+## Reason to bookmark
+
+This is the tool I used to create the webm video for my homepage.
+
+I needed a way to retain the alpha transparency without having to resort to looping through a sequence of images.
+
+I was able to turn the sequence of still frames into a webm video with a transparent background.
