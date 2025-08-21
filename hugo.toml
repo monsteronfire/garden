@@ -1,7 +1,8 @@
 baseURL = 'https://shaiiong.com/'
 languageCode = 'en-us'
-title = 'Garden Little'
+title = 'Shaii Ong'
 theme = "starter-garden"
+ummaryLength = 30
 
 [params]
 author = "Shaii Ong"
