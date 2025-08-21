@@ -1,0 +1,19 @@
+.details {
+    display: flex;
+    gap: var(--space-xl);
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+
+    .icon {
+        display: inline-block
+    }
+
+    svg path {
+        fill: var(--colour-grey);
+    }
+
+    time {
+        font-size: var(--font-size-s);
+        color: var(--colour-grey);
+    }
+}

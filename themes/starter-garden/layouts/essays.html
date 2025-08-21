@@ -12,6 +12,7 @@
       {{ range .Pages }}
         <div class="essays__item">
           <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+          {{ partial "details.html" . }}
           {{ partial "wikilinks.html" .Summary }}
         </div>
       {{ end }}

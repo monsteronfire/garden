@@ -1,8 +1,10 @@
-<div>
-    <p>
-        Date planted <time datetime="">{{ .Params.date_planted | time.Format "2 Jan, 2006" }}</time>
-    </p>
-    <p>
-        Date last tended <time datetime="">{{ .Params.date_tended | time.Format "2 Jan, 2006" }}</time>
-    </p>
+<div class="details">
+    <span>
+        {{ partial "components/icon.html" "planted" }}
+        <time datetime="">{{ .Params.date_planted | time.Format "2 Jan, 2006" }}</time>
+    </span>
+    <span>
+        {{ partial "components/icon.html" "watering-can" }}
+        <time datetime="">{{ .Params.date_tended | time.Format "2 Jan, 2006" }}</time>
+    </span>
 </div>

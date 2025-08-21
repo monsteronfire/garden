@@ -48,14 +48,18 @@
 .notes__item,
 .pins__item,
 .projects__item {
+    box-sizing: border-box;
     display: flex;
     gap: var(--space-xs);
     padding: var(--space-s) var(--space-m);
-    border: 1px solid var(--colour-primary-muted);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--colour-primary-muted);
     border-radius: var(--border-radius);
     transition: all 0.3s ease;
 
     &:hover {
+        border-style: dashed;
         background: var(--colour-overlay);
     }
 }
