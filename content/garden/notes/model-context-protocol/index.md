@@ -1,19 +1,19 @@
 +++
-title = "{{ .Name | title }}"
-description = "Write about 180 characters"
+title = "MCP (Model Context Protocol)"
+description = "Initial thoughts about Model Context Protocol"
 type = "note"
-date = "{{ .Date }}"
-date_planted = "{{ .Date }}"
-date_tended = "{{ .Date }}"
-draft = true
+date = "2025-07-15T07:34:07Z"
+date_planted = "2025-07-15T07:34:07Z"
+date_tended = "2025-08-21T07:34:07Z"
+draft = false
 # Epistemic status
-certainty = "high | medium | low | speculative"
-vibes = "dying on this hill (for now) | pretty sure this is a thing | don't quote me | half-baked"
-evidence = "empirical | theoretical | anecdotal"
+certainty = "speculative"
+vibes = "half-baked"
+evidence = "anecdotal"
 # Maintenance status
-growth_stage = "seed | sprout | bloom"
+growth_stage = "seed"
 # Thematic clustering
-topics = ["AI", "Culture & Community", "Development", "Engineering Management", "Security", "Art & Creativity"]
+topics = ["AI", "Culture & Community", "Development", "Engineering Management", "Security"]
 # Examples for tags
 # angle = ["skeptical", "optimistic", "contrarian", "supportive", "critical", "balanced", "provocative", "mainstream", "fringe", "devil's-advocate", "cheerleader", "neutral", "biased", "objective"]
 

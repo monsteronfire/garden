@@ -1,10 +1,10 @@
 +++
-title = "{{ .Name | title }}"
+title = "Rag-Architecture"
 description = "Write about 180 characters"
 type = "note"
-date = "{{ .Date }}"
-date_planted = "{{ .Date }}"
-date_tended = "{{ .Date }}"
+date = "2025-08-21T07:33:01Z"
+date_planted = "2025-08-21T07:33:01Z"
+date_tended = "2025-08-21T07:33:01Z"
 draft = true
 # Epistemic status
 certainty = "high | medium | low | speculative"
@@ -13,7 +13,7 @@ evidence = "empirical | theoretical | anecdotal"
 # Maintenance status
 growth_stage = "seed | sprout | bloom"
 # Thematic clustering
-topics = ["AI", "Culture & Community", "Development", "Engineering Management", "Security", "Art & Creativity"]
+topics = ["AI", "Culture & Community", "Development", "Engineering Management", "Security"]
 # Examples for tags
 # angle = ["skeptical", "optimistic", "contrarian", "supportive", "critical", "balanced", "provocative", "mainstream", "fringe", "devil's-advocate", "cheerleader", "neutral", "biased", "objective"]
 
