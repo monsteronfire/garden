@@ -80,6 +80,7 @@
     [class*='__title'] {
         margin-top: var(--space-2xs);
         font-family: var(--font-family-display);
+        font-size: var(--font-size-base);
         text-transform: uppercase;
     }
 
