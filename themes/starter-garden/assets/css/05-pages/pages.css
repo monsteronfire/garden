@@ -55,13 +55,29 @@
     gap: var(--space-xs);
     padding: var(--space-s) var(--space-m);
     border-width: 1.5px;
-    border-style: solid;
+    border-style: dashed;
     border-color: var(--colour-primary-muted);
     border-radius: var(--border-radius);
     transition: all 0.3s ease;
 
     &:hover {
-        border-style: dashed;
+        border-image-source: url("/images/vine-light.svg");
+        border-image-slice: 60 20 60 20;
+        border-image-outset: 1rem 0 1rem 0 ;
+        border-image-width: 2rem;
+        border-image-repeat: round;
+
         background: var(--colour-overlay);
     }
+}
+
+[data-theme="dark"] {
+    .notes__item,
+    .pins__item,
+    .projects__item,
+    .essays__item {
+        &:hover {
+            border-image-source: url("/images/vine-dark.svg");
+        }
+    } 
 }
