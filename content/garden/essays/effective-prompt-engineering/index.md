@@ -1,9 +1,9 @@
 +++
-title = "Essay 2"
+title = "Prompt Engineering is Effective Communication"
 type = "essay"
-date = 2025-08-18T10:00:00-07:00
-date_planted = 2023-02-15T10:00:00-07:00
-date_tended = 2023-02-15T10:00:00-07:00
+date = 2025-08-20T20:50:00-07:00
+date_planted = 2025-08-20T20:50:00-07:00
+date_tended = 2025-08-20T20:00:50-07:00
 draft = false
 growth = ["sprout"]
 word_count = 0

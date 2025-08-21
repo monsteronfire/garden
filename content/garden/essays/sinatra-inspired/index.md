@@ -1,11 +1,11 @@
 +++
-title = "Essay 1"
+title = "Sinatra-inspired Frameworks"
 type = "essay"
-date = 2023-02-15T10:00:00-07:00
-date_planted = 2023-02-15T10:00:00-07:00
-date_tended = 2023-02-15T10:00:00-07:00
+date = 2025-06-20T10:00:00-07:00
+date_planted = 2025-06-20T10:00:00-07:00
+date_tended = 2025-06-20T10:00:00-07:00
 draft = false
-growth = ["seed"]
+growth = ["sprout"]
 word_count = 0
 certainty = ["medium"]
 completeness = ["developing"]
