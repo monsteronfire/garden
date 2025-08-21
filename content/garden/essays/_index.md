@@ -5,4 +5,4 @@ draft = false
 layout = "essays"
 +++
 
-## Long-form writing on subjects I've researched and gained a better understanding of.
+## Long-form writing on subjects I've researched and gained a better understanding of. Still happy to be fact-checked, though.
