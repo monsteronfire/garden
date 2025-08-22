@@ -107,11 +107,11 @@
     }
 
     .sidebar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: var(--space-l);
-    height: auto;
-}
+        position: -webkit-sticky;
+        position: sticky;
+        top: var(--space-l);
+        height: auto;
+    }
 
     .sidebar,
     .mainarticlecontent {
@@ -130,6 +130,8 @@
 
 }
 
-
-
-
+.storymeta {
+    margin-bottom: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+    border-bottom: 1px dashed var(--colour-grey);
+}

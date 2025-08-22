@@ -1,9 +1,11 @@
 {{ define "main" }}
   <div class="wrapper">
-    {{ partial "components/breadcrumbs.html" . }}
-    <h1>{{ .Title }}</h1>
+    <div class="storymeta">
+      {{ partial "components/breadcrumbs.html" . }}
+      <h1>{{ .Title }}</h1>
 
-    {{ partial "tags.html" . }}
+      {{ partial "tags.html" . }}
+    </div>
 
     <section class="story">
       <aside class="sidebar">
