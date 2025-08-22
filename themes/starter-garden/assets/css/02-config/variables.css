@@ -128,6 +128,14 @@
   --colour-orange: #FE8336;
   --colour-accent: var(--colour-green);
 
+  /* Colour - content types */
+  --colour-essays: #EDA933;
+  --colour-notes: #77C8B2;
+  --colour-projects: #B67ED0;
+  --colour-pins: #7796E8;
+  --colour-portraits: #BA4046;
+
+
   /* Neutral colours */
   --colour-white: hsl(0, 0%, 100%);
   --colour-background: var(--colour-medium);
