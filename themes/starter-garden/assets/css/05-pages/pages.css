@@ -84,7 +84,9 @@
 
 .article {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
+    margin-bottom: var(--space-4xl);
 
     @media (min-width: 768px) {
         flex-direction: row;
@@ -104,6 +106,13 @@
         margin-bottom: var(--space-xl);
     }
 
+}
+
+.sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--space-l);
+    height: auto;
 }
 
 .sidebar,
