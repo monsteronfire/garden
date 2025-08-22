@@ -81,9 +81,8 @@
 {{ end }}
 
 <div class="container">
-  <h2>🌱 Digital Garden Connection Graph</h2>
-  
-  <div class="controls">
+  <div class="wrapper">
+    <div class="controls">
       <div class="filter-group">
           <label>Growth Stage</label>
           <select id="growthFilter">
@@ -111,51 +110,53 @@
           <button onclick="resetFilters()">Reset Filters</button>
           <button onclick="centerGraph()">Center Graph</button>
       </div>
-  </div>
-  
-  <div class="relationship-graph" data-nodes="{{ $nodes | jsonify }}" data-links="{{ $links | jsonify }}">
-      <svg id="graph"></svg>
-      <div class="legend">
-          <h4>Legend</h4>
-          <div>
-              <strong>Growth Stage Colours:</strong>
-              <div class="legend-item">
-                  <div class="legend-color" style="background: #2ecc71"></div>
-                  <span>Seed</span>
-              </div>
-              <div class="legend-item">
-                  <div class="legend-color" style="background: #f1c40f"></div>
-                  <span>Sprout</span>
-              </div>
-              <div class="legend-item">
-                  <div class="legend-color" style="background: #e74c3c"></div>
-                  <span>Bloom</span>
-              </div>
-          </div>
-          <div style="margin-top: 15px;">
-              <strong>Content types:</strong>
-              <div class="legend-item content">
-                  <span class="legend-type-icon circle">●</span>
-                  <span>Note</span>
-              </div>
-              <div class="legend-item content">
-                  <div class="legend-type-icon triangle">▲</div>
-                  <span>Essay</span>
-              </div>
-              <div class="legend-item content">
-                  <div class="legend-type-icon star">★</div>
-                  <span>Pin</span>
-              </div>
-              <div class="legend-item content">
-                  <div class="legend-type-icon plus">✚</div>
-                  <span>Project</span>
-              </div>
-              <div class="legend-item content">
-                  <div class="legend-type-icon pentagon">⬟</div>
-                  <span>Portrait</span>
-              </div>
-          </div>
-      </div>
+    </div>
+    
+    <div class="relationship-graph" data-nodes="{{ $nodes | jsonify }}" data-links="{{ $links | jsonify }}">
+        <svg id="graph"></svg>
+        <div class="legend">
+            <h4>Legend</h4>
+            <div>
+                <strong>Growth Stage Colours:</strong>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #2ecc71"></div>
+                    <span>Seed</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #f1c40f"></div>
+                    <span>Sprout</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #e74c3c"></div>
+                    <span>Bloom</span>
+                </div>
+            </div>
+            <div style="margin-top: 15px;">
+                <strong>Content types:</strong>
+                <div class="legend-item content">
+                    <span class="legend-type-icon circle">●</span>
+                    <span>Note</span>
+                </div>
+                <div class="legend-item content">
+                    <div class="legend-type-icon triangle">▲</div>
+                    <span>Essay</span>
+                </div>
+                <div class="legend-item content">
+                    <div class="legend-type-icon star">★</div>
+                    <span>Pin</span>
+                </div>
+                <div class="legend-item content">
+                    <div class="legend-type-icon plus">✚</div>
+                    <span>Project</span>
+                </div>
+                <div class="legend-item content">
+                    <div class="legend-type-icon pentagon">⬟</div>
+                    <span>Portrait</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
   </div>
 </div>
 
