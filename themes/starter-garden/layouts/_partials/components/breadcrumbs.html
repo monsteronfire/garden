@@ -1,0 +1,10 @@
+<ul id="breadcrumbs" class="breadcrumbs">
+    {{- range .Ancestors.Reverse }}
+        {{ if not .IsHome }}
+            <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+        {{ end }}
+    {{- end }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+</ul>
