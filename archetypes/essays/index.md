@@ -1,5 +1,6 @@
 +++
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+description = "Write about 180 characters"
 slug = "{{ .Name | anchorize }}"
 type = "essay"
 date = '{{ .Date }}'

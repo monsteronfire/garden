@@ -1,5 +1,6 @@
 +++
 title = "Sinatra-inspired frameworks"
+description = "Write about 180 characters"
 slug = "sinatra-inspired"
 type = "essay"
 date = 2025-06-20T10:00:00-07:00
