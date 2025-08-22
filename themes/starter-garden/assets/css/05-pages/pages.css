@@ -81,3 +81,21 @@
         }
     } 
 }
+
+.article {
+    display: flex;
+
+    h2 {
+        margin-bottom: var(--space-xs);
+        font-family: var(--font-family-heading);
+        font-weight: 700;
+    }
+
+    h2:not(:first-of-type) {
+       margin-top: var(--space-4xl); 
+    }
+
+    p {
+        margin-bottom: var(--space-xl);
+    }
+}
