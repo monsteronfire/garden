@@ -131,7 +131,9 @@
   /* Colour - content types */
   --colour-essays: #EDA933;
   --colour-notes: #77C8B2;
-  --colour-projects: #B67ED0;
+  --colour-projects-light: #752d96;
+  --colour-projects-dark: #B67ED0;
+  --colour-projects: var(--colour-projects-light);
   --colour-pins: #7796E8;
   --colour-portraits: #BA4046;
 
@@ -193,6 +195,7 @@
     --colour-secondary: var(--colour-dark);
 
     --colour-grey: var(--colour-grey-light);
+    --colour-projects: var(--colour-projects-dark);
 
     --colour-overlay: rgba(255, 255, 255, var(--opacity-10));
     --colour-accent: var(--colour-orange);

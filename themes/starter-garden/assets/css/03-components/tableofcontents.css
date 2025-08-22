@@ -1,0 +1,54 @@
+#TableOfContents {
+  max-height: 90vh;
+  height: 100%;
+  overflow-y: scroll;
+  scrollbar-color: var(--colour-primary) var(--colour-background);
+  scrollbar-width: thin;
+}
+
+.tableofcontents {
+    width: 33.3%;
+
+    ul {
+        padding: 0;
+        margin-top: var(--space-m);
+    }
+
+    ul li,
+    [data-name="related-list-item"] {
+        display: flex;
+        margin-bottom: var(--space-s);
+    }
+
+    ul li::before,
+    [data-name="related-list-item"]::before {
+        content: "\273B";
+        color: var(--colour-accent);
+        margin-left: var(--space-xs);
+        margin-right: var(--space-xs);
+    }
+
+    ul li a {
+        font-size: var(--font-size-s);
+        text-decoration: none;
+    }
+
+    &.essay {
+        ul li a {
+            color: var(--colour-essays);
+        }
+    }
+
+    &.note {
+        ul li a {
+            color: var(--colour-notes);
+        }
+    }
+
+    &.project {
+        ul li a {
+            color: var(--colour-projects);
+        }
+    }
+
+}
