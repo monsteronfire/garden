@@ -1,6 +1,7 @@
 +++
 title = "Ffmpeg"
 description = "Amazing multimedia suite of tools for working with audio and video"
+slug = "ffmpeg"
 type = "pin"
 date = '2025-08-20T06:26:49Z'
 date_planted = '2025-08-20T06:26:49Z'

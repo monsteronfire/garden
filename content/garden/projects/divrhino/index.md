@@ -1,5 +1,6 @@
 +++
 title = "DivRhino YouTube Channel"
+slug = "divhino"
 type = "project"
 project_type = ["site", "youtube"]
 date = '2025-08-20T13:03:52Z'

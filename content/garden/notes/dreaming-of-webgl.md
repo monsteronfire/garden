@@ -1,6 +1,7 @@
 +++
 title = "Dreaming of WebGL"
 description = "I'd like to learn more about WebGL"
+slug = "dreaming-of-webgl"
 type = "note"
 date = "2025-08-10T07:33:38Z"
 date_planted = "2025-08-10T07:33:38Z"

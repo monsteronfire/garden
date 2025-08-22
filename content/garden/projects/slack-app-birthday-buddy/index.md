@@ -1,5 +1,6 @@
 +++
 title = "Slack app: Birthday Buddy"
+slug = "slack-app-birthday-buddy"
 type = "project"
 project_type = ["repo", "app"]
 date = 2025-08-05T15:34:05Z

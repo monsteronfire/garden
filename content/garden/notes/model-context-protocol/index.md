@@ -1,6 +1,7 @@
 +++
 title = "MCP (Model Context Protocol)"
 description = "Initial thoughts about Model Context Protocol"
+slug = "model-context-protocol"
 type = "note"
 date = "2025-07-15T07:34:07Z"
 date_planted = "2025-07-15T07:34:07Z"

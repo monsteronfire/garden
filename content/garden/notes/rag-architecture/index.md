@@ -1,6 +1,7 @@
 +++
 title = "Rag-Architecture"
 description = "Write about 180 characters"
+slug = "rag-architecture"
 type = "note"
 date = "2025-08-21T07:33:01Z"
 date_planted = "2025-08-21T07:33:01Z"

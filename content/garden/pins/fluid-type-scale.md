@@ -1,6 +1,7 @@
 +++
 title = "Fluid Type Scale"
 description = "Utopia's fluid type scale for responsive typography"
+slug = "fluid-type-scale"
 type = "pin"
 date = '2025-08-20T07:06:02Z'
 date_planted = '2025-08-20T07:06:02Z'

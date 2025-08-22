@@ -1,6 +1,7 @@
 +++
 title = "Software Bill of Materials"
 description = "Write about 180 characters"
+slug = "software-bill-of-materials"
 type = "note"
 date = "2025-07-11T07:33:18Z"
 date_planted = "2025-07-11T07:33:18Z"

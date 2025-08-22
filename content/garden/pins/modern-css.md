@@ -1,6 +1,7 @@
 +++
 title = "Modern CSS Solutions"
 description = "A great reference for learning how to solve old problems with modern CSS"
+slug = "modern-css"
 type = "pin"
 date = 2025-08-19T10:00:00-07:00
 date_planted = 2025-08-19T10:00:00-07:00

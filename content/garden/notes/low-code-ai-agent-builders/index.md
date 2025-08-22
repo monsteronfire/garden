@@ -1,6 +1,7 @@
 +++
 title = "Low-code AI agent builders"
 description = "Maintaining a list of some low code tools for building AI agents"
+slug = "low-code-ai-agent-builders"
 type = "note"
 date = "2025-07-05T07:21:39Z"
 date_planted = "2025-07-05T07:21:39Z"

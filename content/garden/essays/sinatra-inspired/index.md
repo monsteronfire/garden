@@ -1,5 +1,6 @@
 +++
 title = "Sinatra-inspired frameworks"
+slug = "sinatra-inspired"
 type = "essay"
 date = 2025-06-20T10:00:00-07:00
 date_planted = 2025-06-20T10:00:00-07:00

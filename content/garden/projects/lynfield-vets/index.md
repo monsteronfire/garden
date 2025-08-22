@@ -1,5 +1,6 @@
 +++
 title = "Lynfield Vets"
+slug = "lynfield-vets"
 type = "project"
 project_type = "repo | site | youtube"
 date = '2025-08-20T13:03:52Z'

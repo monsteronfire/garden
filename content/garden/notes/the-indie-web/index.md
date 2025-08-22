@@ -1,6 +1,7 @@
 +++
 title = "The Indie Web"
 description = "Owning and controlling your data in an ocean of Social Media kingdoms"
+slug = "the-indie-web"
 type = "note"
 date = "2025-07-14T07:33:48Z"
 date_planted = "2025-07-14T07:33:48Z"

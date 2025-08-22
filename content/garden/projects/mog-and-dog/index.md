@@ -1,5 +1,6 @@
 +++
 title = "Mog and Dog Desexing Clinic"
+slug = "mog-and-dog"
 type = "project"
 project_type = ["site"]
 date = 2023-02-15T10:00:00-07:00
