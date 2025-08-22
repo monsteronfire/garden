@@ -47,6 +47,12 @@
     }
 }
 
+.pin .tableofcontents {
+    ul li a {
+        color: var(--colour-pins);
+    }
+}
+
 .project .tableofcontents {
     ul li a {
         color: var(--colour-projects);
