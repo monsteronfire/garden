@@ -7,8 +7,7 @@
   Returns a structure of pages that mention the current page.
 */}}
 
-{{ $currentPage := . }}
-{{ $currentSlug := $currentPage.File.BaseFileName | urlize }}
+{{ $currentSlug := .Slug}}
 
 {{/* Store backlinks */}}
 {{ $backlinks := slice }}
