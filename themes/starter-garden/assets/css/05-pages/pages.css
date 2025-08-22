@@ -82,7 +82,7 @@
     } 
 }
 
-.article {
+.story {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -106,28 +106,30 @@
         margin-bottom: var(--space-xl);
     }
 
-}
-
-.sidebar {
+    .sidebar {
     position: -webkit-sticky;
     position: sticky;
     top: var(--space-l);
     height: auto;
 }
 
-.sidebar,
-.mainarticlecontent {
-    width: 100%;
-}
-
-@media (min-width: 768px) {
-    .sidebar {
-        width: 30%;
-    }
-
+    .sidebar,
     .mainarticlecontent {
-        width: 70%;
+        width: 100%;
     }
+
+    @media (min-width: 768px) {
+        .sidebar {
+            width: 30%;
+        }
+
+        .mainarticlecontent {
+            width: 70%;
+        }
+    }
+
 }
+
+
 
 
