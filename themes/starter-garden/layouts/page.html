@@ -3,6 +3,8 @@
     {{ partial "components/breadcrumbs.html" . }}
     <h1>{{ .Title }}</h1>
 
+    {{ partial "tags.html" . }}
+
     <section class="article">
       {{ partial "components/tableofcontents" . }}
 
@@ -10,9 +12,9 @@
         {{ partial "wikilinks.html" .Content }}
 
         {{ partial "backlinks.html" . }}
+
       </article>
     </section>
     
-    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
   </div>
 {{ end }}

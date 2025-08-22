@@ -6,6 +6,7 @@
     [class*='__link'] {
         padding: var(--space-xs) var(--space-s);
         color: var(--colour-secondary);
+        text-decoration: none;
         text-transform: capitalize;
         background-color: var(--colour-grey);
         border-radius: var(--border-radius);
