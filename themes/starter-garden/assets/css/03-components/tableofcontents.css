@@ -32,23 +32,22 @@
         font-size: var(--font-size-s);
         text-decoration: none;
     }
+}
 
-    &.essay {
-        ul li a {
-            color: var(--colour-essays);
-        }
+.essay .tableofcontents {
+    ul li a {
+        color: var(--colour-essays);
     }
+}
 
-    &.note {
-        ul li a {
-            color: var(--colour-notes);
-        }
+.note .tableofcontents {
+    ul li a {
+        color: var(--colour-notes);
     }
+}
 
-    &.project {
-        ul li a {
-            color: var(--colour-projects);
-        }
+.project .tableofcontents {
+    ul li a {
+        color: var(--colour-projects);
     }
-
 }
