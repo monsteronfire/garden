@@ -1,18 +1,26 @@
 {{ define "main" }}
-  <div class="note">
-    <h1>{{ .Title }}</h1>
+  <div class="wrapper">
+    <div class="storymeta">
+      {{ partial "components/breadcrumbs.html" . }}
+      <h1>{{ .Title }}</h1>
 
-    {{ partial "details.html" . }}
-    {{ partial "epistemic.html" . }}
+      {{ partial "details.html" . }}
+      {{ partial "epistemic.html" . }}
+      {{ partial "tags.html" . }}
+    </div>
 
-    {{/*  {{ .Content }}  */}}
+    <section class="story">
+      <aside class="sidebar">
+        {{ partial "components/tableofcontents" . }}
+      </aside>
+
+      <article class="mainarticlecontent">
+        {{ partial "wikilinks.html" .Content }}
+
+        {{ partial "backlinks.html" . }}
+
+      </article>
+    </section>
     
-    {{ partial "wikilinks.html" .Content }}
-    {{ partial "backlinks.html" . }}
-
-    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-
-    {{ partial "relationship-graph.html" . }}
   </div>
-
 {{ end }}
