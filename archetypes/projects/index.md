@@ -1,5 +1,6 @@
 +++
-title = "{{ .Name | title }}"
+title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+slug = "{{ .Name | anchorize }}"
 type = "project"
 project_type = "repo | site | youtube"
 date = '{{ .Date }}'

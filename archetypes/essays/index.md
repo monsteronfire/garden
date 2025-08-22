@@ -1,5 +1,6 @@
 +++
-title = "{{ .Name | title }}"
+title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+slug = "{{ .Name | anchorize }}"
 type = "essay"
 date = '{{ .Date }}'
 date_planted = '{{ .Date }}'
