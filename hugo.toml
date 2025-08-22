@@ -53,6 +53,13 @@ bloom = "🌸"
 using = "Have tried and can recommend"
 exploring = "Looks cool, haven't tried"
 
+# Table of contents
+[markup]
+[markup.tableOfContents]
+endLevel = 2
+ordered = false
+startLevel = 2
+
 [frontmatter]
 lastmod = ["date_tended", ":git", "date", ":default"]
 
