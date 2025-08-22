@@ -84,6 +84,11 @@
 
 .article {
     display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
 
     h2 {
         margin-bottom: var(--space-xs);
@@ -98,4 +103,22 @@
     p {
         margin-bottom: var(--space-xl);
     }
+
 }
+
+.sidebar,
+.mainarticlecontent {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        width: 30%;
+    }
+
+    .mainarticlecontent {
+        width: 70%;
+    }
+}
+
+

@@ -6,9 +6,11 @@
     {{ partial "tags.html" . }}
 
     <section class="article">
-      {{ partial "components/tableofcontents" . }}
+      <aside class="sidebar">
+        {{ partial "components/tableofcontents" . }}
+      </aside>
 
-      <article>
+      <article class="mainarticlecontent">
         {{ partial "wikilinks.html" .Content }}
 
         {{ partial "backlinks.html" . }}
