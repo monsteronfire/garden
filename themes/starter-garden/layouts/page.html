@@ -1,11 +1,18 @@
 {{ define "main" }}
-  <h1>{{ .Title }} Default Template</h1>
+  <div class="wrapper">
+    {{ partial "components/breadcrumbs.html" . }}
+    <h1>{{ .Title }}</h1>
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    <section class="article">
+      {{ partial "components/tableofcontents" . }}
 
-  {{ partial "wikilinks.html" .Content }}
-  
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+      <article>
+        {{ partial "wikilinks.html" .Content }}
+
+        {{ partial "backlinks.html" . }}
+      </article>
+    </section>
+    
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  </div>
 {{ end }}
