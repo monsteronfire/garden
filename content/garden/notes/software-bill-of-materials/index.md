@@ -1,6 +1,6 @@
 +++
 title = "Software Bill of Materials"
-description = "Write about 180 characters"
+description = "Learning more about how to apply this practice to community cybersecurity."
 slug = "software-bill-of-materials"
 type = "note"
 date = "2025-07-11T07:33:18Z"
