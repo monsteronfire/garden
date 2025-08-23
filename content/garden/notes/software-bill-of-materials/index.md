@@ -10,7 +10,7 @@ draft = false
 # Epistemic status
 certainty = "high"
 vibes = "dying on this hill (for now)"
-evidence = "empirical"
+effort = "high"
 # Maintenance status
 growth_stage = "bloom"
 # Thematic clustering

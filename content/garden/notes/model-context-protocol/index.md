@@ -10,7 +10,7 @@ draft = false
 # Epistemic status
 certainty = "speculative"
 vibes = "half-baked"
-evidence = "anecdotal"
+effort = "low"
 # Maintenance status
 growth_stage = "seed"
 # Thematic clustering
