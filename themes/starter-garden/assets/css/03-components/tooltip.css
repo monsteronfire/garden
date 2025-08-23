@@ -5,10 +5,10 @@
 
 .hastooltip .tooltip {
   position: absolute;
-  left: 50%;
+  left: 3%;
   bottom: 120%;
-  transform: translateX(-50%);
-  background: #222;
+  transform: translateX(-3%);
+  background-color: #222;
   color: #fff;
   padding: 6px 12px;
   border-radius: 6px;
@@ -24,4 +24,11 @@
 .hastooltip:focus .tooltip {
   opacity: 1;
   pointer-events: auto;
+}
+
+[data-theme="dark"] {
+  .hastooltip .tooltip {
+    background-color: aliceblue;
+    color: #222;
+  } 
 }
