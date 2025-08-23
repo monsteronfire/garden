@@ -5,7 +5,6 @@
 
     [class*='_contents'] {
         display: flex;
-        align-content: center;
         justify-content: space-between;
         padding-top: var(--space-xl);
         padding-bottom: var(--space-xl);
