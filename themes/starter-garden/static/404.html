@@ -5,50 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 | Shaii Ong</title>
     <style>
-        :root {
-            --space-m: 1rem;
-        }
-
         body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            color: #26162C;
+            font-family: Georgia, 'Times New Roman', Times, serif;
             background-color: #EDD5C9;
             background-image: url("/images/bg-tile-asfalt-light.png");
         }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            width: 100%;
-            padding-right: var(--space-m);
-            padding-left: var(--space-m);
-            margin-left: auto;
-            margin-right: auto;
+        p {
+            font-size: 1.4rem;
+            margin-top: 40px;
+        }
 
-            @media (min-width: 768px) {
-                max-width: 75rem;
-            }
+        a {
+            color: #0E740C;
+        }
+
+        .maincontent {
+            text-align: center;
         }
 
         .potion {
             width: 300px;
             height: auto;
-            margin: auto;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <header></header>
     <main class="maincontent">
-        <div class="container">
-            <h1>That spell backfired!</h1>
-            <h2>The page was not found.</h2>
+        <h1>That spell backfired!</h1>
+        <h2>The page was not found.</h2>
 
-            <p>Return <a href="/">home</a> or visit the <a href="/garden">garden</a>.</p>
+        <p>Return <a href="/">home</a> or visit the <a href="/garden">garden</a>.</p>
 
-            <img src="/images/404-potion.png" alt="Purple 404 potion" class="potion">
-        </div>
+        <img src="/images/404-potion.png" alt="Purple 404 potion" class="potion">
     </main>
-    <footer></footer>
 </body>
 </html>
