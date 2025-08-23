@@ -7,5 +7,6 @@
 
     > [class*='__content'] > p {
         margin-bottom: var(--space-l);
+        font-size: var(--font-size-m-fixed);
     }
 }

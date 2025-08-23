@@ -73,8 +73,14 @@
     ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
       var(--fluid-bp)
   );
+  
+  --f-6-min: 20;
+  --f-6-max: 24;
+  --font-size-m-fixed: calc(
+    ((var(--f-6-min) / 16) * 1rem) + (var(--f-6-max) - var(--f-6-min)) *
+      var(--fluid-bp)
+  );
 
-  --font-size-m-fixed: 1.5rem;
 }
 
 :root {
