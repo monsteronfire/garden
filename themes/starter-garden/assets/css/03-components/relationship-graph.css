@@ -38,7 +38,7 @@ select {
     overflow: hidden;
 }
 
-.tooltip {
+.gtooltip {
     position: absolute;
     background: rgba(0, 0, 0, 0.9);
     color: white;
@@ -52,13 +52,13 @@ select {
     z-index: 1000;
 }
 
-.tooltip h4 {
+.gtooltip h4 {
     margin: 0 0 8px 0;
     color: #3daf8b;
     font-size: 14px;
 }
 
-.tooltip .meta {
+.gtooltip .meta {
     opacity: 0.8;
     font-size: 11px;
     margin: 4px 0;

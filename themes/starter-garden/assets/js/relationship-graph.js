@@ -66,7 +66,7 @@ function initGraph() {
         .attr('fill', config.colors.relationships.mentions);
 
     // Setup tooltip
-    tooltip = d3.select('#tooltip');
+    gtooltip = d3.select('#gtooltip');
 
     // Initialize simulation
     setupSimulation();
@@ -258,7 +258,7 @@ function showTooltip(event, d) {
         <div style="margin-top: 8px; font-size: 12px; color: #666;">Click to open page</div>
     `;
     
-    tooltip
+    gtooltip
         .html(content)
         .style('display', 'block')
         .style('left', (event.pageX + 10) + 'px')
@@ -266,7 +266,7 @@ function showTooltip(event, d) {
 }
 
 function hideTooltip() {
-    tooltip.style('display', 'none');
+    gtooltip.style('display', 'none');
 }
 
 // Filter functions - simplified since we only have mentions now
