@@ -7,10 +7,11 @@ date = "{{ .Date }}"
 date_planted = "{{ .Date }}"
 date_tended = "{{ .Date }}"
 draft = true
-# Epistemic status
+# Epistemic status - certainty and vibe
 certainty = "high | medium | low | speculative"
 vibes = "dying on this hill (for now) | pretty sure this is a thing | don't quote me | half-baked"
-evidence = "empirical | theoretical | anecdotal"
+# Epistemic effort - how much time spent on this
+effort = "high | medium | low"
 # Maintenance status
 growth_stage = "seed | sprout | bloom"
 # Thematic clustering
