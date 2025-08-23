@@ -31,4 +31,17 @@
     </section>
     
   </div>
+
+  {{/*  tableofcontents file  */}}
+  {{- $tableofcontents := resources.Get "js/tableofcontents.js" }}
+    {{- if $tableofcontents }}
+      {{- if hugo.IsDevelopment }}
+        <script src="{{ $tableofcontents.RelPermalink }}"></script>
+    {{- else }}
+      {{- with $tableofcontents | minify | fingerprint }}
+        <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+      {{- end }}
+    {{- end }}
+  {{- end }}
+
 {{ end }}
