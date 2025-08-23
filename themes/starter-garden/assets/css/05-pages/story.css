@@ -25,8 +25,9 @@
     .sidebar {
         position: -webkit-sticky;
         position: sticky;
-        top: var(--space-l);
+        top: 0;
         height: auto;
+        background-color: var(--colour-background);
     }
 
     .sidebar,
@@ -37,6 +38,8 @@
     @media (min-width: 768px) {
         .sidebar {
             width: 30%;
+            top: var(--space-l);
+            background-color: transparent;
         }
 
         .mainarticlecontent {

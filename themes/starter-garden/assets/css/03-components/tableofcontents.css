@@ -41,17 +41,19 @@
 }
 
 .tableofcontents__toggle {
+    cursor: pointer;
     display: flex;
     gap: var(--space-xs);
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-top: var(--space-l);
     margin-bottom: var(--space-l);
     color: var(--colour-grey);
     font-family: var(--font-family-heading);
     font-size: var(--font-size-m-fixed);
     font-weight: 700;
-    background: none;
+    background-color: var(--colour-background);
     border: 1px solid var(--colour-primary);
     border-radius: var(--border-radius);
 
@@ -62,8 +64,10 @@
     }
 
     @media (min-width: 768px) {
+        cursor: default;
         padding: 0;
         border: none;
+        margin-top: 0;
         margin-bottom: 0;
 
         &::after {
