@@ -1,8 +1,12 @@
-<div>
-    <p>
+<div class="epistemic">
+    <p class="epistemic__vibes">
+        {{ partial "components/tooltip.html" (dict "label" "Vibes" "info" "Describes how confident I feel about what I've written.") }}
         {{ .Params.vibes }}
     </p>
-    <p>
-        {{ .Params.evidence }}
+    <p class="epistemic__effort">
+        <span class="epistemic__label hastooltip" tabindex="0">
+            {{ partial "components/tooltip.html" (dict "label" "Effort" "info" "The amount of effort I put into creating this.") }}
+        </span>
+        {{ .Params.effort }}
     </p>
 </div>
