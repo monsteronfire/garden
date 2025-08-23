@@ -1,9 +1,13 @@
-<span class="learnmore">
-  <span class="learnmore__label">
-    {{ .label | markdownify }}
-  </span>
+{{/* 
+  Tooltip component
 
-  <span class="learnmore__content">
-    {{ .content | markdownify }}
+  Usage:
+  {{ partial "components/tooltip.html" (dict "label" "Effort" "info" "The amount of effort I put into creating this.") }}
+*/}}
+
+<span class="hastooltip" tabindex="0">
+  {{ .label | markdownify }}: 
+  <span class="tooltip">
+    {{ .info | markdownify }}
   </span>
 </span>
