@@ -1,29 +1,62 @@
 #TableOfContents {
     display: none;
-    max-height: 90vh;
-    height: 100%;
-    overflow-y: scroll;
-    scrollbar-color: var(--colour-primary) var(--colour-background);
-    scrollbar-width: thin;
-
     @media (min-width: 768px) {
         display: block;
     }
 }
 
 .tableofcontents {
-    width: 40%;
     min-width: var(--space-xl);
+    background-color: var(--colour-secondary);
+    border-radius: var(--border-radius);
+
+    @media (min-width: 768px) {
+        background-color: transparent;
+    }
+
+    nav {
+        max-height: 90vh;
+        height: 100%;
+        overflow-y: scroll;
+        scrollbar-color: var(--colour-dark) var(--colour-light);
+        scrollbar-width: thin;
+        padding: 0 20px;
+
+        @media (min-width: 768px) {
+            scrollbar-color: var(--colour-primary) var(--colour-background);
+            padding: 0;
+        }
+    }
 
     ul {
         padding: 0;
-        margin-top: var(--space-m);
+        margin-top: 0;
+
+        @media (min-width: 768px) {
+           margin-top: var(--space-m); 
+        }
     }
 
     ul li,
     [data-name="related-list-item"] {
         display: flex;
-        margin-bottom: var(--space-s);
+        margin-bottom: 0;
+        padding-top: var(--space-m);
+        padding-bottom: var(--space-m);
+
+        @media (min-width: 768px) {
+           margin-bottom: var(--space-m); 
+           padding-top: 0;
+           padding-bottom: 0;
+        }
+    }
+
+    ul li:not(:last-child) {
+        border-bottom: 1px dashed var(--colour-grey);
+
+        @media (min-width: 768px) {
+            border-bottom: none;
+        }
     }
 
     ul li::before,
