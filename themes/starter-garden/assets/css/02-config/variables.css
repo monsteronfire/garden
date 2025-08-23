@@ -73,6 +73,8 @@
     ((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
       var(--fluid-bp)
   );
+
+  --font-size-m-fixed: 1.5rem;
 }
 
 :root {
