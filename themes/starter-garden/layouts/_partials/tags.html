@@ -1,5 +1,9 @@
-<div class="tags">
-    {{ range .Params.tags }}
-        <a class="tags__link" href="/tags/{{ . | urlize }}">{{ . }}</a>
-    {{ end }}
-</div>
+{{ with .Params.tags }}
+    <div class="tags">
+      {{ range . }}
+          {{ if not (eq . "") }}
+            <a class="tags__link" href="/tags/{{ . | urlize }}">{{ . }}</a>
+          {{ end }}
+      {{ end }}
+    </div>
+{{ end }}
