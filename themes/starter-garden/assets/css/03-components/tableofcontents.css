@@ -89,7 +89,7 @@
     font-family: var(--font-family-heading);
     font-size: var(--font-size-m-fixed);
     font-weight: 700;
-    background-color: var(--colour-background);
+    background-color: transparent;
     border: 1px solid var(--colour-primary);
     border-radius: var(--border-radius);
 
@@ -97,6 +97,10 @@
         content: " \25BC";
         color: var(--colour-primary);
         font-size: var(--font-size-xs);
+    }
+
+    &.open::after {
+        content: " \25B2";
     }
 
     @media (min-width: 768px) {

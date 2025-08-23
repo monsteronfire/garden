@@ -6,18 +6,20 @@
     // Hide TOC by default on small screens
     if (mq.matches && toc) {
         toc.classList.add('hidden');
+        tocToggle.classList.remove('open');
     }
 
     function setupToggle() {
         if (mq.matches && tocToggle && toc) {
             tocToggle.addEventListener('click', () => {
                 toc.classList.toggle('hidden');
+                tocToggle.classList.toggle('open', !toc.classList.contains('hidden'));
             });
 
-            // Close TOC when any child link is clicked
             toc.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
                     toc.classList.add('hidden');
+                    tocToggle.classList.remove('open');
                 });
             });
         }
@@ -28,8 +30,10 @@
     mq.addEventListener('change', () => {
         if (mq.matches && toc) {
             toc.classList.add('hidden');
+            tocToggle.classList.remove('open');
         } else if (toc) {
             toc.classList.remove('hidden');
+            tocToggle.classList.remove('open');
         }
         setupToggle();
     });
