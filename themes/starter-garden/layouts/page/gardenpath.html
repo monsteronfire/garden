@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <div class=" graph wrapper">
+    <h1>{{ .Title }}</h1>
+
+    {{ partial "wikilinks.html" .Content }}
+
+    {{ partial "gardenpath.html" . }}
+  </div>
+{{ end }}

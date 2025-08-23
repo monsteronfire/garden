@@ -18,7 +18,7 @@
 
 .filter-group label {
     font-weight: bold;
-    color: #66c2a5;
+    color: var(--colour-accent);
     font-size: 0.9em;
 }
 
@@ -28,12 +28,19 @@ select {
     font-size: 0.9em;
 }
 
+.graphouter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-4xl);
+}
 
-.relationship-graph {
+.gardenpath {
     position: relative;
-    width: 100%;
-    height: 800px;
-    border: 2px solid #333;
+    width: 90%;
+    height: 70vh;
+    border: 2px solid var(--colour-grey);
     border-radius: 10px;
     overflow: hidden;
 }

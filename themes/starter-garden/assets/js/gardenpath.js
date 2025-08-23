@@ -1,6 +1,6 @@
 const relationshipData = {
-    nodes: JSON.parse(document.querySelector('.relationship-graph').dataset.nodes),
-    edges: JSON.parse(document.querySelector('.relationship-graph').dataset.links)
+    nodes: JSON.parse(document.querySelector('.gardenpath').dataset.nodes),
+    edges: JSON.parse(document.querySelector('.gardenpath').dataset.links)
 }
 
 // Graph configuration
