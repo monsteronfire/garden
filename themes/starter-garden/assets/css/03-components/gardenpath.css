@@ -22,10 +22,19 @@
     font-size: var(--font-size-s);
 }
 
-.growthfilter {
+.graphfilter {
     padding: var(--space-xs) var(--space-s);
     border-radius: var(--border-radius);
     font-size: var(--font-size-s);
+}
+
+.graphbuttons {
+    padding: var(--space-xs) var(--space-m);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-s);
+    border: 1px solid var(--colour-grey);
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .graphouter {

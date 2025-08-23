@@ -84,7 +84,7 @@
   <div class="controls">
     <div class="filter-group">
         <label>Growth Stage</label>
-        <select id="growthFilter" class="growthfilter">
+        <select id="growthFilter" class="graphfilter">
             <option value="all">All Stages</option>
             <option value="seed">🌱 Seed</option>
             <option value="sprout">🌿 Sprout</option>
@@ -94,7 +94,7 @@
     
     <div class="filter-group">
         <label>Content Type</label>
-        <select id="contentFilter">
+        <select id="contentFilter" class="graphfilter">
             <option value="all">All Types</option>
             <option value="note">● Note</option>
             <option value="pin">★ Pin</option>
@@ -106,8 +106,8 @@
     
     <div class="filter-group">
         <label>Actions</label>
-        <button onclick="resetFilters()">Reset Filters</button>
-        <button onclick="centerGraph()">Centre Graph</button>
+        <button class="graphbuttons" onclick="resetFilters()">Reset Filters</button>
+        <button class="graphbuttons" onclick="centerGraph()">Centre Graph</button>
     </div>
   </div>
     
