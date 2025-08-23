@@ -1,6 +1,7 @@
 .hastooltip {
   position: relative;
   cursor: help;
+  font-weight: 700;
 }
 
 .hastooltip .tooltip {
@@ -10,6 +11,7 @@
   transform: translateX(-3%);
   background-color: #222;
   color: #fff;
+  font-weight: 400;
   padding: 6px 12px;
   border-radius: 6px;
   white-space: nowrap;

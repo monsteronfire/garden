@@ -4,13 +4,15 @@
       {{ partial "components/breadcrumbs.html" . }}
       <h1>{{ .Title }}</h1>
 
-      {{ if and .Params.date_planted .Params.date_tended }}
-        {{ partial "details.html" . }}
-      {{ end }}
+      <div class="storymeta__item">
+        {{ if and .Params.date_planted .Params.date_tended }}
+          {{ partial "details.html" . }}
+        {{ end }}
 
-      {{ if .Params.vibes }}
-        {{ partial "epistemic.html" . }}
-      {{ end }}
+        {{ if .Params.vibes }}
+          {{ partial "epistemic.html" . }}
+        {{ end }}
+      </div>
 
       {{ partial "tags.html" . }}
     </div>

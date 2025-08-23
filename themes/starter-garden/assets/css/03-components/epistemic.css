@@ -1,5 +1,6 @@
 .epistemic {
     display: flex;
+    gap: var(--space-xl);
 
     p {
         color: var(--colour-grey);

@@ -134,4 +134,12 @@
     margin-bottom: var(--space-2xl);
     padding-bottom: var(--space-2xl);
     border-bottom: 1px dashed var(--colour-grey);
+
+    [class*='__item'] {
+        margin-top: var(--space-m);
+        margin-bottom: var(--space-m);
+        display: flex;
+        gap: var(--space-xl);
+        align-items: flex-end;
+    }
 }
