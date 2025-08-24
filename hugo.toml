@@ -58,6 +58,10 @@ exploring = "Looks cool, haven't tried"
 endLevel = 2
 ordered = false
 startLevel = 2
+[markup.goldmark]
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+
 
 [frontmatter]
 lastmod = ["date_tended", ":git", "date", ":default"]

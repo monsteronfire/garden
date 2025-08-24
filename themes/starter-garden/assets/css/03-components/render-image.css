@@ -1,0 +1,15 @@
+.postimage {
+    padding: var(--space-xs);
+    text-align: center;
+    border: 1px solid var(--colour-grey);
+    border-radius: var(--border-radius);
+
+    img {
+        border-radius: var(--border-radius);
+    }
+
+    figcaption {
+        margin-top: var(--space-xs);
+        font-size: var(--font-size-xs);
+    }
+}

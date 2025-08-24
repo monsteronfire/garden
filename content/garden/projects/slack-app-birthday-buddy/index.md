@@ -14,6 +14,8 @@ cover = "project-cover-birthday-buddy.jpg"
 ## Overview
 Birthday Buddy is a little Slack App (or bot), similar to the popular Birthday Bot, but smaller.
 
+![](media/slack-app-preview.png "Preview of Birthday Buddy Slack app")
+
 ## Challenge/Problem
 Acknowledging a person's birthday is a low-friction way of tending to social connections. Most people like hearing from their circle, and a birthday is a reoccurring reason to connect. 
 
