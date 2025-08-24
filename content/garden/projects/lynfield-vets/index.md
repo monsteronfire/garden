@@ -1,5 +1,5 @@
 +++
-title = "Lynfield Vets"
+title = "Websites for Lynfield Vets"
 slug = "lynfield-vets"
 type = "project"
 project_type = "repo | site | youtube"
@@ -7,23 +7,26 @@ date = '2025-08-20T13:03:52Z'
 date_planted = '2025-08-20T13:03:52Z'
 date_tended = '2025-08-20T13:03:52Z'
 draft = false
-description = "The business website for a veterinary clinic in Auckland, New Zealand."
+description = "The business websites of two veterinary clinics in New Zealand."
 link = ""
-tags = ["Website", "CMS", "NextJS", "Webflow", "Low Code"]
+tags = ["Website", "TinaCMS", "NextJS", "CMS", "NextJS", "Webflow", "Low Code"]
 cover = "project-cover-lynfield-vets.jpg"
 +++
 
 ## Overview
-A brief description of what the project is and its primary purpose
+Lynfield Vets is a long-term client with a casual maintenance arrangement. 
 
 ## Challenge/Problem
-What specific problem were you solving or what learning goal were you pursuing?
+One of the main goals when taking on this project was to make sure the solution was as self-service as possible after it was in production. site needed a CMS that wasn't WordPress.
 
 ## Approach
 Methodology, key decisions, and why you chose certain technologies or strategies
 
-## Technical Details
-Stack, architecture, interesting implementation details (but keep it high-level enough to leave room for deeper discussion)
+
+## Technical details
+The client had engaged a developer from Fiver to build their first site. That original site had been built on WordPress, but there was no agreement in place for long-term support. A year or so later, the site got hacked due to outdated plugins and a lack of security updates. The client wanted a new site, but didn't want it built on WordPress.
+
+The 
 
 ## Outcomes
 Results, metrics, lessons learned, or skills gained
