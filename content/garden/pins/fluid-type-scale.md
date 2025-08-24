@@ -9,7 +9,7 @@ date_tended = '2025-08-20T07:06:02Z'
 draft = false
 external_url = "https://utopia.fyi/type/calculator/"
 status = "using"
-tags = ["css"]
+tags = ["css", "typography"]
 domain = ["tool"]
 +++
 
