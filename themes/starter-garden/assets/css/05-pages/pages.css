@@ -53,7 +53,7 @@
     box-sizing: border-box;
     display: flex;
     gap: var(--space-xs);
-    padding: var(--space-s) var(--space-m);
+    padding: var(--space-m);
     border-width: 1.5px;
     border-style: dashed;
     border-color: var(--colour-primary-muted);
@@ -63,8 +63,8 @@
     &:hover {
         border-image-source: url("/images/vine-light.svg");
         border-image-slice: 60 20 60 20;
-        border-image-outset: 1rem 0 1rem 0 ;
-        border-image-width: 2rem;
+        border-image-outset: 0.8rem 0 0.8rem 0;
+        border-image-width: 1.5rem;
         border-image-repeat: round;
 
         background: var(--colour-overlay);
