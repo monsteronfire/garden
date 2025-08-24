@@ -24,6 +24,23 @@
   src: url('/fonts/inter/inter-italic-variable-font_opsz-wght.ttf') format('truetype');
 }
 
+/* JetBrains Mono - for code */
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono/jetbrains-mono.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "JetBrains Mono Italic";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono/jetbrains-mono-italic.ttf') format('truetype');
+}
+
 @font-face {
    font-family: 'Material Icons';
    font-style: normal;

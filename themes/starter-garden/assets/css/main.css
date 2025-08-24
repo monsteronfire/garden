@@ -46,6 +46,14 @@ p, ul, li {
     font-size: var(--font-size-base);
 }
 
+code {
+    padding: var(--space-5xs) var(--space-xs);
+    font-family: var(--font-family-code);
+    font-size: var(--font-size-s);
+    background-color: var(--colour-highlight);
+    border-radius: var(--border-radius-s);
+}
+
 .maincontent {
     display: flex;
 
