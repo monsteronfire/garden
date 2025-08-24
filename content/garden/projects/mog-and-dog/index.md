@@ -5,41 +5,22 @@ type = "project"
 project_type = ["site"]
 date = 2023-02-15T10:00:00-07:00
 draft = false
-description = "The business website for a desexing clinic based in Northland, New Zealand."
-link = ""
-tags = ["Website", "CMS", "NextJS", "Webflow", "Low Code"]
+description = "The business website of Mog and Dog desexing clinic in Northland, New Zealand."
+link = "https://www.desexing.co.nz"
+tags = ["Web development", "TinaCMS", "NextJS", "CMS", "NextJS", "Webflow", "Low Code"]
 cover = "project-cover-mog-and-dog.jpg"
 +++
 
 ## Overview
-A brief description of what the project is and its primary purpose
+Mog and Dog Desexing Clinic is another website developed for the Lynfield Vets client, expanding their online presence to serve a specialised clinic in Northland, New Zealand.
+
+![](media/mog-and-dog-hero.png "Mog and Dog landing page")
 
 ## Challenge/Problem
-What specific problem were you solving or what learning goal were you pursuing?
-
-## Approach
-Methodology, key decisions, and why you chose certain technologies or strategies
+The primary challenge for this project was design-focused rather than technical. While the site needed to maintain a coherent brand identity consistent with Lynfield Vets, it also had to stand out as a distinct clinic with its own personality and audience.
 
 ## Technical Details
-Stack, architecture, interesting implementation details (but keep it high-level enough to leave room for deeper discussion)
-
-## Outcomes
-Results, metrics, lessons learned, or skills gained
+The technical architecture for this project closely mirrored that of the main [[lynfield-vets | Lynfield Vets website]]. Having both sites housed in one Webflow account made it convenient for the client to make updates in an environment they were already familiar with.
 
 ## Reflections
-What you'd do differently, what surprised you, or how this influenced your thinking
-
-## Optional sections depending on project type:
-
-### Constraints
-Timeline, budget, technical limitations (especially relevant for client work)
-
-### Collaboration
-Team dynamics, your specific role if it was a group effort
-
-### Evolution
-How the project changed from initial concept to final result
-
-## Future Considerations
-Potential improvements or extensions you've thought about
-
+Every now and then it is fun to switch contexts and solve non-technical problems. While design isn’t my primary focus, I appreciate the creative problem-solving it requires. This project gave me the opportunity to further develop my design skills.
