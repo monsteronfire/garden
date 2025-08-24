@@ -42,7 +42,7 @@ h3 {
     font-size: var(--font-size-base);
 }
 
-p {
+p, ul, li {
     font-size: var(--font-size-base);
 }
 

@@ -20,11 +20,14 @@
                 "esbenp.prettier-vscode",
                 "yzhang.markdown-all-in-one",
                 "eamodio.gitlens",
-                "tamasfe.even-better-toml"
+                "tamasfe.even-better-toml",
+                "streetsidesoftware.code-spell-checker"
             ],
             "settings": {
                 "hugo.server.renderToDisk": true,
-                "files.associations": {}
+                "files.associations": {},
+                "cSpell.language": "en-GB",
+                "cSpell.enabled": true
             }
         }
     },
