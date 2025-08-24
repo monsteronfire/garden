@@ -24,10 +24,15 @@
         list-style: none;
         padding: 0;
     }
+
+    .menu ul li {
+        &::marker {
+            content: url('/images/leaves.svg');
+        }
+    }
     
     .menu a {
         border-radius: var(--border-radius);
-        padding: var(--space-xs) var(--space-s);
         color: var(--colour-primary);
         font-family: var(--font-family-heading);
         font-size: var(--font-size-s);
