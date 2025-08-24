@@ -1,0 +1,55 @@
+.repocard {
+    display: flex;
+    align-items: center;
+    margin: var(--space-s) 0;
+    padding: var(--space-xs);
+    border: 1px solid var(--colour-grey);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: var(--colour-grey);
+    transition: all 0.2s ease;
+    max-width: fit-content;
+
+    .icon svg {
+        width: var(--space-xl);
+        height: var(--space-xl);
+    }
+
+    .icon svg path {
+        fill: var(--colour-secondary);
+    }
+
+    &:hover {
+        text-decoration: none;
+        transform: translateY(-1px);
+        box-shadow: var(--shadow-large);
+
+        .repocard__externalicon {
+            opacity: 1;
+        }
+    }
+}
+
+.repocard__content {
+    display: flex;
+    align-items: center;
+    gap: var(--space-s);
+}
+
+.repocard__icon {
+    padding: var(--space-m);
+    background-color: var(--colour-grey);
+    border-radius: var(--border-radius);
+}
+
+.repocard__name {
+    font-weight: 600;
+}
+
+.repocard__externalicon {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    flex-shrink: 0;
+    margin-left: var(--space-xs);
+    margin-right: var(--space-s);
+}

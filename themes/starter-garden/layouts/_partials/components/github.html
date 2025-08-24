@@ -1,0 +1,26 @@
+{{/*  
+    GitHub Repository Card
+    Usage:
+    {{ partial "components/github.html" (dict "url" $url "name" $name) }}
+*/}}
+
+{{ $url := .url }}
+{{ $name := .name | default "" }}
+
+{{/* Extract repo name from URL if not provided */}}
+{{ if not $name }}
+  {{ $parts := split (strings.TrimPrefix "https://github.com/" $url) "/" }}
+  {{ $owner := index $parts (sub (len $parts) 2) }}
+  {{ $repo := index $parts (sub (len $parts) 1) }}
+  {{ $name = printf "%s/%s" $owner $repo }}
+{{ end }}
+
+<a href="{{ $url }}" target="_blank" rel="noopener" class="repocard">
+  <div class="repocard__content">
+    <span class="repocard__icon">
+        {{ partial "components/icon.html" "github" }}
+    </span>
+    <span class="repocard__name">{{ $name }}</span>
+    <div class="repocard__externalicon">↗</div>
+  </div>
+</a>
