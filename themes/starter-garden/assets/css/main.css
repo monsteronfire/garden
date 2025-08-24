@@ -46,6 +46,18 @@ p, ul, li {
     font-size: var(--font-size-base);
 }
 
+ul {
+    list-style: none;
+}
+
+li {
+    padding-inline-start: 0.5ch;
+
+    &::marker {
+        content: url('/images/leaf.svg');
+    }
+}
+
 code {
     padding: var(--space-5xs) var(--space-xs);
     font-family: var(--font-family-code);
