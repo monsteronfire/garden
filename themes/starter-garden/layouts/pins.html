@@ -11,11 +11,12 @@
     <div class="pins__list sectionlist">
       {{ range .Pages }}
         <div class="pins__item">
+          <a href="{{ .RelPermalink }}" class="boxlink"></a>
           <div class="pins__icon">
-            <i class="material-icons">bookmark_border</i>
+            <i class="material-icons">bookmark</i>
           </div>
           <div>
-            <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+            <h3>{{ .LinkTitle }}</h3>
             <p>{{ partial "wikilinks.html" .Params.description }}</p>
           </div>
         </div>
