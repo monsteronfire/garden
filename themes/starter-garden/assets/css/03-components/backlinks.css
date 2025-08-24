@@ -1,0 +1,6 @@
+.backlinks {
+    padding: var(--space-m);
+    background-color: var(--colour-secondary-light);
+    border: 1px dashed var(--colour-grey);
+    border-radius: var(--border-radius);
+}

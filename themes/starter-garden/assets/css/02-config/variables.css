@@ -133,7 +133,9 @@
   /* Application colours */
   --colour-primary: var(--colour-dark);
   --colour-primary-muted: var(--colour-dark-muted);
+  --colour-primary-light: #34223c;
   --colour-secondary: var(--colour-medium);
+  --colour-secondary-light: #f6e3da; 
   --colour-tertiary: rgb(253, 231, 231);
 
   --colour-green: #0E740C;
@@ -217,6 +219,7 @@
     --colour-primary: var(--colour-medium);
     --colour-primary-muted: var(--colour-medium-muted);
     --colour-secondary: var(--colour-dark);
+    --colour-secondary-light: var(--colour-primary-light);
 
       --colour-highlight: var(--colour-highlight-dark);
 

@@ -74,11 +74,11 @@
 {{/* Render backlinks if any exist */}}
 {{ if gt (len $backlinks) 0 }}
 <div class="backlinks">
-  <h3>💭 Mentioned in</h3>
+  <h2>Backlinks</h2>
   
-  <ul class="backlink-list">
+  <ul class="backlink__list">
     {{ range $backlinks }}
-      <li class="backlink">
+      <li class="backlink__item">
         <a href="{{ .page.RelPermalink }}" class="backlink__title">
           {{ .page.Title }}
         </a>
