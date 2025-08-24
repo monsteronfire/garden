@@ -6,7 +6,7 @@ project_type = ["repo", "app"]
 date = 2025-08-05T15:34:05Z
 draft = false
 description = "A little Slack App that sends birthday wishes, built with Python and hosted on Railway"
-link = ""
+link = "https://github.com/monsteronfire/birthday-buddy"
 tags = ["python", "railway", "cron", "community"]
 cover = "project-cover-birthday-buddy.jpg"
 +++
