@@ -14,7 +14,9 @@
           <div>
             <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
             {{ partial "details.html" . }}
-            {{ partial "wikilinks.html" .Params.description }}
+            <p>
+              {{ partial "wikilinks.html" .Params.description }}
+            </p>
 
             {{ partial "tags.html" . }}
           </div>
