@@ -152,7 +152,9 @@
   --colour-essays-light: #b77e1c;
   --colour-essays-dark: #EDA933;
   --colour-essays: var(--colour-essays-light);
-  --colour-notes: #77C8B2;
+  --colour-notes-light: #138f6d;
+  --colour-notes-dark: #77C8B2;
+  --colour-notes: var(--colour-notes-light);
   --colour-projects-light: #752d96;
   --colour-projects-dark: #B67ED0;
   --colour-projects: var(--colour-projects-light);
@@ -227,6 +229,7 @@
     --colour-projects: var(--colour-projects-dark);
     --colour-essays: var(--colour-essays-dark);
     --colour-pins: var(--colour-pins-dark);
+    --colour-notes: var(--colour-notes-dark);
 
     --colour-overlay: rgba(255, 255, 255, var(--opacity-10));
     --colour-accent: var(--colour-orange);
