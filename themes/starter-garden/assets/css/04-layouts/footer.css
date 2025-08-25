@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--colour-secondary);
-    border-top: 1px solid var(--colour-tertiary);
+    border-top: 1px solid var(--colour-highlight);
     border-bottom: var(--space-xs) solid var(--colour-accent);
 
     [class*='_contents'] {
