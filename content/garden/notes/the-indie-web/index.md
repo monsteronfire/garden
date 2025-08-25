@@ -53,4 +53,4 @@ I want to join this movement and do my part to make personal homepages accessibl
 
 ## Stripping it way back
 
-I yearn for a simpler web. I constantly find myself annoyed at the ever-increasing complexity that is modern web development. I’d like to build an ecosystem that uses web components to power a decentralised, personal web that gives control back to the individual. This means as static as possible. Whenever a component feels like it could use a database, we should instead have JSON. The goal needs to be autonomy.
+I yearn for a simpler web. I constantly find myself annoyed at the ever-increasing complexity that is modern web development. I’d like to build an ecosystem that uses web components to power a decentralised, personal web that gives control back to the individual. This means as static as possible. Whenever a component feels like it could use a database, we should instead have a JSON file. The goal would be autonomy and ownership over your own data.
