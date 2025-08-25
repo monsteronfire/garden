@@ -1,10 +1,10 @@
 <div class="details">
-    <span>
+    <div>
         {{ partial "components/icon.html" "planted" }}
         <time datetime="">{{ .Params.date_planted | time.Format "2 Jan, 2006" }}</time>
-    </span>
-    <span>
+    </div>
+    <div>
         {{ partial "components/icon.html" "watering-can" }}
         <time datetime="">{{ .Params.date_tended | time.Format "2 Jan, 2006" }}</time>
-    </span>
+    </div>
 </div>

@@ -48,6 +48,7 @@ p, ul, li {
 
 ul {
     list-style: none;
+    margin-bottom: var(--space-xl);
 }
 
 li {

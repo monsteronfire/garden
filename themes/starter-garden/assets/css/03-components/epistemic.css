@@ -1,9 +1,16 @@
 .epistemic {
     display: flex;
-    gap: var(--space-xl);
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: var(--space-s);
+    color: var(--colour-grey);
 
     p {
-        color: var(--colour-grey);
         font-size: var(--font-size-s);
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        gap: var(--space-xl);
     }
 }
