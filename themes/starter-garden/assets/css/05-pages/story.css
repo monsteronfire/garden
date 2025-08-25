@@ -82,3 +82,19 @@
         }
     }
 }
+
+.essay blockquote {
+    border-left-color: var(--colour-essays);
+}
+
+.note blockquote {
+    border-left-color: var(--colour-notes);
+}
+
+.pin blockquote {
+    border-left-color: var(--colour-pins);
+}
+
+.project blockquote {
+    border-left-color: var(--colour-projects);
+}

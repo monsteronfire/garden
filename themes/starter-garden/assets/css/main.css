@@ -67,6 +67,20 @@ code {
     border-radius: var(--border-radius-s);
 }
 
+blockquote {
+    padding-top: var(--space-xs);
+    padding-left: var(--space-l);
+    font-style: italic;
+    border-left-width: var(--space-3xs);
+    border-left-style: solid;
+    border-left-color: var(--colour-accent);
+
+    p, li {
+        color: var(--colour-grey);
+        font-size: var(--font-size-m-fixed);
+    }
+}
+
 .maincontent {
     display: flex;
 
