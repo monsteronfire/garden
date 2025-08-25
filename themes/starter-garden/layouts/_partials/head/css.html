@@ -1,13 +1,6 @@
-{{- with resources.Get "css/main.css" }}
-  {{ $CSS := resources.Match "css/**.css" | resources.Concat "main.css" | minify | fingerprint }}
+{{ $CSS := resources.Match "css/**.css" | resources.Concat "main.css" | minify | fingerprint }}
+{{ if hugo.IsDevelopment }}
+  <link rel="stylesheet" href="{{ $CSS.RelPermalink }}">
+{{ else }}
   <link rel="stylesheet" href="{{ $CSS.RelPermalink }}" integrity="{{ $CSS.Data.Integrity }}" crossorigin="anonymous">
-
-
-  {{- if hugo.IsDevelopment }}
-    <link rel="stylesheet" href="{{ $CSS.RelPermalink }}">
-  {{- else }}
-    {{- with . | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ $CSS.RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-    {{- end }}
-  {{- end }}
-{{- end }}
+{{ end }}
