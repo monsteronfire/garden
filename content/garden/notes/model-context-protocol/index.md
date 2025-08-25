@@ -6,7 +6,7 @@ type = "note"
 date = "2025-07-15T07:34:07Z"
 date_planted = "2025-07-15T07:34:07Z"
 date_tended = "2025-08-21T07:34:07Z"
-draft = false
+draft = true
 # Epistemic status
 certainty = "speculative"
 vibes = "half-baked"
