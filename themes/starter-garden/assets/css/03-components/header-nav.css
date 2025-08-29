@@ -23,12 +23,20 @@
     .menu ul {
         list-style: none;
         padding: 0;
+        margin-bottom: 0;
     }
 
     .menu ul li {
         &::marker {
             content: url('/images/leaves.svg');
         }
+
+        &::after {
+            content: url('/images/leaves.svg');
+            display: inline-block;
+            transform: scaleX(-1) scaleY(-1);
+        }
+
     }
     
     .menu a {
@@ -39,6 +47,10 @@
         font-weight: 500;
         text-decoration: none;
         text-transform: uppercase;
+
+        &:hover {
+            font-weight: 700;
+        }
     }
 
     @media (min-width: 768px) {
