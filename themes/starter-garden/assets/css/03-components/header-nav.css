@@ -27,6 +27,8 @@
     }
 
     .menu ul li {
+        padding-inline-start: .2ch;
+        
         &::marker {
             content: url('/images/leaves.svg');
         }
