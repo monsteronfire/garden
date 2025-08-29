@@ -13,11 +13,11 @@
         <div class="pins__item">
           <a href="{{ .RelPermalink }}" class="boxlink"></a>
           <div class="pins__icon">
-            <i class="material-icons">bookmark</i>
+            {{ partial "components/icon.html" "bookmark" }}
           </div>
           <div>
             <h3>{{ .LinkTitle }}</h3>
-            <p>{{ partial "wikilinks.html" .Params.description }}</p>
+            {{ partial "wikilinks.html" .Params.description }}
           </div>
         </div>
       {{ end }}

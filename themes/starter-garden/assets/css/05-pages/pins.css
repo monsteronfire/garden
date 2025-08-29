@@ -12,16 +12,19 @@
     }
 
     @media (min-width: 768px) {
-        width: 45%;
+        width: 32%;
     }
 }
 
 .pins__icon {
+    flex: 0 0 auto;
+    margin-top: var(--space-3xs);
+
     .material-icons {
         color: var(--colour-primary-muted);
     }
 
     svg path {
-        stroke: var(--colour-primary);
+        stroke: var(--colour-pins);
     }
 }
