@@ -20,10 +20,6 @@
     flex: 0 0 auto;
     margin-top: var(--space-3xs);
 
-    .material-icons {
-        color: var(--colour-primary-muted);
-    }
-
     svg path {
         stroke: var(--colour-pins);
     }

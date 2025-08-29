@@ -14,10 +14,6 @@
 
 .icon--lightmode {
   display: inline-block;
-
-  .material-icons {
-    color: var(--colour-dark);
-  }
 }
 
 .icon--darkmode {
@@ -29,9 +25,6 @@
 }
 [data-theme="dark"] .icon--darkmode {
   display: inline-block;
-  .material-icons {
-    color: var(--colour-accent);
-  }
 }
 
 .sr-only {
