@@ -40,7 +40,8 @@
 .pins__list,
 .projects__list,
 .essays__list,
-.terms__list {
+.terms__list,
+.growthstage__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -51,7 +52,8 @@
 .pins__item,
 .projects__item,
 .essays__item,
-.terms__item {
+.terms__item,
+.growthstage__item {
     box-sizing: border-box;
     display: flex;
     gap: var(--space-xs);

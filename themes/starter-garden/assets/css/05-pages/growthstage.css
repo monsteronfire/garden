@@ -1,0 +1,11 @@
+.growthstage__item {
+    width: 100%;
+    
+    @media (min-width: 768px) {
+        width: 32%;
+    }
+
+    .details {
+        margin-top: var(--space-m);
+    }
+}

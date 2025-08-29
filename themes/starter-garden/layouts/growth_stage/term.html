@@ -1,10 +1,29 @@
 {{ define "main" }}
-  <div class="growthstagehome">
-    <h1>{{ .Title }}</h1>
-    growth stage terms layout
-    {{ .Content }}
-    {{ range .Pages }}
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ end }}
+  <div class="growthstagehome wrapper">
+    <div class="sectionheader">
+      <h1>Growth stage "{{ .Title }}"</h1>
+    </div>
+    <div class="growthstage__content sectioncontent">
+      {{ .Content }}
+      <p>The entries below are all connected by the growth stage "{{ lower .Title }}". Notes in this stage may be moved to another stage, or they may remain here.</p>
+    </div>
+
+    <div class="growthstage__list sectionlist">
+      {{ range .Pages }}
+        <div class="growthstage__item">
+          <a href="{{ .RelPermalink }}" class="boxlink"></a>
+          <div class="growthstage__icon">
+            {{ partial "growth-icon.html" . }}
+          </div>
+          <div>
+            <h3>{{ .LinkTitle }}</h3>
+            
+            {{ .Params.description }}
+
+            {{ partial "details.html" . }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
   </div>
 {{ end }}
