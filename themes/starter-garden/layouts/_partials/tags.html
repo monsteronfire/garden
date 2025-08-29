@@ -1,5 +1,5 @@
 {{ with .Params.tags }}
-    <div class="tags">
+    <div class="tags__list">
       {{ range . }}
           {{ if not (eq . "") }}
             <a class="tags__link" href="/tags/{{ . | urlize }}">{{ . }}</a>

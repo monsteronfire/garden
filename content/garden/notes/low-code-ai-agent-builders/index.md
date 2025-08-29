@@ -15,7 +15,7 @@ effort = "medium"
 growth_stage = "seed"
 # Thematic clustering
 topics = ["AI"]
-tags = ["resource", "ai"]
+tags = ["resource", "AI"]
 +++
 
 I’ve been thinking a lot about what a diverse AI engineering stack would look like, and I believe that it has to include some low code tooling. While I’m a developer at my day jobs, I’m a huge fan of low/no code solutions. I like the idea that non-technical people can also participate in emerging technology without feeling left out. It democratises the usage of AI and the associated workflows.

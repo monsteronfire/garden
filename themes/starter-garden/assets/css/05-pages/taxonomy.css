@@ -1,0 +1,20 @@
+.taxonomy__list {
+    columns: 2;
+    column-gap: var(--space-l);
+    padding: 0;
+    padding-left: var(--space-l);
+    padding-right: var(--space-l);
+    margin: 0 auto;
+    margin-bottom: var(--space-4xl);
+    list-style: none;
+
+    li {
+        break-inside: avoid;
+        margin-bottom: 0.5em;
+    }
+
+    @media (min-width: 768px) {
+        columns: 4;
+        column-gap: var(--space-4xl);
+    }
+}

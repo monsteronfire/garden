@@ -39,7 +39,8 @@
 .notes__list,
 .pins__list,
 .projects__list,
-.essays__list {
+.essays__list,
+.terms__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -49,7 +50,8 @@
 .notes__item,
 .pins__item,
 .projects__item,
-.essays__item {
+.essays__item,
+.terms__item {
     box-sizing: border-box;
     display: flex;
     gap: var(--space-xs);

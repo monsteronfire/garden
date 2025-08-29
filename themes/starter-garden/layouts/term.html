@@ -1,7 +1,27 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-  {{ end }}
+  <div class="termshome wrapper">
+    <div class="sectionheader">
+      <h1>Tagged with "{{ .Title }}"</h1>
+    </div>
+    <div class="terms__content sectioncontent">
+      {{ .Content }}
+      <p>This tag connects essays, notes, pins, and projects throughout the garden. Browse the entries below to explore how this tag links related content across different sections.</p>
+    </div>
+
+    <div class="terms__list sectionlist">
+      {{ range .Pages }}
+        <div class="terms__item">
+          <a href="{{ .RelPermalink }}" class="boxlink"></a>
+          <div class="terms__icon">
+            {{ partial "components/garden-icon.html" . }}
+            <p class="terms__typelabel">{{ strings.FirstUpper .Type }}</p>
+          </div>
+          <div>
+            <h3>{{ .LinkTitle }}</h3>
+            <p>{{ .Params.description }}</p>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
 {{ end }}
