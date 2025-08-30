@@ -29,14 +29,11 @@
 }
 
 .sectionlist {
-    margin-bottom: var(--space-4xl);
-}
-
-.sectionlist--flex {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: var(--space-2xl) var(--space-m);
+    margin-bottom: var(--space-4xl);
 }
 
 .sectionitem {

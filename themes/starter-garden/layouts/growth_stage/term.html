@@ -8,7 +8,7 @@
       <p>The entries below are all connected by the growth stage "{{ lower .Title }}". Notes in this stage may be moved to another stage, or they may remain here.</p>
     </div>
 
-    <div class="sectionlist sectionlist--flex">
+    <div class="sectionlist">
       {{ range .Pages }}
         <div class="sectionitem sectionitem--3column">
           <a href="{{ .RelPermalink }}" class="boxlink"></a>
