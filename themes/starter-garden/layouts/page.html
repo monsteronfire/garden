@@ -44,4 +44,16 @@
     {{- end }}
   {{- end }}
 
+    {{/*  copy-button file  */}}
+  {{- $copybutton := resources.Get "js/copy-button.js" }}
+    {{- if $copybutton }}
+      {{- if hugo.IsDevelopment }}
+        <script src="{{ $copybutton.RelPermalink }}"></script>
+    {{- else }}
+      {{- with $copybutton | minify | fingerprint }}
+        <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+      {{- end }}
+    {{- end }}
+  {{- end }}
+
 {{ end }}

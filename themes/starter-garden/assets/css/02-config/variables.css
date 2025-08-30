@@ -147,6 +147,10 @@
   --colour-highlight-dark: #592146;
   --colour-highlight: var(--colour-highlight-light);
 
+  /* Colour - Code Snippets */
+  --colour-snippet-light: #312423;
+  --colour-snippet-dark: #312423;
+  --colour-snippet: var(--colour-snippet-light);
 
   /* Colour - content types */
   --colour-essays-light: #b77e1c;
@@ -223,7 +227,9 @@
     --colour-secondary: var(--colour-dark);
     --colour-secondary-light: var(--colour-primary-light);
 
-      --colour-highlight: var(--colour-highlight-dark);
+    --colour-highlight: var(--colour-highlight-dark);
+    
+    --colour-snippet: var(--colour-snippet-dark);
 
     --colour-grey: var(--colour-grey-light);
     --colour-projects: var(--colour-projects-dark);

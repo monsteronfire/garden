@@ -57,6 +57,12 @@ startLevel = 2
 [markup.goldmark.parser]
 wrapStandAloneImageWithinParagraph = false
 
+[markup.highlight]
+lineNos = true
+lineNumbersInTable = true
+style = "gruvbox"
+wrapperClass = "snippet"
+
 
 [frontmatter]
 lastmod = ["date_tended", ":git", "date", ":default"]
