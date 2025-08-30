@@ -12,8 +12,8 @@
       {{ range .Pages }}
         <div class="notes__item">
           <a href="{{ .RelPermalink }}" class="boxlink"></a>
-            <div class="notes__icon">
-              {{ partial "growth-icon.html" . }}
+            <div class="notes__icon sectionicon">
+              {{ partial "components/icon.html" .Params.growth_stage }}
             </div>
             <div>
               <h3>{{ .LinkTitle }}</h3>

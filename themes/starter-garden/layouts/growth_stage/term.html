@@ -13,7 +13,7 @@
         <div class="growthstage__item">
           <a href="{{ .RelPermalink }}" class="boxlink"></a>
           <div class="growthstage__icon">
-            {{ partial "growth-icon.html" . }}
+            {{ partial "components/icon.html" .Params.growth_stage }}
           </div>
           <div>
             <h3>{{ .LinkTitle }}</h3>

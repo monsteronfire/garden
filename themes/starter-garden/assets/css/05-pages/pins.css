@@ -1,15 +1,5 @@
-.pinshome {
-}
-
-.pins__list {
-}
-
 .pins__item {
     width: 100%;
-
-    h3 a {
-        text-decoration: none;
-    }
 
     @media (min-width: 768px) {
         width: 32%;
@@ -17,7 +7,6 @@
 }
 
 .pins__icon {
-    flex: 0 0 auto;
     margin-top: var(--space-3xs);
 
     svg path {

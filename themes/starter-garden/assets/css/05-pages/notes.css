@@ -1,13 +1,7 @@
-.notes__list {}
-
 .notes__item {
     width: 100%;
     
     @media (min-width: 768px) {
         width: 32%;
     }
-}
-
-.notes__icon {
-
 }

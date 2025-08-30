@@ -75,6 +75,10 @@
     }
 }
 
+.sectionicon {
+    flex: 0 0 auto;
+}
+
 [data-theme="dark"] {
     .notes__item,
     .pins__item,
