@@ -43,12 +43,21 @@
     gap: var(--space-2xl) var(--space-m);
 }
 
-.notes__item,
+.sectionitem--3column {
+    width: 100%;
+    
+    @media (min-width: 768px) {
+        width: 32%;
+    }
+}
+
+.sectionitem,
 .pins__item,
 .projects__item,
 .essays__item,
 .terms__item,
 .growthstage__item {
+    position: relative;
     box-sizing: border-box;
     display: flex;
     gap: var(--space-xs);
@@ -75,7 +84,7 @@
 }
 
 [data-theme="dark"] {
-    .notes__item,
+    .sectionitem,
     .pins__item,
     .projects__item,
     .essays__item {
