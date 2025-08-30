@@ -1,55 +1,57 @@
-.snipper-wrapper {
-    display: block;
+.snippet-wrapper {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: var(--space-l);
+    padding: var(--space-s) var(--space-xs);
+    background-color: var(--colour-snippet);
+    border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
 .snippet {
-  position: relative;
-  overflow: scroll;
-  scrollbar-color: var(--colour-snippet) var(--colour-snippet);
-  background-color: var(--colour-snippet);
-  border-radius: var(--border-radius);
-  margin-bottom: 1.5rem;
-    padding: var(--space-s) var(--space-xs);
+    position: relative;
+    overflow: scroll;
+    scrollbar-color: var(--colour-accent) var(--colour-snippet);
 }
 
 .copy-code-button {
-  position: absolute;
-  z-index: 2;
-  right: 0;
-  top: 0;
-  font-family: var(--font-family-heading);
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 14px;
-  text-transform: uppercase;
-  width: 65px;
-  color: var(--colour-secondary);
-  background-color: var(--colour-grey);
-  border: 1.25px solid #232326;
-  border-top-left-radius: 0;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 4px;
-  white-space: nowrap;
-  padding: 4px 4px 5px 4px;
-  margin: 0 0 0 1px;
-  cursor: pointer;
-  opacity: 0.6;
+    position: absolute;
+    z-index: var(--zindex-2);
+    right: 0;
+    top: 0;
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: uppercase;
+    width: 65px;
+    color: var(--colour-secondary);
+    background-color: var(--colour-grey);
+    border: 1.25px solid #232326;
+    border-top-left-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    white-space: nowrap;
+    padding: 4px 4px 5px 4px;
+    margin: 0 0 0 1px;
+    cursor: pointer;
+    opacity: 0.6;
 }
 
 .copy-code-button:hover,
 .copy-code-button:focus,
 .copy-code-button:active,
 .copy-code-button:active:hover {
-  color: #222225;
-  background-color: #b3b3b3;
-  opacity: 0.8;
+    color: #222225;
+    background-color: #b3b3b3;
+    opacity: 0.8;
 }
 
 .copyable-text-area {
-  position: absolute;
-  z-index: -1;
-  opacity: 0.01;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.01;
 }
 
 .snippet pre {
