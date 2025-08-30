@@ -36,12 +36,7 @@
     }
 }
 
-.notes__list,
-.pins__list,
-.projects__list,
-.essays__list,
-.terms__list,
-.growthstage__list {
+.sectionlist--flex {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
