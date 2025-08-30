@@ -39,8 +39,7 @@
     gap: var(--space-2xl) var(--space-m);
 }
 
-.sectionitem,
-.growthstage__item {
+.sectionitem {
     width: 100%;
     position: relative;
     box-sizing: border-box;
@@ -61,6 +60,10 @@
         border-image-repeat: round;
 
         background: var(--colour-overlay);
+    }
+
+    .details {
+        margin-top: var(--space-m);
     }
 }
 
