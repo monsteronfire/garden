@@ -1,11 +1,3 @@
-.pins__item {
-    width: 100%;
-
-    @media (min-width: 768px) {
-        width: 32%;
-    }
-}
-
 .pins__icon {
     margin-top: var(--space-3xs);
 

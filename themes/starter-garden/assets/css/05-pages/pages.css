@@ -52,7 +52,6 @@
 }
 
 .sectionitem,
-.pins__item,
 .projects__item,
 .essays__item,
 .terms__item,
@@ -85,7 +84,6 @@
 
 [data-theme="dark"] {
     .sectionitem,
-    .pins__item,
     .projects__item,
     .essays__item {
         &:hover {
