@@ -44,7 +44,6 @@
 }
 
 .sectionitem,
-.essays__item,
 .terms__item,
 .growthstage__item {
     position: relative;
@@ -91,8 +90,7 @@
 }
 
 [data-theme="dark"] {
-    .sectionitem,
-    .essays__item {
+    .sectionitem {
         &:hover {
             border-image-source: url("/images/vine-dark.svg");
         }

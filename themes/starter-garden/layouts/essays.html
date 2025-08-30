@@ -10,9 +10,9 @@
 
     <div class="sectionlist sectionlist--flex">
       {{ range .Pages }}
-        <div class="essays__item">
+        <div class="sectionitem sectionitem--2column">
           <div>
-            <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+            <h3>{{ .LinkTitle }}</h3>
             {{ partial "details.html" . }}
             <p>
               {{ partial "wikilinks.html" .Params.description }}
