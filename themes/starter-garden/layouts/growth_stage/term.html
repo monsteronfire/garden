@@ -8,12 +8,12 @@
       <p>The entries below are all connected by the growth stage "{{ lower .Title }}". Notes in this stage may be moved to another stage, or they may remain here.</p>
     </div>
 
-    <div class="growthstage__list sectionlist">
+    <div class="sectionlist">
       {{ range .Pages }}
-        <div class="growthstage__item">
+        <div class="sectionitem sectionitem--3column">
           <a href="{{ .RelPermalink }}" class="boxlink"></a>
-          <div class="growthstage__icon">
-            {{ partial "growth-icon.html" . }}
+          <div class="sectionicon">
+            {{ partial "components/icon.html" .Params.growth_stage }}
           </div>
           <div>
             <h3>{{ .LinkTitle }}</h3>

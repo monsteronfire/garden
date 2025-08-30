@@ -8,11 +8,11 @@
       {{ .Content }}
     </div>
     
-    <div class="pins__list sectionlist">
+    <div class="sectionlist">
       {{ range .Pages }}
-        <div class="pins__item">
+        <div class="sectionitem sectionitem--3column">
           <a href="{{ .RelPermalink }}" class="boxlink"></a>
-          <div class="pins__icon">
+          <div class="pins__icon sectionicon">
             {{ partial "components/icon.html" "bookmark" }}
           </div>
           <div>

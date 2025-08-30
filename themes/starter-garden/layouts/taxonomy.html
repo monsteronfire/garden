@@ -7,7 +7,7 @@
       {{ .Content }}
     </div>
 
-    <ul class="taxonomy__list sectionlist">
+    <ul class="taxonomy__list">
       {{ range sort .Pages "Title" }}
         <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
       {{ end }}

@@ -29,31 +29,16 @@
 }
 
 .sectionlist {
-    margin-bottom: var(--space-4xl);
-
-    [class*='__item'] {
-        position: relative;
-    }
-}
-
-.notes__list,
-.pins__list,
-.projects__list,
-.essays__list,
-.terms__list,
-.growthstage__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: var(--space-2xl) var(--space-m);
+    margin-bottom: var(--space-4xl);
 }
 
-.notes__item,
-.pins__item,
-.projects__item,
-.essays__item,
-.terms__item,
-.growthstage__item {
+.sectionitem {
+    width: 100%;
+    position: relative;
     box-sizing: border-box;
     display: flex;
     gap: var(--space-xs);
@@ -73,13 +58,30 @@
 
         background: var(--colour-overlay);
     }
+
+    .details {
+        margin-top: var(--space-m);
+    }
+}
+
+.sectionitem--3column {
+    @media (min-width: 768px) {
+        width: 32%;
+    }
+}
+
+.sectionitem--2column {
+    @media (min-width: 768px) {
+        width: 49%;
+    }
+}
+
+.sectionicon {
+    flex: 0 0 auto;
 }
 
 [data-theme="dark"] {
-    .notes__item,
-    .pins__item,
-    .projects__item,
-    .essays__item {
+    .sectionitem {
         &:hover {
             border-image-source: url("/images/vine-dark.svg");
         }
