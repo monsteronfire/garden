@@ -43,16 +43,7 @@
     gap: var(--space-2xl) var(--space-m);
 }
 
-.sectionitem--3column {
-    width: 100%;
-    
-    @media (min-width: 768px) {
-        width: 32%;
-    }
-}
-
 .sectionitem,
-.projects__item,
 .essays__item,
 .terms__item,
 .growthstage__item {
@@ -78,13 +69,29 @@
     }
 }
 
+.sectionitem--3column {
+    width: 100%;
+    
+    @media (min-width: 768px) {
+        width: 32%;
+    }
+}
+
+.sectionitem--2column {
+    width: 100%;
+
+
+    @media (min-width: 768px) {
+        width: 49%;
+    }
+}
+
 .sectionicon {
     flex: 0 0 auto;
 }
 
 [data-theme="dark"] {
     .sectionitem,
-    .projects__item,
     .essays__item {
         &:hover {
             border-image-source: url("/images/vine-dark.svg");
