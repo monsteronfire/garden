@@ -43,11 +43,6 @@ subtitle = "A spell for"
 description = "Portfolio of work"
 link = "/garden/projects"
 
-[params.garden.growth_stage]
-seed = "🌱"
-sprout = "🌿"
-bloom = "🌸"
-
 [params.pins.status]
 using = "Have tried and can recommend"
 exploring = "Looks cool, haven't tried"
