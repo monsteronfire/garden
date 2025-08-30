@@ -11,6 +11,7 @@
     <div class="sectionlist">
       {{ range .Pages }}
         <div class="sectionitem sectionitem--2column">
+          <a href="{{ .RelPermalink }}" class="boxlink"></a>
           <div>
             <h3>{{ .LinkTitle }}</h3>
             {{ partial "details.html" . }}

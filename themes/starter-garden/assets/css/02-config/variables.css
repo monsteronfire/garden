@@ -147,6 +147,10 @@
   --colour-highlight-dark: #592146;
   --colour-highlight: var(--colour-highlight-light);
 
+  /* Colour - Code Snippets */
+  --colour-snippet-light: #3e2e2c;
+  --colour-snippet-dark: #3f2e2d;
+  --colour-snippet: var(--colour-snippet-light);
 
   /* Colour - content types */
   --colour-essays-light: #b77e1c;
@@ -209,6 +213,7 @@
   /* Z-index */
   --zindex-1: 10;
   --zindex-2: 20;
+  --zindex-3: 30;
 
   /* Media Query - Screen Sizes */
   --tabletandup: 50rem;
@@ -223,7 +228,9 @@
     --colour-secondary: var(--colour-dark);
     --colour-secondary-light: var(--colour-primary-light);
 
-      --colour-highlight: var(--colour-highlight-dark);
+    --colour-highlight: var(--colour-highlight-dark);
+    
+    --colour-snippet: var(--colour-snippet-dark);
 
     --colour-grey: var(--colour-grey-light);
     --colour-projects: var(--colour-projects-dark);
