@@ -1,20 +1,7 @@
-.terms__item {
-    /* flex: 1 0 100%; */
-    width: 100%;
-    
-    @media (min-width: 768px) {
-        width: 32%;
-    }
-}
-
 .terms__icon {
     /* Do not grow. Do not shrink. Set fixed width */
     flex: 0 0 80px;
     text-align: center;
-
-    img.deck__image {
-        /* width: 200px; */
-    }
 }
 
 .terms__typelabel {
