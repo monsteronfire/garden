@@ -1,24 +1,26 @@
 .snippet-wrapper {
     display: inline-block;
+    position: relative;
     width: 100%;
     margin-bottom: var(--space-l);
-    padding: var(--space-s) var(--space-xs);
+    padding: var(--space-m) var(--space-l) var(--space-xs) var(--space-l);
     background-color: var(--colour-snippet);
     border-radius: var(--border-radius);
     overflow: hidden;
 }
 
 .snippet {
-    position: relative;
     overflow: scroll;
-    scrollbar-color: var(--colour-accent) var(--colour-snippet);
+    scrollbar-color: var(--colour-grey) var(--colour-snippet);
+    padding: var(--space-xs);
 }
 
 .copy-code-button {
+    display: block;
     position: absolute;
     z-index: var(--zindex-2);
-    right: 0;
-    top: 0;
+    right: var(--space-xs);
+    top: var(--space-xs);
     font-family: var(--font-family-heading);
     font-size: var(--font-size-xs);
     font-weight: 700;
@@ -34,6 +36,7 @@
     border-bottom-left-radius: 4px;
     white-space: nowrap;
     padding: 4px 4px 5px 4px;
+    padding: var(--space-2xs) var(--space-xs) var(--space-2xs) var(--space-xs);
     margin: 0 0 0 1px;
     cursor: pointer;
     opacity: 0.6;

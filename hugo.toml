@@ -58,8 +58,6 @@ startLevel = 2
 wrapStandAloneImageWithinParagraph = false
 
 [markup.highlight]
-lineNos = true
-lineNumbersInTable = true
 style = "gruvbox"
 wrapperClass = "snippet"
 
