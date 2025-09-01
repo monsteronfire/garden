@@ -1,9 +1,12 @@
 {
     "name": "Hugo Development Container",
-    "image": "golang:1.24.5",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
         "ghcr.io/devcontainers/features/git:1": {
             "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/go:1": {
+            "version": "1.25.0"
         },
         "ghcr.io/devcontainers/features/node:1": {
             "version": "lts"
@@ -44,5 +47,5 @@
     "mounts": [
         "source=devcontainer-hugo-cache,target=/tmp/hugo_cache,type=volume"
     ],
-    "remoteUser": "root"
+    "remoteUser": "vscode"
 }
