@@ -9,7 +9,7 @@
     </div>
 
     <div class="sectionlist">
-      {{ range .Pages }}
+      {{ range sort .Pages ".Params.date_tended" "desc" }}
         <div class="sectionitem sectionitem--3column">
           <a href="{{ .RelPermalink }}" class="boxlink"></a>
             <div class="notes__icon sectionicon">
