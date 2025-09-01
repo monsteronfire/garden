@@ -10,11 +10,18 @@
 
 */}}
 
-<div class="callout callout--{{ .type | default "info" }}">
-  {{ if .title }}
-    <h4 class="callout__title">{{ .title }}</h4>
-  {{ end }}
-  <div class="callout__content">
-    {{ .content | markdownify }}
+<div class="callout callout--{{ .type | default "default" }}">
+  <div class="callout__icon">
+    <span>
+      {{ .icon | default (index site.Params.callouts (.type | default "default")) }}
+    </span>
+  </div>
+  <div>
+    {{ if .title }}
+      <h4 class="callout__title">{{ .title }}</h4>
+    {{ end }}
+    <div class="callout__content">
+      <p>{{ .content | markdownify }}</p>
+    </div>
   </div>
 </div>

@@ -138,6 +138,7 @@
   --colour-secondary-light: #f6e3da; 
   --colour-tertiary: rgb(253, 231, 231);
 
+  /* Colour - Accents */
   --colour-green: #0E740C;
   --colour-orange: #FE8336;
   --colour-accent: var(--colour-green);
@@ -166,6 +167,23 @@
   --colour-pins-dark: #7796E8;
   --colour-pins: var(--colour-pins-light);
   --colour-portraits: #BA4046;
+
+  /* Colours - Pastels */
+  --colour-pastel-green-light: #e2ebe2;
+  --colour-pastel-green-dark: #013600;
+  --colour-pastel-green: var(--colour-pastel-green-light);
+  --colour-pastel-blue-light: #d2deea;
+  --colour-pastel-blue-dark: #042a45;
+  --colour-pastel-blue: var(--colour-pastel-blue-light);
+  --colour-pastel-yellow-light: #F8E5D3;
+  --colour-pastel-yellow-dark: #655708;
+  --colour-pastel-yellow: var(--colour-pastel-yellow-light);
+  --colour-pastel-red-light: #f1bcbc;
+  --colour-pastel-red-dark: #4b032a;
+  --colour-pastel-red: var(--colour-pastel-red-light);
+  --colour-pastel-brown-light: #e9e6e1;
+  --colour-pastel-brown-dark: #342711;
+  --colour-pastel-brown: var(--colour-pastel-brown-light);
 
 
   /* Neutral colours */
@@ -237,6 +255,12 @@
     --colour-essays: var(--colour-essays-dark);
     --colour-pins: var(--colour-pins-dark);
     --colour-notes: var(--colour-notes-dark);
+
+    --colour-pastel-green: var(--colour-pastel-green-dark);
+    --colour-pastel-blue: var(--colour-pastel-blue-dark);
+    --colour-pastel-yellow: var(--colour-pastel-yellow-dark);
+    --colour-pastel-red: var(--colour-pastel-red-dark);
+    --colour-pastel-brown: var(--colour-pastel-brown-dark);
 
     --colour-overlay: rgba(255, 255, 255, var(--opacity-10));
     --colour-accent: var(--colour-orange);
