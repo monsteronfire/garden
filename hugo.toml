@@ -43,6 +43,14 @@ subtitle = "A spell for"
 description = "Portfolio of work"
 link = "/garden/projects"
 
+[params.callouts]
+default = "🍄"
+tip = "🍃"
+info = "ℹ️"
+warning = "⚠️"
+danger = "⛔️"
+link = "🔗"
+
 [params.pins.status]
 using = "Have tried and can recommend"
 exploring = "Looks cool, haven't tried"
@@ -58,8 +66,6 @@ startLevel = 2
 wrapStandAloneImageWithinParagraph = false
 
 [markup.highlight]
-lineNos = true
-lineNumbersInTable = true
 style = "gruvbox"
 wrapperClass = "snippet"
 
