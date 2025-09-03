@@ -52,10 +52,18 @@ ul {
 }
 
 li {
-    padding-inline-start: 0.5ch;
+    list-style: none;
+    position: relative;
+    padding-left: var(--space-l);
 
-    &::marker {
-        content: url('/images/leaf.svg');
+    &::before {
+        content: url('/images/leaves.svg');
+        position: absolute;
+        left: 0;
+        top: 0.2em;
+        display: inline-block;
+        width: 1em;
+        height: 1em;
     }
 }
 

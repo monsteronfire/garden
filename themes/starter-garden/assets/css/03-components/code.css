@@ -15,6 +15,24 @@
     padding: var(--space-xs);
 }
 
+.snippet::-webkit-scrollbar {
+    width: var(--space-s);
+    background: var(--colour-grey);
+}
+
+.snippet::-webkit-scrollbar-thumb {
+    background: var(--colour-snippet);
+    border-radius: var(--border-radius);
+}
+
+.snippet::-webkit-scrollbar-track {
+    background: var(--colour-snippet);
+}
+
+.snippet::-webkit-scrollbar-corner {
+    background: var(--colour-snippet);
+}
+
 .copy-code-button {
     display: block;
     position: absolute;
