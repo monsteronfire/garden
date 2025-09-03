@@ -21,12 +21,12 @@
         max-height: 90vh;
         height: 100%;
         overflow-y: scroll;
-        scrollbar-color: var(--colour-dark) var(--colour-light);
+        scrollbar-color: var(--colour-grey) transparent;
         scrollbar-width: thin;
         padding: 0 20px;
 
         @media (min-width: 768px) {
-            scrollbar-color: var(--colour-primary) var(--colour-background);
+            scrollbar-color: var(--colour-grey) transparent;
             padding: 0;
         }
     }
