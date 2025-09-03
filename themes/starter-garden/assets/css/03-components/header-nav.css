@@ -27,12 +27,6 @@
     }
 
     .menu ul li {
-        padding-inline-start: .2ch;
-        
-        &::marker {
-            content: url('/images/leaves.svg');
-        }
-
         &::after {
             content: url('/images/leaves.svg');
             display: inline-block;
