@@ -15,3 +15,7 @@
         }
     }
 }
+
+.mainarticlecontent li {
+    margin-bottom: var(--space-s);
+}
