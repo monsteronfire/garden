@@ -1,0 +1,21 @@
+.menu,
+.mainarticlecontent {
+    li {
+        position: relative;
+        padding-left: var(--space-l);
+
+        &::before {
+            content: url('/images/leaves.svg');
+            position: absolute;
+            left: 0;
+            top: 0.2em;
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+        }
+    }
+}
+
+.mainarticlecontent li {
+    margin-bottom: var(--space-s);
+}
