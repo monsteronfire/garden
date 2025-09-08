@@ -12,9 +12,17 @@
         return safariAgent
     }
 
+    const video = document.getElementById('sitevideo-video');
+    const fallback = document.getElementById('sitevideo-fallback');
+
     if (isSafari()) {
-        document.querySelector('#sitevideo-fallback').style.display = 'block';
-        document.querySelector('#sitevideo-video').style.display = 'none';
+        fallback.style.display = 'block';
+        video.style.display = 'none';
+    } else if (video && fallback) {
+        video.addEventListener('canplay', function () {
+            fallback.style.display = 'none';
+            video.style.display = 'block';
+        });
     }
 
 })()
