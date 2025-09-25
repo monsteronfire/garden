@@ -46,9 +46,12 @@ p, ul, li {
     font-size: var(--font-size-base);
 }
 
+ul, ol {
+    margin-bottom: var(--space-xl);
+}
+
 ul {
     list-style: none;
-    margin-bottom: var(--space-xl);
 }
 
 ul li {
