@@ -134,13 +134,18 @@
   --colour-primary: var(--colour-dark);
   --colour-primary-muted: var(--colour-dark-muted);
   --colour-primary-light: #34223c;
+  --colour-primary-hue: 0deg;
+
   --colour-secondary: var(--colour-medium);
   --colour-secondary-light: #f6e3da; 
+  --colour-secondary-hue: 119deg;
   --colour-tertiary: rgb(253, 231, 231);
 
+  --colour-hue: var(--colour-secondary-hue);
+
   /* Colour - Accents */
-  --colour-green: #0E740C;
-  --colour-orange: #FE8336;
+  --colour-green: #0e730c;
+  --colour-orange: #fe8336;
   --colour-accent: var(--colour-green);
 
   /* Colour - Highlighters */
@@ -243,6 +248,8 @@
     /* Content Type Card colours */
     --colour-primary: var(--colour-medium);
     --colour-primary-muted: var(--colour-medium-muted);
+    --colour-hue: var(--colour-primary-hue);
+
     --colour-secondary: var(--colour-dark);
     --colour-secondary-light: var(--colour-primary-light);
 

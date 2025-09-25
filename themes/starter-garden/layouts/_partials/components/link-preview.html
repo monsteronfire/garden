@@ -1,0 +1,40 @@
+{{- $url := .Get 0 -}}
+{{- $title := "" -}}
+{{- $description := "" -}}
+{{- $image := "" -}}
+{{- $domain := "" -}}
+
+{{- with $url -}}
+  {{- $domain = (urls.Parse $url).Host -}}
+  
+  {{- if eq $domain "www.youtube.com" -}}
+    {{- $videoId := "" -}}
+    {{- if strings.Contains $url "watch?v=" -}}
+      {{- $videoId = index (split (index (split $url "watch?v=") 1) "&") 0 -}}
+    {{- end -}}
+    {{- if $videoId -}}
+      {{- $oembedUrl := printf "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=%s&format=json" $videoId -}}
+      {{- with resources.GetRemote $oembedUrl | transform.Unmarshal -}}
+        {{- $title = .title -}}
+        {{- $description = .author_name -}}
+      {{- end -}}
+      {{- $image = printf "https://img.youtube.com/vi/%s/maxresdefault.jpg" $videoId -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<div class="link-preview">
+  <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">
+    {{- if $image -}}
+    <div class="link-preview__image">
+      <img src="{{ $image }}" alt="{{ $title }}" loading="lazy">
+    </div>
+    {{- end -}}
+    <div class="link-preview__content">
+      <div class="link-preview__title">{{ $title | default $domain }}</div>
+      {{- if $description -}}
+      <div class="link-preview__description">{{ $description }}</div>
+      {{- end -}}
+    </div>
+  </a>
+</div>
