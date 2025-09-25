@@ -1,6 +1,6 @@
 .menu,
 .mainarticlecontent {
-    li {
+    ul li {
         position: relative;
         padding-left: var(--space-l);
 

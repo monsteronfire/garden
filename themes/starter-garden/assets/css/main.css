@@ -51,7 +51,7 @@ ul {
     margin-bottom: var(--space-xl);
 }
 
-li {
+ul li {
     list-style: none;
 }
 
