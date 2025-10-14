@@ -7,12 +7,8 @@ date = '{{ .Date }}'
 date_planted = '{{ .Date }}'
 date_tended = '{{ .Date }}'
 draft = true
-growth = ["seed"]
-word_count = 0
-certainty = ["medium"]
-completeness = ["developing"]
+link = ""
 tags = [""]
-domain = [""]
 +++
 
 ## Thesis
