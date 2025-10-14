@@ -6,4 +6,4 @@ draft = false
 layout = "notes"
 +++
 
-## Rough notes about ideas I'm exploring and topics I'd like to learn more about. These notes are constantly changing. They may grow into fully-realised essays or they may not.
+## Rough notes about ideas I'm exploring and topics I'd like to learn more about. These notes are constantly changing. They may grow into fully-realised experiments or they may not.

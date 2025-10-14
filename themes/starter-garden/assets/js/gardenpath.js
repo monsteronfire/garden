@@ -19,7 +19,7 @@ const config = {
         contentTypes: {
             note: { shape: 'circle', size: 8 },
             pin: { shape: 'star', size: 15 },
-            essay: { shape: 'diamond', size: 12 },
+            experiment: { shape: 'diamond', size: 12 },
             portrait: { shape: 'triangle', size: 10 },
             project: { shape: 'pentagon', size: 12 }
         }
@@ -141,7 +141,7 @@ function updateGraph() {
                 node.append('polygon')
                     .attr('points', starPoints.join(' '));
                 break;
-            case 'essay':
+            case 'experiment':
                 node.append('polygon')
                     .attr('points', `0,-${contentConfig.size} ${contentConfig.size},${contentConfig.size} -${contentConfig.size},${contentConfig.size}`);
                 break;

@@ -85,8 +85,8 @@
     }
 }
 
-.essay blockquote {
-    border-left-color: var(--colour-essays);
+.experiment blockquote {
+    border-left-color: var(--colour-experiments);
 }
 
 .note blockquote {

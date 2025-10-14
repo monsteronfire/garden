@@ -2,7 +2,7 @@
 title = "Prompt engineering is just effective communication"
 description = "Write about 180 characters"
 slug = "effective-prompt-engineering"
-type = "essay"
+type = "experiment"
 date = 2025-08-20T20:50:00-07:00
 date_planted = 2025-08-20T20:50:00-07:00
 date_tended = 2025-08-20T20:00:50-07:00

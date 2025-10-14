@@ -2,7 +2,7 @@
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 description = "Write about 180 characters"
 slug = "{{ .Name | anchorize }}"
-type = "essay"
+type = "experiment"
 date = '{{ .Date }}'
 date_planted = '{{ .Date }}'
 date_tended = '{{ .Date }}'

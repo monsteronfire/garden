@@ -119,9 +119,9 @@
     }
 }
 
-.essay .tableofcontents {
+.experiment .tableofcontents {
     ul li a {
-        color: var(--colour-essays);
+        color: var(--colour-experiments);
     }
 }
 
