@@ -5,4 +5,5 @@ draft = false
 layout = "experiments"
 +++
 
-## Long-form writing on subjects I've researched and gained a better understanding of. Still happy to be fact-checked, though.
+## “We make, not to have, but to know.”
+## ― Alan Kay

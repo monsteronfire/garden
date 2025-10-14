@@ -13,8 +13,10 @@
         <div class="sectionitem sectionitem--2column">
           <a href="{{ .RelPermalink }}" class="boxlink"></a>
           <div>
+          <div class="sectioncover">
+            <img src="{{ (.Resources.GetMatch "media/cover*").RelPermalink}}" alt="">
+          </div>
             <h3>{{ .LinkTitle }}</h3>
-            {{ partial "details.html" . }}
             <p>
               {{ partial "wikilinks.html" .Params.description }}
             </p>
