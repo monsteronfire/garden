@@ -7,12 +7,12 @@ date = 2025-08-20T20:50:00-07:00
 date_planted = 2025-08-20T20:50:00-07:00
 date_tended = 2025-08-20T20:00:50-07:00
 draft = true
-growth = ["sprout"]
-word_count = 0
-certainty = ["medium"]
-completeness = ["developing"]
+certainty = "medium"
+vibes = "pretty sure this is a thing"
+effort = "medium to high"
+growth_stage = "sprout"
+topics = []
 tags = ["LLM", "ai", "prompt", "communication"]
-domain = [""]
 +++
 
 ## Osdjk ksjdksdksdj
