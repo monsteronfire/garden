@@ -159,9 +159,9 @@
   --colour-snippet: var(--colour-snippet-light);
 
   /* Colour - content types */
-  --colour-essays-light: #b77e1c;
-  --colour-essays-dark: #EDA933;
-  --colour-essays: var(--colour-essays-light);
+  --colour-experiments-light: #b77e1c;
+  --colour-experiments-dark: #EDA933;
+  --colour-experiments: var(--colour-experiments-light);
   --colour-notes-light: #138f6d;
   --colour-notes-dark: #77C8B2;
   --colour-notes: var(--colour-notes-light);
@@ -259,7 +259,7 @@
 
     --colour-grey: var(--colour-grey-light);
     --colour-projects: var(--colour-projects-dark);
-    --colour-essays: var(--colour-essays-dark);
+    --colour-experiments: var(--colour-experiments-dark);
     --colour-pins: var(--colour-pins-dark);
     --colour-notes: var(--colour-notes-dark);
 

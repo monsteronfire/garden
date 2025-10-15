@@ -14,13 +14,13 @@ title = "Notes"
 subtitle = "A spell for"
 description = "Quick thoughts & ideas"
 link = "/garden/notes"
-[[params.garden.content_types.essays]]
+[[params.garden.content_types.experiments]]
 icon = "▲"
-image = "content-type-essays.png"
-title = "Essays"
+image = "content-type-experiments.png"
+title = "Experiments"
 subtitle = "A spell for"
 description = "More structured writing"
-link = "/garden/essays"
+link = "/garden/experiments"
 [[params.garden.content_types.pins]]
 icon = "★"
 image = "content-type-pins.png"
@@ -105,9 +105,9 @@ weight = 20
 # weight = 21
 
 # [[menus.main]]
-# name = 'Essays'
+# name = 'Experiments'
 # parent = 'garden'
-# pageRef = '/essays'
+# pageRef = '/experiments'
 # weight = 22
 
 # [[menus.main]]

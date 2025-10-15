@@ -14,7 +14,7 @@ A flexible Hugo theme for creating digital gardens with growth tracking, epistem
 - ✅ Growth stage tracking (seed → tree → fruit)
 - ✅ Epistemic status indicators
 - ✅ Content freshness tracking
-- ✅ Flexible content types (notes, pins, essays, portraits, projects)
+- ✅ Flexible content types (notes, pins, experiments, portraits, projects)
 - ✅ Relationship mapping between content
 - ✅ Customisable taxonomy structure
 

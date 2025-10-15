@@ -2,17 +2,18 @@
 title = "Sinatra-inspired frameworks"
 description = "A brief history of my exploration into the genre of micro-frameworks shaped by Sinatra's minimalist philosophy, and how they influenced each other."
 slug = "sinatra-inspired"
-type = "essay"
+type = "note"
 date = 2025-06-20T10:00:00-07:00
 date_planted = 2025-06-20T10:00:00-07:00
 date_tended = 2025-08-25T10:00:00-07:00
 draft = false
-growth = "sprout"
-word_count = 0
 certainty = "medium"
-completeness = "developing"
-tags = ["ruby", "frameworks"]
-domain = [""]
+vibes = "pretty sure this is a thing"
+growth = "sprout"
+effort = "medium to high"
+growth_stage = "bloom"
+topics = ["Development"]
+tags = ["ruby", "frameworks", "inspiration"]
 +++
 
 ## Introduction
