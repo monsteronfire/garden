@@ -6,7 +6,7 @@ type = "note"
 date = "2025-10-06T15:53:34Z"
 date_planted = "2025-10-06T15:53:34Z"
 date_tended = "2025-10-06T15:53:34Z"
-draft = true
+draft = false
 # Epistemic status - certainty and vibe
 certainty = "high | medium | low | speculative"
 vibes = "dying on this hill (for now) | pretty sure this is a thing | don't quote me | half-baked"
