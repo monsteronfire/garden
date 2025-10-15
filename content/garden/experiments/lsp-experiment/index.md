@@ -8,15 +8,7 @@ date_planted = '2025-08-20T13:02:52Z'
 date_tended = '2025-08-20T13:02:52Z'
 draft = false
 link = ""
-tags = [""]
+tags = ["AI", "Ollama", "Language Server", "Experiment"]
 +++
 
-## Thesis
-
-## Outline
-
-1. one
-2. two
-3. three
-
-## Content
+This note is coming soon. This is a placeholder to demonstrate how the experiments page is going to look.
