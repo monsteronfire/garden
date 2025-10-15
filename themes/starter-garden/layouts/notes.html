@@ -8,7 +8,7 @@
       {{ .Content }}
     </div>
 
-    <div class="sectionlist">
+    <div class="sectionlist fade-in-up">
       {{ range sort .Pages ".Params.date_tended" "desc" }}
         <div class="sectionitem sectionitem--3column">
           <a href="{{ .RelPermalink }}" class="boxlink"></a>
