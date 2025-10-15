@@ -141,8 +141,6 @@
   --colour-secondary-hue: 119deg;
   --colour-tertiary: rgb(253, 231, 231);
 
-  --colour-hue: var(--colour-secondary-hue);
-
   /* Colour - Accents */
   --colour-green: #0e730c;
   --colour-orange: #fe8336;
@@ -248,7 +246,6 @@
     /* Content Type Card colours */
     --colour-primary: var(--colour-medium);
     --colour-primary-muted: var(--colour-medium-muted);
-    --colour-hue: var(--colour-primary-hue);
 
     --colour-secondary: var(--colour-dark);
     --colour-secondary-light: var(--colour-primary-light);
