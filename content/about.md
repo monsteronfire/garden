@@ -7,4 +7,4 @@ layout = "about"
 draft = false
 +++
 
-eererer effffff dddsds fffsdsdsdsd
+I'm a full-stack developer who has worked in different languages over the years.
