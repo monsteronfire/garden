@@ -16,16 +16,6 @@ effort = "low"
 growth_stage = "seed"
 # Thematic clustering
 topics = ["Development"]
-# Examples for tags
-# angle = ["skeptical", "optimistic", "contrarian", "supportive", "critical", "balanced", "provocative", "mainstream", "fringe", "devil's-advocate", "cheerleader", "neutral", "biased", "objective"]
-
-# approach = ["first-principles", "top-down", "bottom-up", "iterative", "experimental", "theoretical", "practical", "systematic", "intuitive", "analytical", "creative", "methodical", "ad-hoc", "structured", "exploratory"]
-
-# perspective = ["beginner-friendly", "expert-level", "historical", "futuristic", "cross-disciplinary", "domain-specific", "big-picture", "detailed", "personal", "academic", "industry", "outsider", "insider", "generalist", "specialist"]
-
-# lens = ["systems-thinking", "reductionist", "holistic", "economic", "technical", "social", "ethical", "psychological", "philosophical", "scientific", "artistic", "business", "engineering", "design", "user-focused", "data-driven", "story-driven", "metaphorical"]
-
-# other_examples = ["rituals", "processes", "documentation", "tribal-knowledge", "posterity", "learning-in-progress", "contradictory", "team-building", "tinkering", "humans", "ethics"]
 tags = ["smalltalk", "computing", "history", "vision"]
 +++
 
