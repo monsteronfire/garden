@@ -1,6 +1,6 @@
 +++
 title = 'About'
-heading = "About"
+heading = "Shaii Ong"
 date = 2025-10-18T08:30:00-07:00
 type = "page"
 layout = "about"

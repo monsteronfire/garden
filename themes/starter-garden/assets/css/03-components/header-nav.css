@@ -27,12 +27,8 @@
     }
 
     .menu ul li {
-        &::after {
-            content: url('/images/leaves.svg');
-            display: inline-block;
-            transform: scaleX(-1) scaleY(-1);
-        }
-
+        display: inline-block;
+        margin-right: var(--space-l);
     }
     
     .menu a {

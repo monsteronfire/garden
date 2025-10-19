@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="wrapper">
-    <h1>{{ .Title }}</h1>
+    <h1>{{ .Params.heading }}</h1>
 
     {{ partial "wikilinks.html" .Content }}
   
