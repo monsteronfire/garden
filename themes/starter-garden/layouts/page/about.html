@@ -1,6 +1,8 @@
 {{ define "main" }}
   <div class="wrapper">
-    <h1>{{ .Params.heading }}</h1>
+    <h1>
+      {{ partial "components/sparkle" .Params.heading }}
+    </h1>
 
     {{ partial "wikilinks.html" .Content }}
   
