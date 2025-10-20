@@ -3,8 +3,13 @@
     <h1>
       {{ partial "components/sparkle" "Shaii" }} Ong
     </h1>
-
-    {{ partial "wikilinks.html" .Content }}
-  
+    <section class="story about">
+      <article class="mainarticlecontent">
+        {{ partial "wikilinks.html" .Content }}
+      </article>
+      <aside class="sidebar">
+        ss
+      </aside>
+    </section>
   </div>
 {{ end }}
