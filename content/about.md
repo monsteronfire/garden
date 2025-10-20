@@ -9,6 +9,6 @@ draft = false
 
 I write code, draw illustrations, design websites, and follow threads of interest all over the internet.
 
-While writing code is my main outlet for creativity, I dabble in many things.
+While writing code is my main outlet for creativity, I dabble in many interests.
 
-Right now, I'm learning Elixir and exploring how to use offline models to build secure tooling.
+Right now, I'm learning Elixir and exploring how to use offline models to build secure tools.
