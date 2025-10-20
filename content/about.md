@@ -7,7 +7,7 @@ layout = "about"
 draft = false
 +++
 
-I write code, draw illustrations, design websites, and follow threads of interest all over the internet.
+I write code, draw illustrations, design websites, and follow threads of curiosity all over the internet.
 
 While writing code is my main outlet for creativity, I dabble in many interests.
 
