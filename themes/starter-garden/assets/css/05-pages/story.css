@@ -1,4 +1,5 @@
-.story {
+.story,
+.about {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -49,16 +50,35 @@
 
     @media (min-width: 768px) {
         .sidebar {
-            width: 30%;
             top: var(--space-l);
             background-color: transparent;
+        }
+    }
+
+}
+
+.story {
+    @media (min-width: 768px) {
+        .sidebar {
+            width: 30%;
         }
 
         .mainarticlecontent {
             width: 70%;
         }
     }
+}
 
+.about {
+    @media (min-width: 768px) {
+        .sidebar {
+            width: 40%;
+        }
+
+        .mainarticlecontent {
+            width: 60%;
+        }
+    }
 }
 
 .storymeta {
