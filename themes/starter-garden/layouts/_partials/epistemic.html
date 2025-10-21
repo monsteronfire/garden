@@ -32,4 +32,16 @@
         {{ .Params.completeness }}
     </div> 
     {{ end }}
+
+    {{ if .Params.external_url }}
+        <div class="epistemic__external-url">
+            <a
+                href="{{ .Params.external_url | safeURL }}"
+                target="_blank"
+                rel="external"
+                class="external">
+                Visit original link
+            </a>
+        </div>
+    {{ end }}
 </div>

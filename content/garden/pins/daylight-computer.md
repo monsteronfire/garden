@@ -8,7 +8,7 @@ date_planted = '2025-10-21T02:31:29Z'
 date_tended = '2025-10-21T02:31:29Z'
 draft = false
 external_url = "https://daylightcomputer.com"
-status = "using | exploring"
+status = "exploring"
 tags = [""]
 domain = [""]
 +++

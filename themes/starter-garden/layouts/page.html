@@ -9,7 +9,7 @@
           {{ partial "details.html" . }}
         {{ end }}
 
-        {{ if or .Params.vibes .Params.effort .Params.completeness .Params.certainty }}
+        {{ if or .Params.vibes .Params.effort .Params.completeness .Params.certainty .Params.external_url }}
           {{ partial "epistemic.html" . }}
         {{ end }}
       </div>
