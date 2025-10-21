@@ -9,8 +9,8 @@ date_tended = '2025-10-21T02:31:29Z'
 draft = false
 external_url = "https://daylightcomputer.com"
 status = "exploring"
-tags = [""]
-domain = [""]
+tags = ["well-being", "computing", "hardware"]
+domain = ["tools"]
 +++
 
 ## Reason to bookmark

@@ -9,7 +9,7 @@ date_tended = '2025-08-20T06:57:01Z'
 draft = false
 external_url = "https://frame.work"
 status = "exploring"
-tags = ["linux", "modular"]
+tags = ["linux", "modular", "computing", "hardware"]
 domain = ["tools"]
 +++
 

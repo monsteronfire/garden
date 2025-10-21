@@ -9,7 +9,7 @@ date_tended = '2025-08-20T06:36:48Z'
 draft = false
 external_url = "https://livebook.dev"
 status = "exploring"
-tags = ["Elixir", "documentation"]
+tags = ["Elixir", "documentation", "Machine Learning"]
 domain = ["tool"]
 +++
 

@@ -9,7 +9,7 @@ date_tended = '2025-08-21T01:50:12Z'
 draft = false
 external_url = "https://writinghabit.com"
 status = "using"
-tags = ["writing", "worflow", "process"]
+tags = ["writing", "workflow", "process", "habit forming"]
 domain = ["reference"]
 +++
 
