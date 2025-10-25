@@ -1,4 +1,5 @@
 .wrapper {
+    flex-grow: 1;
     margin-top: var(--space-xl);
 
     @media (min-width: 768px) {
