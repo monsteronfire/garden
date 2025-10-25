@@ -5,7 +5,7 @@ theme = "starter-garden"
 
 [pagination]
 disableAliases = false
-pagerSize = 9
+pagerSize = 12
 
 [params]
 author = "Shaii Ong"
