@@ -9,7 +9,7 @@
     </div>
 
     <div class="sectionlist fade-in-up">
-      {{ range .Pages }}
+      {{ range (.Paginate .Pages).Pages }}
         <div class="sectionitem sectionitem--2column">
           <a href="{{ .RelPermalink }}" class="boxlink"></a>
           <div>
@@ -26,6 +26,7 @@
         </div>
       {{ end }}
     </div>
+    {{ partial "pagination.html" . }}
 
   </div>
 {{ end }}
