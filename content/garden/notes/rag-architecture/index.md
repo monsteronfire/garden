@@ -35,7 +35,7 @@ These are some of the notes I've taken as I built out a RAG application. It took
 This preparation process can be separated into a few parts:
 
 - Creating and storing (for future use) a set of "golden questions" that can be used to test the accuracy of the AI responses.
-- Creating a knowledgebase, which involves collecting source documents for the specific knowledge domain. For instance, user manuals and documentation for a particular software system. Then, converting source documents into a format that can be inserted into a vector database.
+- Creating a knowledge base, which involves collecting source documents for the specific knowledge domain. For instance, user manuals and documentation for a particular software system. Then, converting source documents into a format that can be inserted into a vector database.
 
 ### Golden questions
 
