@@ -7,8 +7,8 @@ layout = "about"
 draft = false
 +++
 
-I write code, draw illustrations, design websites, and follow threads of curiosity all over the internet.
+I follow threads of curiosity all over the internet and use this garden to document and grow my understanding.
 
-While writing code is my main outlet for creativity, I dabble in many interests.
+While writing code is my main outlet for creativity, I dabble in many interests, including digital illustration, content creation, social media marketing, community building, tooling, and whatever else piques my interest.
 
-Right now, I'm learning Elixir and exploring how to use offline models to build secure tools.
+Right now, I'm learning Elixir/Phoenix and exploring how to the use of offline models to build secure internal tools.
