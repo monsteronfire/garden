@@ -11,12 +11,19 @@ link = ""
 tags = [""]
 +++
 
-## Thesis
+## Overview
 
-## Outline
+## Challenge/Problem
 
-1. one
-2. two
-3. three
+## Business Considerations/Context
 
-## Content
+## Approach
+
+## Technical Details
+
+## Outcomes
+
+## Reflections
+
+## Future Considerations (optional)
+
