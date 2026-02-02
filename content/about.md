@@ -1,7 +1,7 @@
 +++
 title = 'About'
 heading = "Shaii Ong"
-date = 2025-10-18T08:30:00-07:00
+date = 2026-02-01T08:30:00-07:00
 type = "page"
 layout = "about"
 draft = false
