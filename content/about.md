@@ -9,6 +9,6 @@ draft = false
 
 I follow threads of curiosity all over the internet and use this garden to document and grow my understanding.
 
-While writing code is my main outlet for creativity, I dabble in many interests, including digital illustration, content creation, social media marketing, community building, tooling, and various other pursuits.
+While writing code is my main outlet for creativity, I dabble in many interests, including digital illustration, content creation, social media marketing, community building, tooling, real-life crafts, and various other pursuits.
 
 Right now, I'm learning Elixir/Phoenix and exploring how offline models can be used to build secure internal tools.
