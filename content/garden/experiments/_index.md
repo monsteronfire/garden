@@ -5,5 +5,10 @@ draft = false
 layout = "experiments"
 +++
 
-## “We make, not to have, but to know.”
-## ― Alan Kay
+## Prototypes and Proofs of Concept (POCs) to test tooling ideas.
+
+&nbsp;
+
+*"We make, not to have, but to know."*
+
+*― Alan Kay*

@@ -17,7 +17,10 @@ Birthday Buddy is a little Slack App (or bot), similar to the popular Birthday B
 ![](media/slack-app-preview.png "Preview of Birthday Buddy Slack app")
 
 ## Challenge/Problem
-Acknowledging a person's birthday is a low-friction way of tending to social connections. Most people like hearing from their social circle, and a birthday is a reoccurring reason to connect. 
+Acknowledging a person's birthday is a low-friction way of tending to social connections. Most people like hearing from their social circle, and a birthday is a reoccurring reason to connect.
+
+## Business Considerations/Context
+The self-hosted birthday bot reduces the need for a subscription and also ensures team data is not being stored and processed on third-party servers.
 
 ## Approach and technical details
 The original plan was to put together a serverless function that ran once a day to check for birthdays and then have it post on Slack via a Slack app if a birthday was found.
