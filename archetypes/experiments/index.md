@@ -17,9 +17,7 @@ tags = [""]
 
 ## Business Considerations/Context
 
-## Approach
-
-## Technical Details
+## Approach and Technical Details
 
 ## Outcomes
 
