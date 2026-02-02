@@ -23,7 +23,7 @@ icon = "▲"
 image = "content-type-experiments.png"
 title = "Experiments"
 subtitle = "A spell for"
-description = "More structured writing"
+description = "Prototypes and POCs"
 link = "/garden/experiments"
 [[params.garden.content_types.pins]]
 icon = "★"
