@@ -35,3 +35,9 @@ The teaching practice I got from creating videos has definitely transferred into
 
 ## Future Considerations
 In future, I may create a brand new channel that focuses on tools and workflows rather than projects. I'd like to get better at Vim and Linux, for example, so a channel may be a fun way to drive that personal learning.
+
+{{< external-link "https://github.com/divrhino" "DivRhino GitHub" >}}
+
+{{< external-link "https://www.youtube.com/@DivRhino" "DivRhino YouTube Channel" >}}
+
+{{< external-link "https://divrhino.com" "DivRhino Content Site" >}}
