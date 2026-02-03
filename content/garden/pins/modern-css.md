@@ -18,3 +18,5 @@ domain = ["reference"]
 It has been a long time since I've written vanilla CSS, and I feel a little out-of-the-loop sometimes. This site has great in-depth articles that include code snippets.
 
 There's also a companion site for smol snippets: [smolcss.dev](https://smolcss.dev)
+
+{{< external-link "https://moderncss.dev" "Modern CSS Snippets" "globe" >}}

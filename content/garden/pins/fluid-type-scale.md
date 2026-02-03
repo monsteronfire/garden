@@ -18,3 +18,5 @@ domain = ["tool"]
 I first saw this fluid type scale mentioned on Maggie Appleton's garden. This calculator helps you generate a scale using your own specifications.
 
 It's very cool and saved me the trouble of having to figure out font-sizes for different breakpoints.
+
+{{< external-link "https://utopia.fyi/type/calculator/" "Fluid Type Scale" "globe" >}}

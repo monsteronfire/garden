@@ -18,3 +18,5 @@ domain = ["tool"]
 I was recently using Jupyter Notebooks and wondered if it was possible to run Elixir in them. A quick google search led me to Livebook, which is Elixir's version of the Jupyter Notebook.
 
 It looks like a great project and I'd like to try it out one day.
+
+{{< external-link "https://livebook.dev" "LiveBook" "globe" >}}
