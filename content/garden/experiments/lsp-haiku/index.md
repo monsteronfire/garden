@@ -8,7 +8,7 @@ date_planted = '2025-08-20T13:02:52Z'
 date_tended = '2026-02-01T13:02:52Z'
 draft = false
 link = ""
-tags = ["AI", "Ollama", "Language Server", "VS Code"]
+tags = ["AI", "Ollama", "Language Server", "VS Code", "Tool"]
 +++
 
 ## Overview
