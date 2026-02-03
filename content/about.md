@@ -7,7 +7,7 @@ layout = "about"
 draft = false
 +++
 
-I follow threads of curiosity all over the internet and use this garden to document and grow my understanding.
+I follow threads of curiosity all over the internet and use this [garden](/garden) to document and grow my understanding.
 
 While writing code is my main outlet for creativity, I dabble in many interests, including [digital illustration](/garden/portraits), [content creation](/tags/content-creation), social media marketing, [community](/tags/community) building, [tooling](/garden/experiments), real-life crafts, and various other pursuits.
 
