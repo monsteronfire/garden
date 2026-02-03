@@ -1,0 +1,20 @@
+{{/*  
+    External Link Preview Component
+    Usage:
+    {{ partial "components/external-link.html" (dict "url" $url "name" $name) }}
+*/}}
+
+{{ $url := .url }}
+{{ $name := .name | default "" }}
+{{ $domain := (urls.Parse $url).Host }}
+{{ $title := $name | default $domain }}
+
+<a href="{{ $url }}" target="_blank" rel="noopener noreferrer" class="external-link-preview">
+  <div class="external-link-preview__content">
+    <span class="external-link-preview__icon">
+      {{ partial "components/icon.html" "globe" }}
+    </span>
+    <span class="external-link-preview__title">{{ $title }}</span>
+    <div class="external-link-preview__externalicon">↗</div>
+  </div>
+</a>
