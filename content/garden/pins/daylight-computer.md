@@ -20,3 +20,5 @@ I've been on a bit of a journey, recently, focused on finding more sustainable w
 From their website:
 
 > The vision for Daylight is to build a whole ecosystem of healthier, more humane computers that respect our health, attention, and freedom.
+
+{{< external-link "https://daylightcomputer.com" "Daylight Computers Website" "bookmark" >}}

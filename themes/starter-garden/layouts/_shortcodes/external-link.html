@@ -9,5 +9,6 @@
 */}}
 {{ $url := .Get 0 }}
 {{ $name := .Get 1 }}
+{{ $icon := .Get 2 | default "bookmark" }}
 
-{{ partial "components/external-link.html" (dict "url" $url "name" $name) }}
+{{ partial "components/external-link.html" (dict "url" $url "name" $name "icon" $icon) }}

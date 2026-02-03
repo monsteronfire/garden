@@ -6,13 +6,14 @@
 
 {{ $url := .url }}
 {{ $name := .name | default "" }}
+{{ $icon := .icon | default "bookmark" }}
 {{ $domain := (urls.Parse $url).Host }}
 {{ $title := $name | default $domain }}
 
 <a href="{{ $url }}" target="_blank" rel="noopener noreferrer" class="external-link-preview">
   <div class="external-link-preview__content">
     <span class="external-link-preview__icon">
-      {{ partial "components/icon.html" "globe" }}
+      {{ partial "components/icon.html" $icon }}
     </span>
     <span class="external-link-preview__title">{{ $title }}</span>
     <div class="external-link-preview__externalicon">↗</div>

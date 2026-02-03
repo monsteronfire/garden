@@ -18,3 +18,5 @@ domain = ["reference"]
 writinghabit.com is a great resource with practical guidance to help you form a daily writing habit.
 
 I have personally been able to maintain an unbroken writing streak of over 450 days at the time of creating this pin.
+
+{{< external-link "https://writinghabit.com" "Writing Habit Guide" "globe" >}}
