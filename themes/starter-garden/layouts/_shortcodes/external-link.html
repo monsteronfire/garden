@@ -1,0 +1,13 @@
+{{/*  
+    GitHub Repository Card shortcode
+    Usage:
+    {{< github "https://github.com/monsteronfire/garden" >}}
+
+    or
+
+    {{< github "https://github.com/monsteronfire/garden" "Garden" >}}
+*/}}
+{{ $url := .Get 0 }}
+{{ $name := .Get 1 }}
+
+{{ partial "components/external-link.html" (dict "url" $url "name" $name) }}

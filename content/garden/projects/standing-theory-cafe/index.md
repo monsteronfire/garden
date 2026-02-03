@@ -35,3 +35,5 @@ While the cafe is no longer in operation, during its run the social media team h
 
 ## Reflections
 This project was transformative for me personally. It was my first experience creating content for a client and working within the constraints of a brand identity. Through this work, I discovered a passion for food photography and developed an interest in community management and social media engagement strategies.
+
+{{< external-link "https://www.instagram.com/standingtheorycafe/" "Standing Theory Cafe on Instagram" >}}
