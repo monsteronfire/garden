@@ -2,14 +2,14 @@
 title = "DivRhino YouTube Channel"
 slug = "divhino"
 type = "project"
-project_type = ["site", "youtube"]
+project_type = ["site", "youtube", "content creation"]
 date = '2025-08-20T13:03:52Z'
 date_planted = '2025-08-20T13:02:52Z'
-date_tended = '2025-08-20T13:02:52Z'
+date_tended = '2026-02-03T13:02:52Z'
 draft = false
 description = "A YouTube channel and website dedicated to project-based learning."
 link = "https://www.youtube.com/@DivRhino"
-tags = ["YouTube", "Tutorials", "Golang", "JavaScript", "Git"]
+tags = ["YouTube", "Content Creation", "Tutorials", "Golang", "JavaScript", "Git"]
 cover = "project-cover-divrhino.jpg"
 +++
 
