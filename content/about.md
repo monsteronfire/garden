@@ -11,4 +11,4 @@ I follow threads of curiosity all over the internet and use this [garden](/garde
 
 While writing code is my main outlet for creativity, I dabble in many interests, including [digital illustration](/garden/portraits), [content creation](/tags/content-creation), social media marketing, [community](/tags/community) building, [tooling](/garden/experiments), real-life crafts, and various other pursuits.
 
-Right now, I'm learning [Elixir](/tags/elixir)/[Phoenix](/tags/phoenix) and exploring how [offline models](/tags/ollama) can be used to build secure [internal tools](/tags/tool).
+I'm a bit of a generalist and right now I'm working with [Elixir](/tags/elixir)/[Phoenix](/tags/phoenix) and exploring how [offline models](/tags/ollama) can be used to build secure [internal tools](/tags/tool).
